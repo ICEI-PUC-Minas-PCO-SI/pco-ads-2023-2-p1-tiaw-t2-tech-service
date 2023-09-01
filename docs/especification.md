@@ -51,6 +51,22 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
 
+Requisitos funcionais
+1) Prioridade alta
+Permitir que o usuário se cadastre
+Permitir que o usuário faça login
+Editar perfil
+Mostrar vagas para os usuários
+Permitir que os usuarios aceitem ou rejeitem as vagas
+Filtrar vagas
+
+2) Prioridade media
+Registrar comentários na pagina da empresa de pessoas que ja trabalharam la
+Exibir chat entre empresa/contratante e profissional
+
+3) Prioridade baixa
+Comentar no fórum 
+
 
 ### Requisitos não Funcionais
 
