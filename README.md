@@ -1,26 +1,28 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/lBgKY70F)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11691164&assignment_repo_type=AssignmentRepo)
-# Título do Projeto
+# Tech Service
 
-`CURSO: Sistemas de Informação`
+`ADS`
 
-`DISCIPLINA: Projeto - Aplicações Web`
+`Trabalho Interdisciplinar: Aplicações Web`
 
-`SEMESTRE: 1º`
+`1º período, 2º semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+## Descrição do projeto
+
+Aplicação de freelance em que o usuário tem um perfil com seu currículo, portfólio e referências e pode se candidatar para vagas disponíveis ou ser contato por empresas que estão buscando colaboradores.
 
 ## Integrantes
 
-* Gabriel Henrique Medice Marçal
-* Gustavo Oliveira Castro
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Gabriel Henrique Medice Marçal (ADS)
+* Alice Machado Villalba Costa (SI)
+* Luiza Sampaio Ribeiro (ADS)
+* Gustavo Oliveira Castro (SI)
+* Rafael Brandão Silva (ADS)
 
 ## Orientador
 
-* Nome completo do professor 1
+* Fábio Leandro Rodrigues Cordeiro
 
 # Planejamento
 
