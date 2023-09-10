@@ -6,9 +6,19 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
-
-[TEXTO PRE-ALPHA]Cleide Roberta tem 48, é boleira e trabalha na área faz duas decadas. Ultimamente ela vem visto que a area da tecnologia vem crescendo e pensa em fazer um site para sua loja de bolos.[TEXTO A CONTINUAR]
+### Alyson
+> - Alyson tem 25 anos, nasceu 12/02/1998, mora no Rio de Janeiro (RJ), desempregado, mas cursando em Ciências da Computação.
+> - Seus hobbies são jogar Videogame, ser stremer nas horas vagas e comprar bastante, produtos eletrônicos mensalmente em sites que tem entrega rápida
+    eficiente, qualidade nos produto e bom atendimento.
+> - Em busca de serviços voltados ao seu curso como desenvolvedor de aplicaçõess Web e suas tecnologias.
+> - Gosta de serviços Home Office e trabalhos simples de aplicações Web.
+> - Ele já tentou trabalhar, mas no passado teve experiências de calote em seus serviços.
+> - Um dos seus desafios é achar um trabalho que não tenha esse problema.
+> - Alyson tem habito de fazer mini projetos nas linguagens HTML, CSS e JavaScript.
+> - Ele usa essas tecnologias, por influência de alguns desenvolvedores famosos como Gustavo Guanabara.
+> - Mas não consegue trabalhar na área com esses conhecimentos, por falta de um guia para aplicar seus conhecimentos.
+> - Busca suas informações com base nas outras pessoas ao seu redor e redes sócias como Youtube, X (Twitter), Instagram e comunidades como Rocketseat.
+> - Está em procura de novas plataformas pra adquirir novas experiências na sua área. 
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -28,7 +38,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
+|Desempregado  | Confiabilidade de Serviço           | Garantir  Serviço
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
