@@ -6,7 +6,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-### Alyson
+### 1) Alyson
 > - Alyson tem 25 anos, nasceu 12/02/1998, mora no Rio de Janeiro (RJ), desempregado, mas cursando em Ciências da Computação.
 > - Seus hobbies são jogar Videogame, ser stremer nas horas vagas e comprar bastante, produtos eletrônicos mensalmente em sites que tem entrega rápida
     eficiente, qualidade nos produto e bom atendimento.
@@ -18,7 +18,16 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 > - Ele usa essas tecnologias, por influência de alguns desenvolvedores famosos como Gustavo Guanabara.
 > - Mas não consegue trabalhar na área com esses conhecimentos, por falta de um guia para aplicar seus conhecimentos.
 > - Busca suas informações com base nas outras pessoas ao seu redor e redes sócias como Youtube, X (Twitter), Instagram e comunidades como Rocketseat.
-> - Está em procura de novas plataformas pra adquirir novas experiências na sua área. 
+> - Está em procura de novas plataformas pra adquirir novas experiências na sua área.
+
+
+### Guilherme
+> - Guilherme tem 37 anos, morava em Santa Catarina e tinha uma assistência técnica em que consertava computadores e notebooks, onde tinha muitos clientes.
+> - Precisou se mudar para o Rio de Janeiro, terra natal de seus pais, para cuidar do seu genitor doente.
+> - Agora, abriu outro comércio de assistência técnica lá, mas não está tendo muitos clientes como tinha em Santa Catarina.
+> - Pela falta de clientes, ele está procurando formas de impulsionar seu negócio e achar pessoas precisando de seu serviço, de forma fácil e eficiente.
+> - Tem a disponibilidade de investir em seu negócio para alcançar mais pessoas e lucrar com isso.
+> - Trabalha sozinho na loja atualmente e tem interesse em contratar um ajudante.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
