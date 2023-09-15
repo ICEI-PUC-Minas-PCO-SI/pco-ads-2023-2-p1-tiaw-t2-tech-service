@@ -90,6 +90,15 @@ fundamental para políticas de segurança da informação da empresa e proteger 
 > - Luana tem disponibilidade de trabalhar em equipe e Home-Office.
 > - Também está aberta a novas propostas mesmo que não seja freelancer.
 
+### 6) 
+>-Pedro tem 19 anos, mora em Belo Horizonte-MG e trabalhou na área de Tráfego e Marketing. 
+>-Pedro é apaixonado por criar e implementar estratégias de mídias sociais para promover produtos ou serviços.  Isso inclui gerenciamento de contas, criação de conteúdo visual e textual,
+análise de métricas de engajamento e interação com a comunidade online. 
+>-Falta de oportunidades de Networking: Sem contatos na indústria ou na área de negócios em que ele atua, Pedro tem dificuldade em encontrar oportunidades para 
+ se conectar com clientes em potenciais ou funcionários!
+>-Assim Pdro começa a busca de plataformas que o ajude em entrar en contato e conseguir clientes em potencial, porem se depara com grande desafio que e falta de plataforma
+ que ligam clientes ou empregadores com freelances.
+
 Fontes de Informação: Blogs técnicos, cursos online, conferências de tecnologia
 Objetivos: Expandir sua carteira de clientes, aprimorar suas habilidades em aprendizado de máquina e eventualmente lançar seu próprio aplicativo de IA.
 
