@@ -43,7 +43,7 @@ a realização de seu sonho. Há dois anos, ela vem economizando seu dinheiro, c
 Helena está em busca de fornecedores e serviços de baixo custo, para que dessa forma consiga dar início ao seu sonho. Como parte desse processo,
 ela decidiu procurar por serviços de design e programação que sejam acessíveis e compatíveis com seu orçamento.
 
-> - Helena então decidiu começar a pesquisar por designers mas ela sente dificuldades de encontrar plataformas especializadas nesses serviços que entreguem
+> - Helena então decidiu começar a pesquisar por designers, mas ela sente dificuldades de encontrar plataformas especializadas nesses serviços que entreguem
 interfaces mais intuitivas e fáceis de encontrar portfólios de artistas que se conectem com seu estilo.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
