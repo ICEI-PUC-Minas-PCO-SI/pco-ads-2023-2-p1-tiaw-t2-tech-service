@@ -103,6 +103,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Desempregado  | Confiabilidade de Serviço           | Garantir  Serviço
 |Empreendedora   | Contratar serviços                 | Abertura de uma loja virtual |
 Prestador de servico | Captar clientes de forma eficiente  | Impulsionar meu negócio 
+Desempregado | Progredir na minha área  | Proteger os dados da empresa
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
