@@ -28,6 +28,23 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 > - Pela falta de clientes, ele está procurando formas de impulsionar seu negócio e achar pessoas precisando de seu serviço, de forma fácil e eficiente.
 > - Tem a disponibilidade de investir em seu negócio para alcançar mais pessoas e lucrar com isso.
 > - Trabalha sozinho na loja atualmente e tem interesse em contratar um ajudante.
+>
+### 3)Helena
+> - Helena, nascida em 10 de maio de 2002, tem 21 anos e reside na região metropolitana de São Paulo. 
+Atualmente, está matriculada no curso de Administração pela Universidade de São Paulo (USP).
+
+> - Desde a infância, Helena nutre uma paixão pelo universo da beleza. Seus passatempos favoritos incluem a prática de maquiagem, arrumar seus cabelos e assistir
+vários conteúdos relacionados à moda. Quando adolescente, ela sempre acompanhava várias blogueiras como Mari Maria, Niina Secrets, Bruna Tavares e outras 
+famosas do Youtube, sempre por dentro das novas tendências. Portanto, Helena começou a ter o sonho de inaugurar uma loja especializada em cosméticos acessíveis, 
+abrangendo todos os tipos de público.
+
+> - Contudo, Helena enfrenta desafios financeiros enquanto atua como estagiária em uma empresa de logística, recebendo uma remuneração baixa que dificulta 
+a realização de seu sonho. Há dois anos, ela vem economizando seu dinheiro, com o objetivo de iniciar sua primeira loja virtual. Para alcançar esse objetivo, 
+Helena está em busca de fornecedores e serviços de baixo custo, para que dessa forma consiga dar início ao seu sonho. Como parte desse processo,
+ela decidiu procurar por serviços de design e programação que sejam acessíveis e compatíveis com seu orçamento.
+
+> - Helena então decidiu começar a pesquisar por designers mas ela sente dificuldades de encontrar plataformas especializadas nesses serviços que entreguem
+interfaces mais intuitivas e fáceis de encontrar portfólios de artistas que se conectem com seu estilo.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
