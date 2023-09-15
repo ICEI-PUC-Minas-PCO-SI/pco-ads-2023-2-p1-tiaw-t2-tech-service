@@ -1,9 +1,32 @@
 # Especificações do Projeto
+O TechMeet busca solucionar as adversidades nos campos de empregabilidade, preservação dos termos de contratos, empreendedorismo, comunicação, usabilidade de software com as demais soluções como exemplo, permitir maior contato do empregador com o contratante e vice-versa, introduzir documentação já estruturada pra fechamento de negócios, deixar filtros dispostos aos empregadores em busca de colaboradores, isso tudo por meio de um sistema responsivo com destino a interface variável, acompanhado de um processamento de ótimo tempo de resposta dentre 3 segundos, favorecendo a usabilidade da aplicação assim executado em qualquer plataforma.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+## Ferramentas a serem utilizadas
+### Design
+* Figma
+* Canva
+* Miro
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Realizaram o pre-layouts das telas da nossa aplicação, afim de melhorar a usabilidade.
+### Estruturas de Dados
+* Replit
+* Visual Studio Code
 
+Irão exercer a função bruta de armazena nossos dados de execução.
+### Linguagens 
+* CSS
+* HTML
+* JavaScript
+
+Serão usados a fim de realizar as funções de responsividade, estrutura de dados, embelezamento da interface e funcionalidades de cadastro do usuário, login, chat, etc..
+### Bicliotecaa
+* Jquery
+
+Facilitara a codificação com as demais tags em sua biblioteca.
+### FrameWorks
+* Bootstrap
+
+Ira contribuir em menor tempo de trabalho árduo e cansativo, já com uma estrutura elaborada.
 ## Personas
 
 ### 1) Alyson
