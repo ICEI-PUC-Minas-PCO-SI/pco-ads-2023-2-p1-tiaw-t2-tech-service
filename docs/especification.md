@@ -69,6 +69,19 @@ ela decidiu procurar por serviços de design e programação que sejam acessíve
 > - Helena então decidiu começar a pesquisar por designers, mas ela sente dificuldades de encontrar plataformas especializadas nesses serviços que entreguem
 interfaces mais intuitivas e fáceis de encontrar portfólios de artistas que se conectem com seu estilo.
 
+
+### 4) Marcos
+> - Marcos tem 23 anos, mora em Belo Horizonte-MG e trabalhava na área de redes como Analista de Segurança de Redes.
+> - Gosta muito de mexer com programação de arduínos nas suas horas vagas.
+> - Está desempregado a 5 meses, devido problemas na família acabou começando a desandar no trabalho e diminuir seu desempenho, oque fez a empresa em que trabalhava
+o demitir por faltas excesivas, acabou tendo muitos problemas psicológicos devido a isso e hoje busca uma empresa especializada em redes pra mostrar 100% do seu
+desempenho novamente.
+> - Por esses problemas tem enfrentado dificuldade para encontrar vagas em empresas, mas vai continuar em busca e agora conta com essa nova plataforma para o ajudar.
+> - Busca uma vaga para ser responsável por desenvolver projeto e manutenção de segurança da rede, incluindo a de hardwares e softwares de servidores. Com uma atuação
+fundamental para políticas de segurança da informação da empresa e proteger os dados da organização.
+> - Também é facilmente adaptável para novas funções na área como suporte.
+
+
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:
