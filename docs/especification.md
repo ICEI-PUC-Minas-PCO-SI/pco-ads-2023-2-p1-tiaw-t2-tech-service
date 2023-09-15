@@ -85,25 +85,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
-
-Requisitos funcionais
-1) Prioridade alta
-Permitir que o usuário se cadastre
-Permitir que o usuário faça login
-Editar perfil
-Mostrar vagas para os usuários
-Permitir que os usuarios aceitem ou rejeitem as vagas
-Filtrar vagas
-
-2) Prioridade media
-Registrar comentários na pagina da empresa de pessoas que ja trabalharam la
-Exibir chat entre empresa/contratante e profissional
-
-3) Prioridade baixa
-Comentar no fórum 
-
+|RF-001| Cadastrar freelancer | ALTA |  |
+|RF-002| Cadastrar empregador   | ALTA | |
+|RF-003| Logar freelancer   | ALTA | |
+|RF-004| Logar empregador   | ALTA | |
+|RF-005| Mostrar vagas disponíveis para os freelancers   | ALTA | |
+|RF-006| Permitir que os usuarios aceitem ou rejeitem as vagas   | ALTA | |
+|RF-007| Filtrar vagas   | ALTA | |
+|RF-008| Registrar comentários na página da empresa de pessoas que ja trabalharam lá   | MÉDIA | |
+|RF-009| Exibir chat entre empresa/empregador e freelancer  | MÉDIA | |
+|RF-010| Editar perfil   | BAIXA | |
+|RF-011| Exibir fórum com dicas para o mercado de trabalho   | BAIXA | |
+|RF-012| Cadastrar comentários no fórum   | BAIXA | |
+|RF-013| Editar comentários no fórum   | BAIXA | |
 
 ### Requisitos não Funcionais
 
