@@ -81,6 +81,18 @@ desempenho novamente.
 fundamental para políticas de segurança da informação da empresa e proteger os dados da organização.
 > - Também é facilmente adaptável para novas funções na área como suporte.
 
+### 5) Luana
+
+> - Luana tem 28 anos, mora em São Paulo - SP e trabalha como autônoma na area de Desenvolvimento.
+> - Gosta bastante das areas de inteligência artificial e aprendizado de máquina.
+> - Está com problemas para encontrar trabalhos como freelancer justos, pois ultimamente vêm pegando clientes que querem o novo Uber para semana que vem.
+> - Tem habilidades em Python, Java e Machine Learning.
+> - Luana tem disponibilidade de trabalhar em equipe e Home-Office.
+> - Também está aberta a novas propostas mesmo que não seja freelancer.
+
+Fontes de Informação: Blogs técnicos, cursos online, conferências de tecnologia
+Objetivos: Expandir sua carteira de clientes, aprimorar suas habilidades em aprendizado de máquina e eventualmente lançar seu próprio aplicativo de IA.
+
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
