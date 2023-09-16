@@ -1,5 +1,5 @@
 # Especificações do Projeto
-O TechMeet busca solucionar as adversidades nos campos de empregabilidade, preservação dos termos de contratos, empreendedorismo, comunicação, usabilidade de software com as demais soluções como exemplo, permitir maior contato do empregador com o contratante e vice-versa, introduzir documentação já estruturada pra fechamento de negócios, deixar filtros dispostos aos empregadores em busca de colaboradores, isso tudo por meio de um sistema responsivo com destino a interface variável, acompanhado de um processamento de ótimo tempo de resposta dentre 3 segundos, favorecendo a usabilidade da aplicação assim executado em qualquer plataforma.
+A Tech Match busca solucionar as adversidades nos campos de empregabilidade, preservação dos termos de contratos, empreendedorismo, comunicação, usabilidade de software com as demais soluções, por exemplo, permitir maior contato do empregador com o contratante e vice-versa, introduzir documentação já estruturada pra fechamento de negócios, deixar filtros dispostos aos empregadores em busca de colaboradores, etc. Isso tudo por meio de um sistema responsivo com destino a interface variável, acompanhado de um processamento de ótimo tempo de resposta dentre 3 segundos, favorecendo a usabilidade da aplicação assim executado em qualquer plataforma.
 
 ## Ferramentas a serem utilizadas
 ### Design
@@ -8,25 +8,29 @@ O TechMeet busca solucionar as adversidades nos campos de empregabilidade, prese
 * Miro
 
 Realizaram o pre-layouts das telas da nossa aplicação, afim de melhorar a usabilidade.
+
 ### Estruturas de Dados
 * Replit
 * Visual Studio Code
 
-Irão exercer a função bruta de armazena nossos dados de execução.
+Irão exercer a função bruta de armazenar nossos dados de execução.
 ### Linguagens 
 * CSS
 * HTML
 * JavaScript
 
 Serão usados a fim de realizar as funções de responsividade, estrutura de dados, embelezamento da interface e funcionalidades de cadastro do usuário, login, chat, etc..
-### Bicliotecaa
+
+### Biblioteca
 * Jquery
 
 Facilitara a codificação com as demais tags em sua biblioteca.
+
 ### FrameWorks
 * Bootstrap
 
-Ira contribuir em menor tempo de trabalho árduo e cansativo, já com uma estrutura elaborada.
+Irá contribuir em menor tempo de trabalho árduo e cansativo, já com uma estrutura elaborada.
+
 ## Personas
 
 ### 1) Alyson
@@ -52,7 +56,7 @@ Ira contribuir em menor tempo de trabalho árduo e cansativo, já com uma estrut
 > - Tem a disponibilidade de investir em seu negócio para alcançar mais pessoas e lucrar com isso.
 > - Trabalha sozinho na loja atualmente e tem interesse em contratar um ajudante.
 >
-### 3)Helena
+### 3) Helena
 > - Helena, nascida em 10 de maio de 2002, tem 21 anos e reside na região metropolitana de São Paulo. 
 Atualmente, está matriculada no curso de Administração pela Universidade de São Paulo (USP).
 
@@ -82,7 +86,6 @@ fundamental para políticas de segurança da informação da empresa e proteger 
 > - Também é facilmente adaptável para novas funções na área como suporte.
 
 ### 5) Luana
-
 > - Luana tem 28 anos, mora em São Paulo - SP e trabalha como autônoma na area de Desenvolvimento.
 > - Gosta bastante das areas de inteligência artificial e aprendizado de máquina.
 > - Está com problemas para encontrar trabalhos como freelancer justos, pois ultimamente vêm pegando clientes que querem um novo Uber para semana que vem.
@@ -92,7 +95,7 @@ fundamental para políticas de segurança da informação da empresa e proteger 
 > - Luana tem disponibilidade de trabalhar em equipe e Home-Office.
 > - Também está aberta a novas propostas mesmo que não seja freelancer.
 
-### 6) 
+### 6) Pedro
 > - Pedro tem 19 anos, mora em Belo Horizonte-MG e trabalhou na área de Tráfego e Marketing. 
 > - Pedro é apaixonado por criar e implementar estratégias de mídias sociais para promover produtos ou serviços.  Isso inclui gerenciamento de contas, criação de conteúdo visual e textual,
 análise de métricas de engajamento e interação com a comunidade online. 
@@ -104,7 +107,6 @@ análise de métricas de engajamento e interação com a comunidade online.
 
 ## Histórias de Usuários
 
-
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Desempregado  | Confiabilidade de Serviço           | Garantir  Serviço
@@ -113,10 +115,6 @@ análise de métricas de engajamento e interação com a comunidade online.
 |Empreendedor | Captar clientes de forma eficiente  | Impulsionar meu negócio 
 |Desempregado | Desenvolver suas tecnologias  | Proteger os dados da empresa
 |Autônoma |  Novo emprego/Freelancer | Colocar seu conhecimento em prática | 
-
-
-
-
 
 ## Requisitos
 
@@ -146,8 +144,8 @@ análise de métricas de engajamento e interação com a comunidade online.
 |-------|-------------------------|----|
 |RNF-001| Deve executar em qualquer Plataforma| Alta|
 |RNF-002| Ser executada nas linguagens HTML, CSS e JavaScript| ALTA|
-|RNF-003| A aplicação deve ter padroões de cores, fontes| ALTA|
-|RNF-004| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-003| A aplicação deve ter padrões de cores, fontes| ALTA|
+|RNF-004| O sistema deve ser responsivo para rodar em um dispositivos móveis | MÉDIA | 
 |RNF-005| O sistema deve dar confiabilidade nos dados dos usuários|MÉDIA|
 |RNF-006| Sistema com disponibilidade de 75% no dia | MÉDIA|
 |RNF-007| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
@@ -160,9 +158,8 @@ análise de métricas de engajamento e interação com a comunidade online.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend com banco de dados real |
-|03| Não pode faltar documentação nenhuma documentação do que for feito|
-|04| Entrega no meio de Dezembro, 2023|
-|05| Qualidade deve ser mediante a sua funcionalidade|
-|06| Relatorio do processo pessoal no projeto de 7 em 7 dias|
+|03| Não pode faltar nenhuma documentação do que for feito|
+|04| Qualidade deve ser mediante a sua funcionalidade|
+|05| Relatório do processo pessoal no projeto de 7 em 7 dias|
 
 
