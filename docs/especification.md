@@ -12,6 +12,8 @@ Realizaram o pre-layouts das telas da nossa aplicação, afim de melhorar a usab
 ### Estruturas de Dados
 * Replit
 * Visual Studio Code
+* LocalStorage
+* CRUD Json Server
 
 Irão exercer a função bruta de armazenar nossos dados de execução.
 ### Linguagens 
