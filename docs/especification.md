@@ -138,6 +138,7 @@ análise de métricas de engajamento e interação com a comunidade online.
 |RF-012| Exibir fórum com dicas para o mercado de trabalho   | BAIXA |Gustavo.O |
 |RF-013| Cadastrar comentários no fórum   | BAIXA |Luiza |
 |RF-014| Editar comentários no fórum   | BAIXA |Gabriel |
+|RF-015| Mostrar no perfil todos os ofícios |
 
 ### Requisitos não Funcionais
 
