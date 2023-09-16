@@ -85,112 +85,83 @@ fundamental para políticas de segurança da informação da empresa e proteger 
 
 > - Luana tem 28 anos, mora em São Paulo - SP e trabalha como autônoma na area de Desenvolvimento.
 > - Gosta bastante das areas de inteligência artificial e aprendizado de máquina.
-> - Está com problemas para encontrar trabalhos como freelancer justos, pois ultimamente vêm pegando clientes que querem o novo Uber para semana que vem.
+> - Está com problemas para encontrar trabalhos como freelancer justos, pois ultimamente vêm pegando clientes que querem um novo Uber para semana que vem.
 > - Tem habilidades em Python, Java e Machine Learning.
+> - E precisa colocar em prática seu conhecimento.
+> - Mas ainda não encontrou um serviço ideial.
 > - Luana tem disponibilidade de trabalhar em equipe e Home-Office.
 > - Também está aberta a novas propostas mesmo que não seja freelancer.
 
 ### 6) 
->-Pedro tem 19 anos, mora em Belo Horizonte-MG e trabalhou na área de Tráfego e Marketing. 
->-Pedro é apaixonado por criar e implementar estratégias de mídias sociais para promover produtos ou serviços.  Isso inclui gerenciamento de contas, criação de conteúdo visual e textual,
+> - Pedro tem 19 anos, mora em Belo Horizonte-MG e trabalhou na área de Tráfego e Marketing. 
+> - Pedro é apaixonado por criar e implementar estratégias de mídias sociais para promover produtos ou serviços.  Isso inclui gerenciamento de contas, criação de conteúdo visual e textual,
 análise de métricas de engajamento e interação com a comunidade online. 
->-Falta de oportunidades de Networking: Sem contatos na indústria ou na área de negócios em que ele atua, Pedro tem dificuldade em encontrar oportunidades para 
+> - Falta de oportunidades de Networking: Sem contatos na indústria ou na área de negócios em que ele atua, Pedro tem dificuldade em encontrar oportunidades para 
  se conectar com clientes em potenciais ou funcionários!
->-Assim Pdro começa a busca de plataformas que o ajude em entrar en contato e conseguir clientes em potencial, porem se depara com grande desafio que e falta de plataforma
- que ligam clientes ou empregadores com freelances.
-
-Fontes de Informação: Blogs técnicos, cursos online, conferências de tecnologia
-Objetivos: Expandir sua carteira de clientes, aprimorar suas habilidades em aprendizado de máquina e eventualmente lançar seu próprio aplicativo de IA.
-
-
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
-
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+> - Assim Pedro começa a buscar  plataformas que o ajude  entrar em  contato e conseguir clientes em potencial, porem se depara com grande desafio que é a falta de plataforma
+ que ligam clientes, empregadores e freelances.
+> - Objetivos: Expandir sua carteira de clientes, aprimorar suas habilidades em aprendizado de máquina e eventualmente lançar seu próprio aplicativo de IA.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Desempregado  | Confiabilidade de Serviço           | Garantir  Serviço
 |Empreendedora   | Contratar serviços                 | Abertura de uma loja virtual |
-Prestador de servico | Captar clientes de forma eficiente  | Impulsionar meu negócio 
-Desempregado | Progredir na minha área  | Proteger os dados da empresa
+|Autônomo | Plataforma de serviços | Expandir mercado  e aprimorar habilidades |
+|Empreendedor | Captar clientes de forma eficiente  | Impulsionar meu negócio 
+|Desempregado | Desenvolver suas tecnologias  | Proteger os dados da empresa
+|Autônoma |  Novo emprego/Freelancer | Colocar seu conhecimento em prática | 
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+
+
 
 ## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Cadastrar freelancer | ALTA |  |
-|RF-002| Cadastrar empregador   | ALTA | |
-|RF-003| Logar freelancer   | ALTA | |
-|RF-004| Logar empregador   | ALTA | |
-|RF-005| Mostrar vagas disponíveis para os freelancers   | ALTA | |
-|RF-006| Permitir que os usuarios aceitem ou rejeitem as vagas   | ALTA | |
-|RF-007| Filtrar vagas   | ALTA | |
-|RF-008| Registrar comentários na página da empresa de pessoas que ja trabalharam lá   | MÉDIA | |
-|RF-009| Exibir chat entre empresa/empregador e freelancer  | MÉDIA | |
-|RF-010| Editar perfil   | BAIXA | |
-|RF-011| Exibir fórum com dicas para o mercado de trabalho   | BAIXA | |
-|RF-012| Cadastrar comentários no fórum   | BAIXA | |
-|RF-013| Editar comentários no fórum   | BAIXA | |
+|RF-001| Cadastrar freelancer | ALTA |Rafael.B  |
+|RF-002| Cadastrar empregador   | ALTA |Rafael.B |
+|RF-003| Logar freelancer   | ALTA |Alice |
+|RF-004| Logar empregador   | ALTA |Alice |
+|RF-005| Mostrar vagas disponíveis para os freelancers   | ALTA |Gustavo.B |
+|RF-006| Fazer um contrato já pré-inscrito| ALTA|Rafael.B|
+|RF-007| Permitir que os usuarios aceitem ou rejeitem as vagas   | ALTA |gustavo.B |
+|RF-008| Filtrar vagas   | ALTA |Gabriel |
+|RF-009| Registrar comentários na página da empresa de pessoas que ja trabalharam lá   | MÉDIA |Luiza |
+|RF-010| Exibir chat entre empresa/empregador e freelancer  | MÉDIA |Alice |
+|RF-011| Editar perfil   | BAIXA |Gustavo.O |
+|RF-012| Exibir fórum com dicas para o mercado de trabalho   | BAIXA |Gustavo.O |
+|RF-013| Cadastrar comentários no fórum   | BAIXA |Luiza |
+|RF-014| Editar comentários no fórum   | BAIXA |Gabriel |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| Deve executar em qualquer Plataforma| Alta|
+|RNF-002| Ser executada nas linguagens HTML, CSS e JavaScript| ALTA|
+|RNF-003| A aplicação deve ter padroões de cores, fontes| ALTA|
+|RNF-004| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-005| O sistema deve dar confiabilidade nos dados dos usuários|MÉDIA|
+|RNF-006| Sistema com disponibilidade de 75% no dia | MÉDIA|
+|RNF-007| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-008| O sistema não apresentará aos usuários quaisquer dados de cunho privativo| BAIXA|
+|RNF-009| Relatório de acompanhamento deve ser documentado toda Segunda-Feira| BAIXA|
 
 ## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend com banco de dados real |
+|03| Não pode faltar documentação nenhuma documentação do que for feito|
+|04| Entrega no meio de Dezembro, 2023|
+|05| Qualidade deve ser mediante a sua funcionalidade|
+|06| Relatorio do processo pessoal no projeto de 7 em 7 dias|
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
