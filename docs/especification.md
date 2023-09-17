@@ -33,6 +33,9 @@ Facilitara a codificação com as demais tags em sua biblioteca.
 
 Irá contribuir em menor tempo de trabalho árduo e cansativo, já com uma estrutura elaborada.
 
+ Com isso, nossa aplicação abrangerá elementos de sistemas de informação, já que abrangerá recursos de softare e dados para atingir as devidas funções e requisitos que deve atender. Além disso, seguiremos os devidos procedimentos e regras para chegar ao nosso objetivo.
+Esses recursos ajudarão a automatizar os processos e facilitar o desenvolvimento de um site que irá otimizar a vida dos freelancers e seus clientes, priorizando sempre a comunicação entre as pessoas do grupo.
+
 ## Personas
 
 ### 1) Alyson
