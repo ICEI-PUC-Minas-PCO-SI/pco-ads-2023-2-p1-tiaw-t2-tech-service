@@ -112,11 +112,11 @@ análise de métricas de engajamento e interação com a comunidade online.
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Desempregado  | Confiabilidade de Serviço           | Garantir  Serviço
-|Empreendedora   | Contratar serviços                 | Abertura de uma loja virtual |
 |Autônomo | Plataforma de serviços | Expandir mercado  e aprimorar habilidades |
-|Empreendedor | Captar clientes de forma eficiente  | Impulsionar meu negócio 
+|Empreendedora   | Contratar serviços                 | Abertura de uma loja virtual |
 |Desempregado | Desenvolver suas tecnologias  | Proteger os dados da empresa
 |Autônoma |  Novo emprego/Freelancer | Colocar seu conhecimento em prática | 
+|Empreendedor | Captar clientes de forma eficiente  | Impulsionar meu negócio 
 
 ## Requisitos
 
