@@ -142,31 +142,29 @@ Esses recursos ajudarão a automatizar os processos e facilitar o desenvolviment
 | ID     | Descrição do Requisito                                              | Prioridade | Responsável |
 | ------ | ------------------------------------------------------------------- | ---------- | ----------- |
 | RF-001 | SIS. deve permitir cadastro                                         | ALTA       | Rafael      |
-| RF-008 | SIS. deve exibir chat a usuários cadastrados                        | ALTA       | Alice       |
+| RF-002 | SIS. deve exibir chat a usuários cadastrados                        | ALTA       | Alice       |
 | RF-003 | SIS. deve permitir login a usuários cadastrados                     | ALTA       | Rafael      |
 | RF-004 | SIS. deve mostrar vagas para usuários cadastrados                   | ALTA       | Gustavo.B   |
 | RF-005 | SIS. deve fazerr contrato para usuários cadastrados                 | ALTA       | Rafael      |
 | RF-006 | SIS. deve ter Permissão/Negação a vagas de empregos                 | ALTA       | Gustavo.B   |
-| RF-010 | SIS. deve exibir fórum de dicas a usuários                          | MEDIA      | Gustavo.O   |
-| RF-011 | SIS. deve permitir cadastrar comentários no fórum                   | MEDIA      | Luiza       |
-| RF-002 | SIS. deve permitir filtragem de vagas a usuário cadastrado          | MEDIA      | Gabriel     |
-| RF-009 | SIS. deve permitir usuário cadastrados a editar perfil              | BAIXA      | Gustavo.O   |
-| RF-012 | SIS. deve exibir no perfil todos os ofícios do usuário cadastrado   | BAIXA      | Alice       |
-| RF-007 | SIS. deve permitir usuário cadastrado comentar no perfil da empresa | BAIXA      | Luiza       |
+| RF-007 | SIS. deve exibir fórum de dicas a usuários                          | MEDIA      | Gustavo.O   |
+| RF-008 | SIS. deve permitir cadastrar comentários no fórum                   | MEDIA      | Luiza       |
+| RF-009 | SIS. deve permitir filtragem de vagas a usuário cadastrado          | MEDIA      | Gabriel     |
+| RF-010 | SIS. deve permitir usuário cadastrados a editar perfil              | BAIXA      | Gustavo.O   |
+| RF-011 | SIS. deve exibir no perfil todos os ofícios do usuário cadastrado   | BAIXA      | Alice       |
+| RF-012 | SIS. deve permitir usuário cadastrado comentar no perfil da empresa | BAIXA      | Luiza       |
 
 ### Requisitos não Funcionais
 
-| ID      | Descrição do Requisito                                                    | Prioridade |
-| ------- | ------------------------------------------------------------------------- | ---------- |
-| RNF-001 | Deve executar em qualquer Plataforma                                      | Alta       |
-| RNF-002 | Ser executada nas linguagens HTML, CSS e JavaScript                       | ALTA       |
-| RNF-003 | A aplicação deve ter padrões de cores, fontes                             | ALTA       |
-| RNF-004 | O sistema deve ser responsivo para rodar em um dispositivos móveis        | MÉDIA      |
-| RNF-005 | O sistema deve dar confiabilidade nos dados dos usuários                  | MÉDIA      |
-| RNF-006 | Sistema com disponibilidade de 75% no dia                                 | MÉDIA      |
-| RNF-007 | Deve processar requisições do usuário em no máximo 3s                     | BAIXA      |
-| RNF-008 | O sistema não apresentará aos usuários quaisquer dados de cunho privativo | BAIXA      |
-| RNF-009 | Relatório de acompanhamento deve ser documentado toda Segunda-Feira       | BAIXA      |
+| ID      | Descrição do Requisito                                                | Prioridade |
+| ------- | --------------------------------------------------------------------- | ---------- |
+| RNF-001 | SIS. deve ter padrões de cores (Roxo e Laranja) e fonte de texto ("") | ALTA       |
+| RNF-002 | SIS. deve ser construida nas linguagens HTML, CSS e JavaScript        | ALTA       |
+| RNF-003 | SIS. deve executar em plataforma de desktop                           | ALTA       |
+| RNF-004 | SIS. com disponibilidade de 98% no dia                                | MÉDIA      |
+| RNF-005 | SIS. deve dar confiabilidade nos dados dos usuários                   | MÉDIA      |
+| RNF-006 | SIS. deve ser responsivo para rodar em telas proporções menores       | MÉDIA      |
+| RNF-007 | SIS. deve processar requisições do usuário em no máximo 3s            | BAIXA      |
 
 ## Restrições
 
@@ -175,5 +173,5 @@ Esses recursos ajudarão a automatizar os processos e facilitar o desenvolviment
 | 01  | O projeto deverá ser entregue até o final do semestre                  |
 | 02  | Não pode ser desenvolvido um módulo de backend com banco de dados real |
 | 03  | Não pode faltar nenhuma documentação do que for feito                  |
-| 04  | Qualidade deve ser mediante a sua funcionalidade                       |
+| 04  | Qualidade da aplicação deve ser de acordo com as realizações dos RF    |
 | 05  | Relatório do processo pessoal no projeto de 7 em 7 dias                |
