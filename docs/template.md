@@ -36,7 +36,7 @@ Paleta de cores que será utilizada:
 
 ## Iconografia
 
-![Logo da Aplicação](<img/LogoTechMatch%20(2).png>)
+![Logo da Aplicação](img/LogoTechMatch1.png)
 
 Defina os ícones que serão utilizados e suas respectivas funções.
 
