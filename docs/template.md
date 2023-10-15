@@ -22,7 +22,10 @@ Paleta de cores que será utilizada:
 ## Tipografia
 
 Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
-
+Poppins Medium 500: título da página
+Poppins Regular 400: título de seção
+Poppins ExtraLight 200: rótulos de componentes
+Poppins Light 300: corpo de texto
 
 ## Iconografia
 
