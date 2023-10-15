@@ -31,6 +31,10 @@ Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cad
 Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como freelancer. Ele poderá ter sua descrição, avaliações por seus trabalhos anteriores, ver os trabalhos que estão sendo realizados por ele, etc.
 ![Wireframe 3](img/wireframe3.png)
 
+### Vagas Disponíveis
+Esse é o wireframe da tela que irá aparecer, quando o usuário for procurar por vagas na sua localidade usando a barra de pesquisa. Ele vai possuir alguns filtros predefinidos e descrição detalhada das vagas listadas.
+![Wireframe 4](img/wireframe4.png)
+
 > **Links Úteis**:
 >
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
