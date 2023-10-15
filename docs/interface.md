@@ -21,7 +21,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 ### Landing page
 Esse é o wireframe da primeira tela que as pessoas vão se deparar quando abrirem o site, a página para capturar novos usuários, já que terá uma apresentação da aplicação, um link levando à página de cadastro, além de levar ao login também.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Exemplo de Wireframe](img/wireframe1.png)
 
 > **Links Úteis**:
 >
