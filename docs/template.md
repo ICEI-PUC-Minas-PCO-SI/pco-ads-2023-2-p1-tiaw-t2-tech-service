@@ -11,7 +11,7 @@ Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo d
 
 ## Cores
 Paleta de cores que será utilizada:
-# #FDCB1B
+### #FDCB1B
 # #E07B45
 # #B03F63
 # #661476
