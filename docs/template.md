@@ -11,11 +11,12 @@ Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo d
 
 ## Cores
 Paleta de cores que será utilizada:
-#FDCB1B
-#E07B45
-#B03F63
-#661476
-#120079
+# #FDCB1B
+# #E07B45
+# #B03F63
+# #661476
+# #120079
+![Wireframe 1](img/AdobeColorGradient gradient_fundo.png)
 
 
 ## Tipografia
