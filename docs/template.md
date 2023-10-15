@@ -16,7 +16,7 @@ Paleta de cores que será utilizada:
 #### #B03F63
 #### #661476
 #### #120079
-![Paleta de cores](img/AdobeColorGradient gradient_fundo.png)
+![Paleta de cores](img/paleta.png)
 
 
 ## Tipografia
