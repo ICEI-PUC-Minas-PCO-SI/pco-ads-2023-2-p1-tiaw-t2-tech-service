@@ -21,7 +21,15 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 ### Landing page
 Esse é o wireframe da primeira tela que as pessoas vão se deparar quando abrirem o site, a página para capturar novos usuários, já que terá uma apresentação da aplicação, um link levando à página de cadastro, além de levar ao login também.
 
-![Exemplo de Wireframe](img/wireframe1.png)
+![Wireframe 1](img/wireframe1.png)
+
+### Perfil da empresa - logado
+Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como empresa/empregador. Ele poderá ter sua descrição, avaliações de pessoas que já trabalharam para ele, ver os trabalhos que estão sendo realizados para ele, etc.
+![Wireframe 2](img/wireframe2.png)
+
+### Perfil do freelancer - logado
+Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como freelancer. Ele poderá ter sua descrição, avaliações por seus trabalhos anteriores, ver os trabalhos que estão sendo realizados por ele, etc.
+![Wireframe 3](img/wireframe3.png)
 
 > **Links Úteis**:
 >
