@@ -8,6 +8,26 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
 
+Layout sera baseado em três repartições
+
+#### Cabeçalho
+
+- Logo, localizada na parte superior esquerdo do cabeçalho;
+- Menu de navegação, localizada na parte superior central, com tipografia Poppins;
+- Botton, localizado na parte superior direito do cabeçalho com tipografia Poppins e cor #B03F63;
+
+#### Sessão
+
+- Tipografia poppins, nos Titulos principal, secundario e textos;
+
+#### Rodapé
+
+- Informações da aplicação, localizada na parte inferior esquerda;
+- Tipografia poppins, nos Titulo principal e textos;
+- Icones das redes sociais Instagram, X, GitHub e Facebook, localizados na parte inferior direito;
+
+- Cores padrões usadas degradê #FDCB1B, #E07B45, #B03F63, #661476, #120079.
+
 ## Cores
 
 Paleta de cores que será utilizada:
@@ -61,6 +81,7 @@ Icone irá levar o usário para a pagina da aplicação no Instagram.
 # X
 
 ![Icone](img/icone%20twitter.png)
+
 Icone irá levar o usário para a pagina da aplicação no X(Twitter).
 
 ### GitHub
