@@ -36,7 +36,36 @@ Paleta de cores que será utilizada:
 
 ## Iconografia
 
+## Logo TechMatch
+
+logo da aplicação TechMatch que sera usada nos cabeçalhos das demais telas.
+
 ![Logo da Aplicação](img/LogoTechMatch1.png)
+
+## Icones
+
+Icones que serão usados nossa aplicação nas paginas com footer
+
+### Facebook
+
+![Icone](img/icone%20facebook.png)
+
+Icone irá levar o usário para a pagina da aplicação no Facebook.
+
+### Instagram
+
+![Icone](img/icone%20instagram.png)
+
+Icone irá levar o usário para a pagina da aplicação no Instagram.
+
+### X
+
+![Icone](img/icone%20twitter.png)
+Icone irá levar o usário para a pagina da aplicação no X(Twitter).
+
+### GitHub
+
+![Icone](img/)
 
 Defina os ícones que serão utilizados e suas respectivas funções.
 
