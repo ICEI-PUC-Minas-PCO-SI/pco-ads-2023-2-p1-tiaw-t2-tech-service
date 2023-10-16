@@ -1,8 +1,7 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
+Baseamos nosso guia de acordo com o aplativo de relacionamento Tinder, pois proporciona bastante atenção a sua maneira que funciona a aplicação, com a maneira de negação e aceitação de outros usuários, trazendo uma criatividade diferente, acompanhado com as cores em formato de degradê, demostrando um visual mais variável e atrativo para o usuário.
+Isso tudo proporcionado, por uma responsividade que irá diminuindo seu layout, formando um layout mobile, trazendo conteudos da direita pra parte central dos elementos que ficam a esquerda.
 
 ## Design
 
@@ -54,40 +53,40 @@ Paleta de cores que será utilizada:
 
 ## Iconografia
 
-### Logo TechMatch
+## Logo TechMatch
 
 logo da aplicação TechMatch que sera usada nos cabeçalhos das demais telas.
 
 ![Logo da Aplicação](img/LogoTechMatch1.png)
 
-### Icones
+## Icones
 
 Icones que serão usados nossa aplicação nas paginas com footer
 
-# Facebook
+### Facebook
 
 ![Icone](img/icone%20facebook.png)
 
-Icone irá levar o usário para a pagina da aplicação no Facebook.
+Icone irá levar o usuário para a pagina da aplicação no Facebook.
 
-# Instagram
+### Instagram
 
 ![Icone](img/icone%20instagram.png)
 
-Icone irá levar o usário para a pagina da aplicação no Instagram.
+Icone irá levar o usuário para a pagina da aplicação no Instagram.
 
-# X
+### X
 
 ![Icone](img/icone%20twitter.png)
 
-Icone irá levar o usário para a pagina da aplicação no X(Twitter).
+Icone irá levar o usuário para a pagina da aplicação no X(Twitter).
 
 ### GitHub
 
 ![Icone](img/icone%20GitHub.jpeg)
 
-Icone irá levar o usário para a pagina do projeto no GitHub.
+Icone irá levar o usuário para a pagina do projeto no GitHub.
 
 ## Estilos CSS
 
-![Estilo CSS](img/codigo%20css.png)
+![Estilo CSS](img/codigopaint.png)
