@@ -89,4 +89,6 @@ Icone irá levar o usuário para a pagina do projeto no GitHub.
 
 ## Estilos CSS
 
+Estilo usados nos elementos de texto, fundo da aplicação, botões, incones e logo.
+
 ![Estilo CSS](img/codigopaint.png)
