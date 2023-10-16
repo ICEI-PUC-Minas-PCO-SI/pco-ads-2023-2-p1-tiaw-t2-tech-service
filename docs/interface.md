@@ -40,6 +40,10 @@ Esse é o wireframe da tela principal, onde será disponibilizado um carrossel i
 contratado.
 ![WireFrame 5](img/wireframe5.png)
 
+## Página de Login/Cadastro
+Esse é o wireframe da tela principal de Login e Cadastro, onde o usuário podera realizar o cadastro ou logar em sua conta.
+![WireFrame 6](img/wireframe_login.jpg)
+
 > **Links Úteis**:
 >
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
