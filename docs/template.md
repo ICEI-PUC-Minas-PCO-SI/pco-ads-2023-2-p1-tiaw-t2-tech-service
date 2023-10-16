@@ -6,15 +6,13 @@ Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
-
-Layout sera baseado em três repartições
+Layout sera baseado em três repartições;
 
 #### Cabeçalho
 
 - Logo, localizada na parte superior esquerdo do cabeçalho;
-- Menu de navegação, localizada na parte superior central, com tipografia Poppins;
-- Botton, localizado na parte superior direito do cabeçalho com tipografia Poppins e cor #B03F63;
+- Menu de navegação, localizado na parte superior central, com tipografia Poppins;
+- Botton, localizado na parte superior direito do cabeçalho com tipografia Poppins e com cor #B03F63;
 
 #### Sessão
 
@@ -22,11 +20,11 @@ Layout sera baseado em três repartições
 
 #### Rodapé
 
-- Informações da aplicação, localizada na parte inferior esquerda;
-- Tipografia poppins, nos Titulo principal e textos;
+- Informações da aplicação, localizada na parte inferior esquerdo;
+- Tipografia poppins, no Titulo principal e no texto;
 - Icones das redes sociais Instagram, X, GitHub e Facebook, localizados na parte inferior direito;
 
-- Cores padrões usadas degradê #FDCB1B, #E07B45, #B03F63, #661476, #120079.
+- Cores padrões usadas em degradê para todas as repartições do layout #FDCB1B, #E07B45, #B03F63, #661476, #120079.
 
 ## Cores
 
@@ -54,9 +52,9 @@ Paleta de cores que será utilizada:
 
 #### Poppins Light 300: corpo de texto
 
-### Iconografia
+## Iconografia
 
-## Logo TechMatch
+### Logo TechMatch
 
 logo da aplicação TechMatch que sera usada nos cabeçalhos das demais telas.
 
@@ -88,7 +86,8 @@ Icone irá levar o usário para a pagina da aplicação no X(Twitter).
 
 ![Icone](img/icone%20GitHub.jpeg)
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+Icone irá levar o usário para a pagina do projeto no GitHub.
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+## Estilos CSS
+
+![Estilo CSS](img/codigo%20css.png)
