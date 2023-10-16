@@ -35,6 +35,11 @@ Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cad
 Esse é o wireframe da tela que irá aparecer, quando o usuário for procurar por vagas na sua localidade usando a barra de pesquisa. Ele vai possuir alguns filtros predefinidos e descrição detalhada das vagas listadas.
 ![Wireframe 4](img/wireframe4.png)
 
+## Página principal - Carrossel
+Esse é o wireframe da tela principal, onde será disponibilizado um carrossel interativo que dará ao usuário a opção de cancelar ou aceitar vagas (enviar currículo). Além disso, a pagina também conta com um chat que ira permitir o contato entre empregador e
+contratado.
+![WireFrame 5](img/wireframe5.png)
+
 > **Links Úteis**:
 >
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
