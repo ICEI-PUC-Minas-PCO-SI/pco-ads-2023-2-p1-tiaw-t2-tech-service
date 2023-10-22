@@ -1,27 +1,12 @@
 # Projeto de Interface
 
-<<<<<<< HEAD
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
-Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
-
-=======
->>>>>>> 7b406c2d0636a27cd874b65fec429e42c9b45a77
 ## User Flow
 
 Visão geral da interação do usuário pelas telas do sistema.
 
 ![Exemplo de UserFlow](/docs/img/User%20Flow.png)
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRU4549AwJq0y5TfCiI4x7m%2FUntitled%3Ftype%3Ddesign%26node-id%3D8%253A13%26mode%3Ddesign%26t%3D1M1c3CBht1Esx6nr-1" allowfullscreen></iframe>
-
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 ## Wireframes
 
@@ -33,17 +18,8 @@ Esse é o wireframe da primeira tela que as pessoas vão se deparar quando abrir
 
 ![Wireframe 1](img/wireframe0.png)
 
-<<<<<<< HEAD
-> **Links Úteis**:
->
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
 =======
+
 ### Perfil da empresa - logado
 
 Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como empresa/empregador. Ele poderá ter sua descrição, avaliações de pessoas que já trabalharam para ele, ver os trabalhos que estão sendo realizados para ele, etc.
@@ -69,4 +45,3 @@ contratado.
 
 Esse é o wireframe da tela principal de Login e Cadastro, onde o usuário podera realizar o cadastro ou logar em sua conta.
 ![WireFrame 6](img/wireframe_login.jpg)
->>>>>>> 7b406c2d0636a27cd874b65fec429e42c9b45a77
