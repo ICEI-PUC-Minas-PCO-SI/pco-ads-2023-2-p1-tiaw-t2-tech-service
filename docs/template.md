@@ -1,36 +1,94 @@
 # Template padrão do site
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
+Baseamos nosso guia de acordo com o aplativo de relacionamento Tinder, pois proporciona bastante atenção a sua maneira que funciona a aplicação, com a maneira de negação e aceitação de outros usuários, trazendo uma criatividade diferente, acompanhado com as cores em formato de degradê, demostrando um visual mais variável e atrativo para o usuário.
+Isso tudo proporcionado, por uma responsividade que irá diminuindo seu layout, formando um layout mobile, trazendo conteudos da direita pra parte central dos elementos que ficam a esquerda.
 
 ## Design
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
+Layout sera baseado em três repartições;
 
+#### Cabeçalho
+
+- Logo, localizada na parte superior esquerdo do cabeçalho;
+- Menu de navegação, localizado na parte superior central, com tipografia Poppins;
+- Botton, localizado na parte superior direito do cabeçalho com tipografia Poppins e com cor #B03F63;
+
+#### Sessão
+
+- Tipografia poppins, nos Titulos principal, secundario e textos;
+
+#### Rodapé
+
+- Informações da aplicação, localizada na parte inferior esquerdo;
+- Tipografia poppins, no Titulo principal e no texto;
+- Icones das redes sociais Instagram, X, GitHub e Facebook, localizados na parte inferior direito;
+
+- Cores padrões usadas em degradê para todas as repartições do layout #FDCB1B, #E07B45, #B03F63, #661476, #120079.
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+Paleta de cores que será utilizada:
 
+#### #FDCB1B
+
+#### #E07B45
+
+#### #B03F63
+
+#### #661476
+
+#### #120079
+
+![Paleta de cores](img/paleta.png)
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+#### Poppins Medium 500: título da página
 
+#### Poppins Regular 400: título de seção
+
+#### Poppins ExtraLight 200: rótulos de componentes
+
+#### Poppins Light 300: corpo de texto
 
 ## Iconografia
 
-Defina os ícones que serão utilizados e suas respectivas funções.
+## Logo TechMatch
 
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
+logo da aplicação TechMatch que sera usada nos cabeçalhos das demais telas.
 
+![Logo da Aplicação](img/LogoTechMatch1.png)
 
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+## Icones
+
+Icones que serão usados nossa aplicação nas paginas com footer
+
+### Facebook
+
+![Icone](img/icone%20facebook.png)
+
+Icone irá levar o usuário para a pagina da aplicação no Facebook.
+
+### Instagram
+
+![Icone](img/icone%20instagram.png)
+
+Icone irá levar o usuário para a pagina da aplicação no Instagram.
+
+### X
+
+![Icone](img/icone%20twitter.png)
+
+Icone irá levar o usuário para a pagina da aplicação no X(Twitter).
+
+### GitHub
+
+![Icone](img/icone%20GitHub.jpeg)
+
+Icone irá levar o usuário para a pagina do projeto no GitHub.
+
+## Estilos CSS
+
+Estilo usados nos elementos de texto, fundo da aplicação, botões, incones e logo.
+
+![Estilo CSS](img/codigopaint.png)

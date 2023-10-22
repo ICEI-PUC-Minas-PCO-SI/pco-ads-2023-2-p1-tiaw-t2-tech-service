@@ -1,12 +1,17 @@
 # Projeto de Interface
 
+<<<<<<< HEAD
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
 Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
+=======
+>>>>>>> 7b406c2d0636a27cd874b65fec429e42c9b45a77
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+Visão geral da interação do usuário pelas telas do sistema.
+
+![Exemplo de UserFlow](/docs/img/User%20Flow.png)
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRU4549AwJq0y5TfCiI4x7m%2FUntitled%3Ftype%3Ddesign%26node-id%3D8%253A13%26mode%3Ddesign%26t%3D1M1c3CBht1Esx6nr-1" allowfullscreen></iframe>
 
@@ -22,12 +27,13 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
-### Exemplo
+### Landing page
 
-A tela Inicial apresenta um menu lateral com as principais seções do portal, enquanto a navigation bar, ao topo, apresenta informações de envio de imagens ou navegação pela galeria de fotos. A área central apresenta a galeria de fotos na forma de uma grade.
+Esse é o wireframe da primeira tela que as pessoas vão se deparar quando abrirem o site, a página para capturar novos usuários, já que terá uma apresentação da aplicação, um link levando à página de cadastro, além de levar ao login também.
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+![Wireframe 1](img/wireframe0.png)
 
+<<<<<<< HEAD
 > **Links Úteis**:
 >
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
@@ -37,3 +43,30 @@ A tela Inicial apresenta um menu lateral com as principais seções do portal, e
 > - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
 > - [Axure](https://www.axure.com/edu) (Licença Educacional)
 > - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+=======
+### Perfil da empresa - logado
+
+Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como empresa/empregador. Ele poderá ter sua descrição, avaliações de pessoas que já trabalharam para ele, ver os trabalhos que estão sendo realizados para ele, etc.
+![Wireframe 2](img/wireframe2.png)
+
+### Perfil do freelancer - logado
+
+Esse é o wireframe da tela que irá aparecer para o usuário caso ele logue/cadastre como freelancer. Ele poderá ter sua descrição, avaliações por seus trabalhos anteriores, ver os trabalhos que estão sendo realizados por ele, etc.
+![Wireframe 3](img/wireframe3.png)
+
+### Vagas Disponíveis
+
+Esse é o wireframe da tela que irá aparecer, quando o usuário for procurar por vagas na sua localidade usando a barra de pesquisa. Ele vai possuir alguns filtros predefinidos e descrição detalhada das vagas listadas.
+![Wireframe 4](img/wireframe4.png)
+
+## Página principal - Carrossel
+
+Esse é o wireframe da tela principal, onde será disponibilizado um carrossel interativo que dará ao usuário a opção de cancelar ou aceitar vagas (enviar currículo). Além disso, a pagina também conta com um chat que ira permitir o contato entre empregador e
+contratado.
+![WireFrame 5](img/wireframe5.png)
+
+## Página de Login/Cadastro
+
+Esse é o wireframe da tela principal de Login e Cadastro, onde o usuário podera realizar o cadastro ou logar em sua conta.
+![WireFrame 6](img/wireframe_login.jpg)
+>>>>>>> 7b406c2d0636a27cd874b65fec429e42c9b45a77
