@@ -49,3 +49,13 @@ contratado.
 
 Esse é o wireframe da tela principal de Login e Cadastro, onde o usuário podera realizar o cadastro ou logar em sua conta.
 ![WireFrame 6](img/wireframe_login.jpg)
+
+## Página de Editar Perfil
+
+Esse é o wireframe da tela de editar perfil, com as possibilidades de mudar seus dados, como imagem do perfil, nome do perfil, sobre seus serviços/Tipo de trabalho e descrição dos empregos.
+![WireFrame 7](img/WireFrameEditarPerfil.png)
+
+## Página de Criar Vagas
+
+Esse é o wireframe da tela de criar vagas, onde sera disponibilizado criação de vagas, pros perfis empresariais, aonde terá acesso a colocar dados do perfil da vaga como nome, numeros de vagas, site da empresa, descrição e filtros
+![WireFrame 8](img/WireFrameCriarVagas.png)
