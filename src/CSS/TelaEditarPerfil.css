@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   background-image: linear-gradient(
     to right,
     #fdcb1b,
@@ -14,14 +23,108 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
 }
 
-/* .container {
-  margin-top: 20px;
-} */
+/*CSS Layout Tela Editar Perfil*/
+.container-section {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.section-editarPerfil {
+  display: flex;
+  flex-wrap: wrap;
+}
+label {
+  font-weight: 600;
+}
+/*CSS Layout Tela Editar Perfil*/
+
+/*Dados Usuarios*/
+.dados-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 65%;
+}
+.dados-img {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
+.img-dados {
+  width: 300px;
+  height: 300px;
+  border-radius: 500px;
+}
+.dados-usuario {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+
+  width: 40%;
+}
+.span-sobre {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.input-nome {
+  width: 60%;
+}
+.label-sobre {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+}
+.textarea-sobre {
+  width: 70%;
+}
+
+.span-arquivos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/*Dados Usuarios*/
+
+/*Dados Serviços*/
+.dados-servicos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
+}
+.servicos-dados-titulo {
+  width: 80%;
+}
+.form-servicos {
+  text-align: justify;
+  gap: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.input-descricao {
+  display: flex;
+  height: 200px;
+}
+
+.submit-servicos {
+  width: 50%;
+}
+/*Dados Serviços*/
 
 .footer-container {
+  width: 100%;
   margin-top: 100px;
 }
 
@@ -29,5 +132,51 @@ body {
   .sidebar {
     background-color: rgba(75, 0, 130, 0.7);
     backdrop-filter: blur(10px);
+  }
+}
+@media (max-width: 1400px) {
+  .section-editarPerfil {
+    gap: 40px;
+  }
+  .dados-perfil {
+    width: 100%;
+  }
+  .dados-servicos {
+    width: 100%;
+  }
+  .submit-servicos {
+    width: 20%;
+  }
+  .body {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+@media (max-width: 850px) {
+  .dados-img {
+    width: 100%;
+  }
+  .dados-usuario {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    width: 100%;
+    overflow: scroll;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .span-arquivos1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .span-arquivos2 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
 }
