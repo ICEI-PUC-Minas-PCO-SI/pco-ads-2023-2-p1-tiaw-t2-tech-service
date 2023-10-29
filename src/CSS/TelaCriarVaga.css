@@ -20,7 +20,11 @@ body {
 /* .container {
   margin-top: 20px;
 } */
-
+/**/
+.section-container {
+  display: flex;
+}
+/**/
 .footer-container {
   margin-top: 100px;
 }
