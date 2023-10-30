@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="/src/CSS/TelaCriarVaga.css" />
     <title>Tech Match</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="">
     <!-- Navbar com menu mobile-->
-    <nav class="navbar navbar-expand-lg navbar-dark border" style="width: 100%">
+    <nav
+      class="navbar d-fle navbar-expand-lg navbar-dark justify-content-sm-center"
+    >
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/src/template-padrao/index.html">
           <img
             src="/src/imgs/logo.png"
             width="100px"
@@ -55,12 +57,19 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <div
+            class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0 justify-content-sm-center"
+          >
             <ul
               class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/src/template-padrao/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#sobre">Sobre</a>
@@ -71,6 +80,9 @@
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#faq">Fórum</a>
               </li>
+              <li class="nav-item mx-2">
+                <button class="nav-button-sair">Sair</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -79,12 +91,13 @@
     <!--Main-->
     <div class="">
       <div class="section-container">
-        <div class="col-md-7 col-sm-12 mt-sm-5 mt-md-0">
+        <div class="sectior-criar-vagas col-md-7 col-sm-12">
+          <h2>Criar Vagas</h2>
           <span class="dados-vagas">
             <label class="label-nome" for="">Nome</label>
             <input type="text" placeholder="Escreva o nome" />
             <label for="">Nº Vagas</label>
-            <input type="number" />
+            <input class="input-number" type="number" />
             <label for="">Site da Empresa</label>
             <input type="text" placeholder="Coloque o site" />
           </span>
@@ -97,12 +110,12 @@
               cols="30"
               rows="10"
             ></textarea>
-            <input type="submit" />
+            <input class="input-submit-descricao" type="submit" />
           </span>
         </div>
-        <div class="col-md-5 col-sm-10 ms-3">
+        <div class="sectior-filtros-vagas">
           <h2 class="dados-filtros">Filtros</h2>
-          <ul>
+          <ul class="ul-filtros-vagas">
             <li>
               <input type="checkbox" name="" id="" />
               <label for="">Desing</label>
@@ -120,14 +133,35 @@
               <label for="">Marketing</label>
             </li>
             <li><input type="checkbox" /><label for="">Software</label></li>
-            <ul>
-              <li><input type="checkbox" /><label for="">JavaScript</label></li>
-              <li><input type="checkbox" /><label for="">C#</label></li>
-              <li><input type="checkbox" /><label for="">C++</label></li>
-              <li><input type="checkbox" /><label for="">Phyton</label></li>
-              <li><input type="checkbox" /><label for="">Java</label></li>
-              <li><input type="checkbox" /><label for="">PHP</label></li>
-              <li><input type="checkbox" /><label for="">Roby</label></li>
+            <ul class="ul-filtros-vagas">
+              <li>
+                <input type="checkbox" />
+                <label for="">JavaScript</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">C#</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">C++</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">Phyton</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">Java</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">PHP</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label for="">Roby</label>
+              </li>
             </ul>
           </ul>
         </div>
@@ -136,7 +170,7 @@
     <!--Footer-->
     <div class="container mb-5 footer-container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7" id="sobre">
           <h3 class="text-white">Sobre a empresa</h3>
           <p class="text-white mt-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
@@ -148,21 +182,36 @@
           class="col-md-5 d-flex align-items-center justify-content-center gap-3"
         >
           <a href="#">
-            <img src="facebook.png" alt="facebook" width="40px" height="40px" />
+            <img
+              src="/src/imgs/facebook.png"
+              alt="facebook"
+              width="40px"
+              height="40px"
+            />
           </a>
           <a href="#">
             <img
-              src="instagram.png"
+              src="/src/imgs/instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
             />
           </a>
           <a href="#">
-            <img src="twitter.png" alt="twitter" width="40px" height="40px" />
+            <img
+              src="/src/imgs/twitter.png"
+              alt="twitter"
+              width="40px"
+              height="40px"
+            />
           </a>
           <a href="#">
-            <img src="github.png" alt="github" width="40px" height="40px" />
+            <img
+              src="/src/imgs/github.png"
+              alt="github"
+              width="40px"
+              height="40px"
+            />
           </a>
         </div>
       </div>
