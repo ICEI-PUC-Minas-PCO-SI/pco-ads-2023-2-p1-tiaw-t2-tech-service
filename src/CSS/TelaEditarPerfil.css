@@ -37,6 +37,9 @@ body {
 label {
   font-weight: 600;
 }
+.nav-button-sair {
+  width: 150px;
+}
 /*CSS Layout Tela Editar Perfil*/
 
 /*Dados Usuarios*/
