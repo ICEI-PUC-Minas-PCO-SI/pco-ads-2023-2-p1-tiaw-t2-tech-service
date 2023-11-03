@@ -57,6 +57,35 @@ label {
   align-items: center;
   flex-direction: column;
 }
+.input-img {
+  width: 80%;
+  font-size: 0.8rem;
+}
+#submit-img {
+  width: 30%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
+}
+#submit-usuario {
+  width: 40%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
+}
+.input-arquivos {
+  width: 150%;
+}
 .img-dados {
   width: 300px;
   height: 300px;
@@ -95,6 +124,16 @@ label {
   gap: 20px;
   align-items: center;
 }
+.span-arquivos1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.span-arquivos2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*Dados Usuarios*/
 
@@ -123,6 +162,14 @@ label {
 
 .submit-servicos {
   width: 50%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
 }
 /*Dados Serviços*/
 
