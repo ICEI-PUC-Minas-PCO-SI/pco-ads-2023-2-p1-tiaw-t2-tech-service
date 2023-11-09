@@ -1,21 +1,17 @@
-let bancoVagas = JSON.parse(localStorage.getItem("usuario"))?.Vaga || [];
+let bancoVagas = JSON.parse(localStorage.getItem("usuario"))|| [];
+console.log(bancoVagas);
 let slideAtual = 0;
 let loadingOverlay = document.getElementById("loading-overlay");
 
-function mostrarLoading() {
-    loadingOverlay.style.display = "flex";
-}
-
-function ocultarLoading() {
-    loadingOverlay.style.display = "none";
-}
-
 function criarSlide(slideAtual) {
-    ocultarLoading();
+     console.log(bancoVagas.imagem)
     var strCarrossel = "";
     let slide = document.createElement("div");
     slide.className = "carousel-item" + (slideAtual === 0 ? " active" : "");
     const vaga = bancoVagas[slideAtual];
+    const vagaIMG = bancoVagas.imagem;
+    console.log(va)
+
    
     if(vaga){ 
         strCarrossel += `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
@@ -30,7 +26,7 @@ function criarSlide(slideAtual) {
             <div class="row">
                 <div class="col-md-6 mx-0 my-auto">
                     <div class="d-flex justify-content-center">
-                        <img src="/src/imgs/avatarimg.png" width="250px" height="250px" alt="imagem-vaga" class="img-fluid rounded-5">
+                        <img src="${vagaIMG}" width="250px" height="250px" alt="imagem-vaga" class="img-fluid rounded-5">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -57,11 +53,11 @@ function criarSlide(slideAtual) {
             <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
         </div>`;
     }
+    console.log(strCarrossel)
     document.querySelector('#tela').innerHTML = strCarrossel;
 }
 
 function aceitarVaga(){
-    mostrarLoading();
     slideAtual++;
 
     if(slideAtual >= bancoVagas.length){
@@ -80,7 +76,6 @@ function aceitarVaga(){
 }
 
 function recusarVaga(){
-    mostrarLoading();
     slideAtual++;
 
     if(slideAtual >= bancoVagas.length){
