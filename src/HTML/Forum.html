@@ -1,116 +1,147 @@
-  <!DOCTYPE html>
-  <html lang="pt-br">>
-    
+<!DOCTYPE html>
+<html lang="pt-br">
+  >
+
   <head>
     <title>Fórum - Forum do Site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/src/CSS/style.css" />
   </head>
-    
+
   <body>
-    
     <header>
       <a href="#" onclick="returnToMainPage()">
-      <img src="logo.png" alt="Logo da Empresa" class="logo">
+        <img
+          src="/src/imgs/logo.png"
+          width="100px"
+          height="100px"
+          alt="Logo da Empresa"
+          class="logo"
+        />
       </a>
       <button class="logout-button" onclick="logout()">Sair</button>
       <h1>Fórum</h1>
-      <input type="text" id="searchInput" onkeyup="searchPosts()" placeholder="Pesquisar posts...">
+      <input
+        type="text"
+        id="searchInput"
+        onkeyup="searchPosts()"
+        placeholder="Pesquisar posts..."
+      />
     </header>
-    
-  <div class="container">
-    
-    <div class="actions">
-      <button onclick="showForm()">Criar Novo Post</button>
-      <button onclick="filterAll()">Todos os Posts</button>
-      <button onclick="filterRecent()">Posts Recentes</button>
-    </div>
-    
-    <div class="forum">
-      <h2>Desenvolvedor Web</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-      <div class="info">
-        <p>Comentários: <span id="commentsCount">0</span></p>
-        <p>Curtidas: <span id="likesCount">0</span></p>
-        <p>Visualizações: <span id="viewsCount">0</span></p>
+
+    <div class="container">
+      <div class="actions">
+        <button onclick="showForm()">Criar Novo Post</button>
+        <button onclick="filterAll()">Todos os Posts</button>
+        <button onclick="filterRecent()">Posts Recentes</button>
       </div>
-    </div>
-    
-    <div class="forum">
-      <h2>Desenvolvedor Web</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-      <div class="info">
-        <p>Comentários: <span id="commentsCount">0</span></p>
-        <p>Curtidas: <span id="likesCount">0</span></p>
-        <p>Visualizações: <span id="viewsCount">0</span></p>
+
+      <div class="forum">
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+        <div class="info">
+          <p>Comentários: <span id="commentsCount">0</span></p>
+          <p>Curtidas: <span id="likesCount">0</span></p>
+          <p>Visualizações: <span id="viewsCount">0</span></p>
+        </div>
       </div>
-    </div>
-    
-    <div class="forum">
-      <h2>Desenvolvedor Web</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-      <div class="info">
-        <p>Comentários: <span id="commentsCount">0</span></p>
-        <p>Curtidas: <span id="likesCount">0</span></p>
-        <p>Visualizações: <span id="viewsCount">0</span></p>
+
+      <div class="forum">
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+        <div class="info">
+          <p>Comentários: <span id="commentsCount">0</span></p>
+          <p>Curtidas: <span id="likesCount">0</span></p>
+          <p>Visualizações: <span id="viewsCount">0</span></p>
+        </div>
       </div>
-    </div>
-    
-    <div class="forum">
-      <h2>Desenvolvedor Web</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-      <div class="info">
-        <p>Comentários: <span id="commentsCount">0</span></p>
-        <p>Curtidas: <span id="likesCount">0</span></p>
-        <p>Visualizações: <span id="viewsCount">0</span></p>
+
+      <div class="forum">
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+        <div class="info">
+          <p>Comentários: <span id="commentsCount">0</span></p>
+          <p>Curtidas: <span id="likesCount">0</span></p>
+          <p>Visualizações: <span id="viewsCount">0</span></p>
+        </div>
       </div>
-    </div>
-    
-    <div class="forum">
-      <h2>Desenvolvedor Web</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-      <div class="info">
-        <p>Comentários: <span id="commentsCount">0</span></p>
-        <p>Curtidas: <span id="likesCount">0</span></p>
-        <p>Visualizações: <span id="viewsCount">0</span></p>
+
+      <div class="forum">
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+        <div class="info">
+          <p>Comentários: <span id="commentsCount">0</span></p>
+          <p>Curtidas: <span id="likesCount">0</span></p>
+          <p>Visualizações: <span id="viewsCount">0</span></p>
+        </div>
+      </div>
+
+      <div class="forum">
+        <h2>Desenvolvedor Web</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+        <div class="info">
+          <p>Comentários: <span id="commentsCount">0</span></p>
+          <p>Curtidas: <span id="likesCount">0</span></p>
+          <p>Visualizações: <span id="viewsCount">0</span></p>
+        </div>
+      </div>
+
+      <div class="form-popup" id="createPostForm">
+        <form class="form-container">
+          <h2>Criar Novo Post</h2>
+          <label for="title"><b>Título</b></label>
+          <input
+            type="text"
+            placeholder="Digite o título"
+            name="title"
+            required
+          />
+          <label for="content"><b>Conteúdo</b></label>
+          <input
+            type="text"
+            placeholder="Digite o conteúdo"
+            name="content"
+            required
+          />
+          <button type="submit" class="btn">Publicar</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Fechar
+          </button>
+        </form>
       </div>
     </div>
 
-    <div class="form-popup" id="createPostForm">
-      <form class="form-container">
-        <h2>Criar Novo Post</h2>
-        <label for="title"><b>Título</b></label>
-        <input type="text" placeholder="Digite o título" name="title" required>
-        <label for="content"><b>Conteúdo</b></label>
-        <input type="text" placeholder="Digite o conteúdo" name="content" required>
-        <button type="submit" class="btn">Publicar</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
-      </form>
-    </div>
-    
-  </div>
-    
-  <footer>
-    <div class="about-company">
-      <h3>Sobre a empresa</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-      beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-      optio a totam soluta tempore natus, tempora aspernatur.</p>
-    </div>
-    <p>&copy; 2023 TechMatch. Todos os direitos reservados.</p>
-  </footer>
-    
-  <script src="script.js"></script>
-    
-</body>
-  
+    <footer>
+      <div class="about-company">
+        <h3>Sobre a empresa</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+          optio a totam soluta tempore natus, tempora aspernatur.
+        </p>
+      </div>
+      <p>&copy; 2023 TechMatch. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
