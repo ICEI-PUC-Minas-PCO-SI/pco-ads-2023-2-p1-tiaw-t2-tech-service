@@ -22,6 +22,16 @@ body {
   margin-top: 20px;
 } */
 /**/
+#a-sair {
+  text-decoration: none;
+  width: 60px;
+  height: 40x;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #f94ca4;
+  display: flex;
+  justify-content: center;
+}
 .section-container {
   display: flex;
   justify-content: center;

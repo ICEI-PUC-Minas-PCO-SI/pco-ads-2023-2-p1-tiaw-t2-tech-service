@@ -1,115 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/CSS/style_carrossel.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/src/CSS/style_carrossel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Página Inicial</title>
-</head>
+  </head>
 
-<body>
+  <body onload="acessarCarrosel ()">
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
-        <div class="container">
-            <!--Logo-->
-          <a class="navbar-brand" href="#">TechMatch</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--Menu lateral-->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body d-flex flex-column flex-lg-row p-5 p-lg-0">
-              <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-                <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#contato">Contato</a>
-                  </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#faq">Fórum</a>
-                </li>
-              </ul>
-              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-                <a href="#cadastro" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: #f94ca4">Sair</a>
-               </div>
+      <div class="container">
+        <!--Logo-->
+        <a class="navbar-brand" href="/src/HTML/index.html">TechMatch</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Menu lateral-->
+        <div
+          class="sidebar offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-5 p-lg-0">
+            <ul
+              class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
+            >
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/src/HTML/Perfil.Freelancer.html"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#footer-midia">Contato</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/src/HTML/VagasDisponiveis.html"
+                  >Vagas</a
+                >
+              </li>
+            </ul>
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+            >
+              <a
+                href="/src/HTML/index.html"
+                class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94ca4"
+                >Sair</a
+              >
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!-- Carrossel -->
     <div class="container-fluid">
-        <div class="row justify-content-center" id="tela"></div>
+      <div class="row justify-content-center" id="tela"></div>
     </div>
-  
 
     <!--Footer-->
-    <div class="container mb-5 footer-container">
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="text-white">Sobre a empresa</h3>
-                <p class="text-white mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae corrupti consequuntur sint quod repellendus, suscipit, nam optio a totam soluta tempore natus, tempora aspernatur.</p>
-            </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-center gap-3">
-                <a href="#">
-                    <img src="/src/imgs/facebook.png" alt="facebook" width="40px" height="40px">
-                </a>
-                <a href="#">
-                    <img src="/src/imgs/instagram.png" alt="instagram" width="40px" height="40px">
-                </a>
-                <a href="#">
-                    <img src="/src/imgs/twitter.png" alt="twitter" width="40px" height="40px">
-                </a>
-                <a href="#">
-                    <img src="/src/imgs/github.png" alt="github" width="40px" height="40px">
-                </a>
-            </div>
+    <div class="container mb-5 footer-container" id="footer-midia">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="text-white">Sobre a empresa</h3>
+          <p class="text-white mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+            optio a totam soluta tempore natus, tempora aspernatur.
+          </p>
+        </div>
+        <div
+          class="col-md-4 d-flex align-items-center justify-content-center gap-3"
+        >
+          <a href="#">
+            <img
+              src="/src/imgs/facebook.png"
+              alt="facebook"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/instagram.png"
+              alt="instagram"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/twitter.png"
+              alt="twitter"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/github.png"
+              alt="github"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Chatbot-->
+    <div class="container d-flex justify-content-end align-items-center">
+      <!-- chat box -->
+      <div class="chat-box">
+        <!-- client -->
+        <div class="client d-flex justify-content-start align-items-center">
+          <img
+            src="/src/imgs/chatbot.png"
+            width="40px"
+            height="40px"
+            alt="logo"
+          />
+          <div class="client-info">
+            <h2 class="mt-2 mx-2">Chatbot</h2>
+          </div>
+        </div>
+
+        <!-- main chat section -->
+        <div class="chats py-2">
+          <div class="client-chat">Olá! No que posso lhe ajudar?</div>
+        </div>
+
+        <!-- input field section -->
+        <div class="chat-input d-flex align-items-center w-100 p-5">
+          <input type="text" placeholder="Digite uma mensagem" />
+          <button class="send-btn">
+            <img src="/src/imgs/send.png" alt="send-btn" />
+          </button>
         </div>
       </div>
 
-      <!--Chatbot-->
-      <div class="container d-flex justify-content-end align-items-center">
-        <!-- chat box -->
-        <div class="chat-box">
-            <!-- client -->
-            <div class="client d-flex justify-content-start align-items-center">
-                <img src="/src/imgs/chatbot.png" width="40px" height="40px" alt="logo"/>
-                <div class="client-info">
-                    <h2 class="mt-2 mx-2">Chatbot</h2>
-                </div>
-            </div>
-
-            <!-- main chat section -->
-            <div class="chats py-2">
-                <div class="client-chat">Olá! No que posso lhe ajudar?</div>
-            </div>
-
-            <!-- input field section -->
-            <div class="chat-input d-flex align-items-center w-100 p-5">
-                <input type="text" placeholder="Digite uma mensagem" />
-                <button class="send-btn">
-                    <img src="/src/imgs/send.png" alt="send-btn">
-                </button>
-            </div>
-        </div>
-
-        <!-- button -->
-        <div class="chat-btn">
-            <img src="/src/imgs/icon.png" alt="chat box icon btn">
-        </div>
+      <!-- button -->
+      <div class="chat-btn">
+        <img src="/src/imgs/icon.png" alt="chat box icon btn" />
+      </div>
     </div>
-      <script src="/src/js/jquery-3.7.1.js"></script>
-      <script src="/src/js/carrossel.js"></script>
-</body>
+    <script src="/src/js/jquery-3.7.1.js"></script>
+    <script src="/src/js/carrossel.js"></script>
+  </body>
 </html>

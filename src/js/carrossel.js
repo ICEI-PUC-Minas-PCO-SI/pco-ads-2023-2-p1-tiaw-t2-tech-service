@@ -1,6 +1,14 @@
 let bancoVagas = JSON.parse(localStorage.getItem("usuario")) || [];
 let slideAtual = 0;
 
+console.log(bancoVagas);
+
+if (bancoVagas.Vaga == "") {
+  alert(
+    "Para acessar completamente a pagina registre uma vaga, CLICANDO EM PERFIL \n (CRIAR VAGA) e precisarar adicionar dados em (EDITAR PERFIL)"
+  );
+}
+
 function criarSlide(slideAtual) {
   var strCarrossel = "";
   let slide = document.createElement("div");
@@ -10,10 +18,10 @@ function criarSlide(slideAtual) {
   let divConteudo = document.getElementById("tela");
 
   if (bancoVagas && bancoVagas.Vaga) {
-       i = 0;
-      const vagaAtual = bancoVagas.Vaga[slideAtual];
-      console.log(vagaAtual);
-      strCarrossel += `
+    i = 0;
+    const vagaAtual = bancoVagas.Vaga[slideAtual];
+    console.log(vagaAtual);
+    strCarrossel += `
       <div class="vaga-disponivel container bg-light p-4 w-75 h-75 mt-5 rounded-5"" data-identificador="${i}">
         <div class="header d-flex justify-content-around my-5">
                  <i class="fas fa-fire fs-2"></i>
@@ -29,19 +37,19 @@ function criarSlide(slideAtual) {
                 <div class="div-dadosVagas col-md-6">
                 <h3>Descrição da Vaga</h3>
             <p class="paragraph-titulo"><strong>Nome da Vaga : </strong>${
-                vagaAtual.nomeVaga
+              vagaAtual.nomeVaga
             }</p>
             <p class="paragraph-descricao"><strong>Descrição : </strong>${
-                vagaAtual.descricao
+              vagaAtual.descricao
             }</p>
             <p class="paragraph-filtro"><strong>Filtro : </strong>${vagaAtual.filtro.join(
-                ", "
+              ", "
             )}</p>
             <p class="paragraph-software"><strong>Linguagens : </strong> ${vagaAtual.software.join(
-                ", "
+              ", "
             )}</p>
             <p class="paragraph-site"><strong>Site : </strong>${
-                vagaAtual.site
+              vagaAtual.site
             }</p>
             </div>
             <div class="actions d-flex justify-content-around">
@@ -53,7 +61,7 @@ function criarSlide(slideAtual) {
                   </div>
               </div>
       </div>`;
-  } else{
+  } else {
     strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
     <div class="header d-flex justify-content-around my-5">
                   <i class="fas fa-fire fs-2"></i>

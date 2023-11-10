@@ -14,16 +14,17 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/login.js"></script>
     <link rel="stylesheet" href="/./src/template-padrao/style.css" />
     <title>Tech Match</title>
   </head>
 
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden" onload="mudancaHome()">
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/src/HTML/index.html">
           <img
             src="/./src/template-padrao/logo.png"
             width="100px"
@@ -61,16 +62,21 @@
               class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/src/HTML/index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#footer-sobre">Sobre</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#contato">Contato</a>
+                <a class="nav-link" href="#footer-midia">Contato</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#faq">Fórum</a>
+                <a class="nav-link" href="/src/HTML/Forum.html">Fórum</a>
               </li>
             </ul>
             <!-- Login/ Cadastro-->
@@ -78,13 +84,13 @@
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="/./src/HTML/Cadastro.html"
+                href="/src/HTML/Cadastro.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Cadastro</a
               >
               <a
-                href="/./src/HTML/Login.html"
+                href="/src/HTML/Login.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Login</a
@@ -121,7 +127,7 @@
                   required="true"
                 />
               </div>
-              <a href="/./src/HTML/Login.html" class="mb-3">
+              <a href="/src/HTML/Login.html" class="mb-3">
                 <div class="">Já possui uma conta?</div>
               </a>
               <div class="mb-5">
@@ -134,7 +140,7 @@
     </div>
 
     <!--Footer-->
-    <div class="container mb-5 footer-container">
+    <div class="container mb-5 footer-container" id="footer-sobre">
       <div class="row">
         <div class="col-md-7">
           <h3 class="text-white">Sobre a empresa</h3>
@@ -146,10 +152,11 @@
         </div>
         <div
           class="col-md-5 d-flex align-items-center justify-content-center gap-3"
+          id="footer-midia"
         >
           <a href="#">
             <img
-              src="/./src/template-padrao/facebook.png"
+              src="/src/imgs/facebook.png"
               alt="facebook"
               width="40px"
               height="40px"
@@ -157,7 +164,7 @@
           </a>
           <a href="#">
             <img
-              src="/./src/template-padrao/instagram.png"
+              src="/src/imgs/instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
@@ -165,7 +172,7 @@
           </a>
           <a href="#">
             <img
-              src="/./src/template-padrao/twitter.png"
+              src="/src/imgs/twitter.png"
               alt="twitter"
               width="40px"
               height="40px"
@@ -173,7 +180,7 @@
           </a>
           <a href="#">
             <img
-              src="/./src/template-padrao/github.png"
+              src="/src/imgs/github.png"
               alt="github"
               width="40px"
               height="40px"
