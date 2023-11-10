@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
 body {
-  background: url("fundo.jpg") rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    to right,
+    #fdcb1b,
+    #e07b45,
+    #b03f63,
+    #661476,
+    #120079
+  );
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
