@@ -1,9 +1,9 @@
 function mudancaHome() {
   alert(
-    "Como voce nao esta logado, não tem permissão pra mudar, para paginas especificas"
+    "Como você não está logado, não tem permissão pra acessar todas as funcionalidades do sistema!"
   );
   let mudanca = prompt(
-    "Deseja mudar de pagina, para acessar mais conteudo ?(Digite o numero)  \n1- Sim \n2- Não"
+    "Deseja mudar de página para acessar mais conteúdo? (Digite o número)  \n1- Sim \n2- Não"
   );
   if (mudanca == 1) {
     alert("Sendo direcionado");

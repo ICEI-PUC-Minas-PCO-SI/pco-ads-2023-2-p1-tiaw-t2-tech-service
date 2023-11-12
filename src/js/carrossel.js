@@ -61,67 +61,16 @@ function criarSlide(slideAtual) {
                   </div>
               </div>
       </div>`;
-  } else {
-    strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
-    <div class="header d-flex justify-content-around my-5">
-                  <i class="fas fa-fire fs-2"></i>
-                  <i class="fas fa-comments fs-2"></i>
-                  <i class="fas fa-user fs-2"></i>
-              </div>
-              <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
-          </div>`;
   }
   divConteudo.innerHTML = strCarrossel;
   console.log(divConteudo);
-
-  //   if (vaga) {
-  //     strCarrossel += `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
-  //             <div class="header d-flex justify-content-around my-5">
-  //                 <i class="fas fa-fire fs-2"></i>
-  //                 <i class="fas fa-comments fs-2"></i>
-  //                 <i class="fas fa-user fs-2"></i>
-  //             </div>
-  //             <div class="row">
-  //                 <h2 class="m-5">${vaga.nomeVaga} - ${vaga.site}</h2>
-  //             </div>
-  //             <div class="row">
-  //                 <div class="col-md-6 mx-0 my-auto">
-  //                     <div class="d-flex justify-content-center">
-  //                         <img src="${vagaIMG}" width="250px" height="250px" alt="imagem-vaga" class="img-fluid rounded-5">
-  //                     </div>
-  //                 </div>
-  //                 <div class="col-md-6">
-  //                     <h3>Descrição da Vaga</h3>
-  //                     <p>${vaga.descricao}</p>
-  //                 </div>
-  //             </div>
-  //             <div class="actions d-flex justify-content-around">
-  //                 <div class="action">
-  //                     <i class="fas fa-times text-danger fs-2" onclick="recusarVaga()"></i>
-  //                 </div>
-  //                 <div class="action">
-  //                     <i class="fas fa-heart text-success fs-2" onclick="aceitarVaga()"></i>
-  //                 </div>
-  //             </div>
-  //         </div>`;
-  //   } else {
-  //     strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
-  //             <div class="header d-flex justify-content-around my-5">
-  //                 <i class="fas fa-fire fs-2"></i>
-  //                 <i class="fas fa-comments fs-2"></i>
-  //                 <i class="fas fa-user fs-2"></i>
-  //             </div>
-  //             <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
-  //         </div>`;
-  //   }
-  //   console.log(strCarrossel);
-  //   document.querySelector("#tela").innerHTML = strCarrossel;
 }
 
 function aceitarVaga() {
   slideAtual++;
+  let divConteudo = document.getElementById("tela");
 
-  if (slideAtual >= bancoVagas.length) {
+  if (bancoVagas.nomeVaga == undefined) {
     strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
             <div class="header d-flex justify-content-around my-5">
                 <i class="fas fa-fire fs-2"></i>
@@ -129,8 +78,12 @@ function aceitarVaga() {
                 <i class="fas fa-user fs-2"></i>
             </div>
             <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
+            <div class="text-center">
+              <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
+            </div>
         </div>`;
-    document.querySelector("#tela").innerHTML = strCarrossel;
+      divConteudo.innerHTML = strCarrossel;
+
   }
 
   criarSlide(slideAtual);
@@ -153,13 +106,14 @@ function recusarVaga() {
 
   criarSlide(slideAtual);
 }
-
-onload = () => {
-  criarSlide(slideAtual);
-};
-
 $(document).ready(() => {
   $(".chat-btn").click(() => {
     $(".chat-box").slideToggle("slow");
   });
 });
+
+onload = () => {
+  criarSlide(slideAtual);
+  $(".chat-box").hide();
+};
+
