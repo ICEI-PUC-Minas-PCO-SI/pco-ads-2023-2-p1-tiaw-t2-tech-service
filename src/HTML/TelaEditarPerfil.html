@@ -16,12 +16,78 @@
     ></script>
     <link rel="stylesheet" href="/src/CSS/TelaEditarPerfil.css" />
     <script src="/src/js/jquery-3.7.1.js"></script>
+<<<<<<< HEAD
     <script>
       $(document).ready(function () {});
     </script>
+=======
+    <script src="/src/js/TelaEditarPerfiljquery.min.js" defer></script>
+    <script></script>
+>>>>>>> 0958d50ff6d8aa1aa372ccf5fbe92f1520ea84f0
     <title>Tech Match</title>
   </head>
   <body class="">
+    <!--Modal Perfil do Usuario-->
+    <div class="modal" tabindex="-1" id="meuModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-warning fs-1">Aviso!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="paragraph-modal">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="btn-fechar"
+            >
+              Fechar
+            </button>
+            <button type="button" class="btn btn-success" id="btn-seguir">
+              Salvar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Serviços Atuais-->
+    <div class="modal" tabindex="-1" id="meuModal-Servico">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title-serv fs-1">Aviso!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="paragraph-modal-serv">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="btn-fechar"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Navbar com menu mobile-->
     <nav
       class="navbar d-fle navbar-expand-lg navbar-dark justify-content-sm-center"
@@ -29,7 +95,7 @@
     >
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/src/HTML/index.html">
           <img
             src="/src/imgs/logo.png"
             width="100px"
@@ -77,16 +143,16 @@
                 >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#sobre">Perfil</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#faq">Perfil</a>
+                <a class="nav-link" href="#faq">Criar Vaga</a>
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#faq">Fórum</a>
               </li>
               <li class="nav-item mx-2">
-                <button class="nav-button-sair">Sair</button>
+                <a href="/src/HTML/index.html" id="a-sair">Sair</a>
               </li>
             </ul>
           </div>
@@ -100,12 +166,17 @@
           <div class="dados-img">
             <img
               class="img-dados"
-              src="/docs/img/icone twitter.png"
+              src="/src/imgs/avatarimg.png"
               width="100px"
+              id="img-usuario"
               alt=""
             />
-            <input type="file" />
-            <input type="submit" />
+            <input
+              class="input-img"
+              id="input-img"
+              type="text"
+              placeholder="Coloque o link da imagem"
+            />
           </div>
           <div class="dados-usuario">
             <h2 class="titulo-dados">Perfil do Usuário</h2>
@@ -115,32 +186,40 @@
                 type="text"
                 placeholder="Escreva seu nome"
                 class="input-nome"
+                id="input-nome"
               />
-              <input type="submit" />
             </p>
             <span class="span-sobre">
               <label class="label-sobre" for="">Sobre</label>
               <textarea
                 class="textarea-sobre"
                 name=""
-                id=""
+                id="textarea-sobre"
                 cols="30"
                 rows="10"
                 placeholder="Escreva seu comentário"
               ></textarea>
-              <input type="submit" />
             </span>
             <span class="span-arquivos">
               <span class="span-arquivos1">
                 <label class="row" for="">Envia seu Curricolu</label>
-                <input type="file" />
-                <input type="submit" />
+                <input
+                  class="input-arquivos"
+                  type="text"
+                  id="input-arquivo1"
+                  placeholder="Coloque seu link"
+                />
               </span>
               <span class="span-arquivos2">
                 <label class="row" for="">Envia seu Portfólio</label>
-                <input type="file" />
-                <input type="submit"
-              /></span>
+                <input
+                  id="input-arquivo2"
+                  class="input-arquivos"
+                  type="text"
+                  placeholder="Coloque seu link"
+                />
+              </span>
+              <input id="submit-usuario" type="submit" />
             </span>
           </div>
         </div>
@@ -148,17 +227,21 @@
           <h2 class="titulo-servicos">Serviços Atuais</h2>
           <form class="form-servicos">
             <label class="" for="">Título</label>
-            <input type="text" placeholder="Escreva" />
-            <input class="submit-servicos" type="submit" name="" id="" />
+            <input id="titulo-serv" type="text" placeholder="Escreva" />
             <label for="">Descrição</label>
             <textarea
               name=""
-              id=""
+              id="descricao-serv"
               cols="30"
               rows="10"
               placeholder="Escreva seu comentário"
             ></textarea>
-            <input class="submit-servicos" type="submit" name="" id="" />
+            <input
+              class="submit-servicos"
+              type="submit"
+              name=""
+              id="input-serv"
+            />
           </form>
         </div>
       </div>

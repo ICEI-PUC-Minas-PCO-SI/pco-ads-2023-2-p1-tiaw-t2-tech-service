@@ -1,0 +1,125 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  display: block;
+  float: left;
+  margin: 10px;
+}
+
+.logout-button {
+  background-color: #747272;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 20px 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header input[type="text"] {
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.forum {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  
+}
+
+.forum h2 {
+  color: #333;
+}
+
+.forum p {
+  color: #666;
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.info p {
+  display: inline;
+  margin-right: 20px;
+  color: #999;
+}
+
+.actions {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.actions button {
+  background-color: #747272;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.actions button:hover {
+  background-color: #747272;
+}
+.about-company {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.about-company h3 {
+  color: #333;
+}
+
+.about-company p {
+  color: #666;
+}
+.about-company {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.about-company h3 {
+  color: #333;
+}
+
+.about-company p {
+  color: #5e5a5a;
+}
+
+
+form.form-container {
