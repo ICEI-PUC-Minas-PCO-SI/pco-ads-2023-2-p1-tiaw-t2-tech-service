@@ -42,6 +42,8 @@ body {
 }
 .section-editarPerfil {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 label {
@@ -57,7 +59,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 65%;
+  width: 100%;
 }
 .dados-img {
   display: flex;
@@ -117,15 +119,15 @@ label {
   align-items: center;
 }
 .input-nome {
-  width: 60%;
+  width: 82%;
 }
 .label-sobre {
   display: flex;
-  width: 70%;
+  width: 90%;
   justify-content: flex-start;
 }
 .textarea-sobre {
-  width: 70%;
+  width: 90%;
 }
 
 .span-arquivos {
@@ -135,11 +137,19 @@ label {
   align-items: center;
 }
 .span-arquivos1 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#input-arquivo1 {
+  width: 90%;
+}
+#input-arquivo2 {
+  width: 90%;
+}
 .span-arquivos2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +163,7 @@ label {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
 }
 .servicos-dados-titulo {
   width: 80%;
