@@ -14,9 +14,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/login.js"></script>
-    <link rel="stylesheet" href="/./src/template-padrao/style.css" />
+    <script src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/js/cadastro.js"></script>
+    <link rel="stylesheet" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/CSS/style.css" />
     <title>Tech Match</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/CSS/Login.css">
   </head>
 
   <body class="overflow-x-hidden" onload="mudancaHome()">
@@ -24,9 +26,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="/src/HTML/index.html">
+        <a class="navbar-brand" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/index.html">
           <img
-            src="/./src/template-padrao/logo.png"
+            src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/logo.png"
             width="100px"
             height="100px"
             alt="logo"
@@ -70,13 +72,13 @@
                 >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#footer-sobre">Sobre</a>
+                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html">Sobre</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#footer-sobre">Contato</a>
+                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html">Contato</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/src/HTML/Forum.html">Fórum</a>
+                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Forum.html">Fórum</a>
               </li>
             </ul>
             <!-- Login/ Cadastro-->
@@ -84,13 +86,13 @@
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="/src/HTML/Cadastro.html"
+                href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Cadastro</a
               >
               <a
-                href="/src/HTML/Login.html"
+                href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Login.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Login</a
@@ -102,41 +104,38 @@
     </nav>
     <!--Main-->
     <div class="container mt-5 mb-5 p-3">
-      <div class="d-flex justify-content-center row gap-5">
-        <div class="border bg-white" style="width: 18rem">
-          <div class="text-center">
-            <h6 class="mt-sm-3">Login</h6>
+      <!-- Login -->
+      <div class="wrapper">
+
+        <form action="">
+
+          <h1>Login</h1>
+
+          <div class="input-box">
+            <input type="text" placeholder="Username" required>
+            <i class='bx bxs-user' ></i>
           </div>
-          <div class="card-body mt-sm-5">
-            <form action="" method="post">
-              <div class="mb-3">
-                <input
-                  class="form-control"
-                  type="email"
-                  name="email"
-                  placeholder="email"
-                  required="true"
-                />
-              </div>
-              <div class="mb-5">
-                <input
-                  class="form-control"
-                  type="password"
-                  name="password"
-                  placeholder="senha"
-                  required="true"
-                />
-              </div>
-              <a href="">
-                <div class="">Esqueceu sua senha?</div>
-              </a>
-              <div class="mb-5">
-                <button class="form-control" type="submit">Entrar</button>
-              </div>
-            </form>
+
+          <div class="input-box">
+            <input type="password" placeholder="Password" required>
+            <i class='bx bxs-lock-alt'></i>
           </div>
-        </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox">Lembrar de mim</label>
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+
+          <button type="submit" class="btn">Entrar</button>
+
+          <div class="register-link">
+            <p>Não possui uma conta? <a href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html">Criar Conta</a></p>
+          </div>
+
+        </form>
+
       </div>
+      <!-- Fim Login-->
     </div>
 
     <!--Footer-->
@@ -152,10 +151,11 @@
         </div>
         <div
           class="col-md-5 d-flex align-items-center justify-content-center gap-3"
+          id="footer-midia"
         >
           <a href="#">
             <img
-              src="/src/template-padrao/facebook.png"
+              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/facebook.png"
               alt="facebook"
               width="40px"
               height="40px"
@@ -163,7 +163,7 @@
           </a>
           <a href="#">
             <img
-              src="/src/template-padrao/instagram.png"
+              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
@@ -171,7 +171,7 @@
           </a>
           <a href="#">
             <img
-              src="/src/template-padrao/twitter.png"
+              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/twitter.png"
               alt="twitter"
               width="40px"
               height="40px"
@@ -179,7 +179,7 @@
           </a>
           <a href="#">
             <img
-              src="/src/template-padrao/github.png"
+              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/github.png"
               alt="github"
               width="40px"
               height="40px"
@@ -188,5 +188,7 @@
         </div>
       </div>
     </div>
+    <script src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/json/main.js"></script>
   </body>
 </html>
+<body class="overflow-x-hidden" onload="mudancaHome()"></body>
