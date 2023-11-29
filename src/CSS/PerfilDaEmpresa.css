@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  background-color: rgba(75, 0, 130, 0.6);
+}
+
+#a-sair {
+  text-decoration: none;
+  background-color: #f94ca4;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+}
+#btn-sair {
+  border-radius: 20px;
+  height: 35px;
+  width: 50px;
+}
+.img-logo {
+  margin-left: 30px;
+}
+.container-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+}
+.linha {
+  background-color: black;
+  height: 2px;
+  margin-top: 50px;
+}
+
+.logo-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 500%;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.perfil {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1/2;
+  margin-bottom: 30px;
+}
+
+.avaliacoes {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2/4;
+  margin-bottom: 100px;
+}
+
+.subtitle-1 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.subtitle {
+  margin-top: 50px;
+  margin-left: 35%;
+}
+
+.icon-vagas {
+  width: 30%;
+  margin-top: 15px;
+}
+
+.card-vagas {
+  margin-top: 10px;
+  width: 80%;
+  height: 30%;
+  border: 2px solid black;
+}
+
+.cards {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.icon-user {
+  width: 40%;
+  border-radius: 500%;
+  margin-bottom: 5%;
+}
+
+.star-icon {
+  width: 200%;
+}
+
+.slider-box-1 {
+  margin-top: 50px;
+}
+.card {
+  height: 80%;
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.servicos {
+  margin-top: 40px;
+}
+.vagas {
+  grid-row: 1/4;
+  grid-column: 2;
+  margin-left: 100px;
+  border-left: 2px solid black;
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(75, 0, 130, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}
