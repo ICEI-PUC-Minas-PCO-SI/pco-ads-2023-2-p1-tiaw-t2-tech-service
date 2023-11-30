@@ -14,25 +14,22 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/js/cadastro.js"></script>
-    <link rel="stylesheet" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/CSS/style.css" />
+    <script src="../js/cadastro.js"></script>
     <title>Tech Match</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/CSS/Login.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/CSS/Login.css" />
   </head>
 
-  <body class="overflow-x-hidden" onload="mudancaHome()">
+  <body class="overflow-x-hidden">
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/index.html">
-          <img
-            src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/logo.png"
-            width="100px"
-            height="100px"
-            alt="logo"
-          />
+        <a class="navbar-brand" href="../HTML/index.html">
+          <img src="../imgs/logo.png" width="100px" height="100px" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -72,13 +69,25 @@
                 >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html">Sobre</a>
+                <a
+                  class="nav-link"
+                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
+                  >Sobre</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html">Contato</a>
+                <a
+                  class="nav-link"
+                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
+                  >Contato</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Forum.html">Fórum</a>
+                <a
+                  class="nav-link"
+                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Forum.html"
+                  >Fórum</a
+                >
               </li>
             </ul>
             <!-- Login/ Cadastro-->
@@ -106,34 +115,33 @@
     <div class="container mt-5 mb-5 p-3">
       <!-- Cadastro -->
       <div class="wrapper">
-
-        <form action="">
-
+        <form id="form">
           <h1>Cadastro</h1>
 
           <div class="input-box">
-            <input type="text" placeholder="Username" required>
-            <i class='bx bxs-user' ></i>
+            <input type="text" id="UserName" placeholder="Username" />
+            <i class="bx bxs-user"></i>
           </div>
 
           <div class="input-box">
-            <input type="password" placeholder="Password" required>
-            <i class='bx bxs-lock-alt'></i>
+            <input type="password" id="UserSenha" />
+            <i class="bx bxs-lock-alt"></i>
           </div>
 
           <div class="remember-forgot">
-            <label><input type="checkbox" required>Eu concordo com os</label>
+            <label><input type="checkbox" required />Eu concordo com os</label>
             <a href="#">Termos & Condições</a>
           </div>
 
           <button type="submit" class="btn">Cadastro</button>
 
           <div class="register-link">
-            <p>Possui uma conta? <a href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Login.html">Entrar</a></p>
+            <p>
+              Possui uma conta?
+              <a href="./Login.html">Entrar</a>
+            </p>
           </div>
-
         </form>
-
       </div>
       <!-- Fim Cadastro-->
     </div>
@@ -155,7 +163,7 @@
         >
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/facebook.png"
+              src="../imgs/facebook.png"
               alt="facebook"
               width="40px"
               height="40px"
@@ -163,7 +171,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/instagram.png"
+              src="../imgs/instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
@@ -171,7 +179,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/twitter.png"
+              src="../imgs/twitter.png"
               alt="twitter"
               width="40px"
               height="40px"
@@ -179,7 +187,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/github.png"
+              src="../imgs/github.png"
               alt="github"
               width="40px"
               height="40px"
@@ -188,6 +196,5 @@
         </div>
       </div>
     </div>
-    <script src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/json/main.js"></script>
   </body>
 </html>

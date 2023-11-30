@@ -6,22 +6,30 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
   min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #fdcb1b,
+    #e07b45,
+    #b03f63,
+    #661476,
+    #120079
+  );
 }
 
-.wrapper{
+.wrapper {
   width: 420px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
 }
 
-.wrapper h1{
+.wrapper h1 {
   font-size: 36px;
   text-align: center;
 }
@@ -39,7 +47,7 @@ body{
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
@@ -58,7 +66,7 @@ body{
   font-size: 20px;
 }
 
-.wrapper .remember-forgot{
+.wrapper .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
@@ -86,7 +94,7 @@ body{
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: #333;
