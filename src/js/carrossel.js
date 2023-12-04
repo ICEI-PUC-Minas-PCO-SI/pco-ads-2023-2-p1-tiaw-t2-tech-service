@@ -26,7 +26,7 @@ function criarSlide(slideAtual) {
         <div class="header d-flex justify-content-around my-5">
                  <i class="fas fa-fire fs-2"></i>
                  <i class="fas fa-comments fs-2"></i>
-                <i class="fas fa-user fs-2"></i>
+                 <a href="PerfilDaEmpresa.html"><i class="fas fa-user fs-2"></i></a>
         </div>
         <div class="row">
                 <div class="col-md-6 mx-0 my-auto">
@@ -106,14 +106,7 @@ function recusarVaga() {
 
   criarSlide(slideAtual);
 }
-$(document).ready(() => {
-  $(".chat-btn").click(() => {
-    $(".chat-box").slideToggle("slow");
-  });
-});
-
 onload = () => {
   criarSlide(slideAtual);
-  $(".chat-box").hide();
 };
 

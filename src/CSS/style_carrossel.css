@@ -25,83 +25,10 @@ background-image: linear-gradient(
 
 .photo-actions {height: calc(100vh - 45px);}
 
-.chat-box {width: 300px;
-height: 300px;
-background-color: white;
-color: white;
-overflow: hidden;
-border-radius: 10px;
-position: absolute;}
-
-.client {height: 80px;
-background-color: #e07b45;
-padding: 15px;}
-
-.client img {border-radius: 50%;}
-
-.client-info p {color: black;
-font-weight: bold;
-font-size: 0.8em;}
-
-.chats {position: relative;
-font-size: 0.9em;}
-
-.client-chat {width: 60%;
-word-wrap: break-word;
-background-color: #120079;
-padding: 7px 10px;
-border-radius: 10px 10px 10px 0;
-margin: 10px 10px;}
-
-.my-chat {width: 60%;
-word-wrap: break-word;
-background-color: #b03f63;
-padding: 7px 10px;
-border-radius: 10px 10px 0 10px;
-margin: 5px 0 5px auto;}
-
-.chat-input {height: 30px;
-background-color: #fff;
-overflow: hidden;
-position: absolute;
-bottom: 0px;}
-
-.chat-input input {width: calc(100% - 40px);
-height: 30px;
-background-color: #e07b45;
-border-radius: 50px;
-padding: 0 15px;}
-
-.send-btn {width: 40px;
-height: 40px;
-background-color: transparent;
-overflow: hidden;
-position: relative;
-margin-left: 5px;
-cursor: pointer;
-transition: 0.4s ease-in-out;}
-
-.send-btn:active {transform: scale(0.85);}
-
-.send-btn img {width: 100%;
-height: 100%;}
-
-.chat-btn {width: 70px;
-height: 70px;
-cursor: pointer;
-position: fixed;
-bottom: 20px;}
-
-.chat-btn img {width: 100%;
-height: 100%;
-border-radius: 50%;
-position: absolute;
-top: 0;
-left: 0;
-padding: 5px;
-transition: 0.4s ease-in-out;}
-
-.chat-btn:hover img {transform: rotate(30deg);}
+.whats {position: fixed;
+bottom: 30px;
+right: 50px;
+z-index: 9999;}
 
 action i {
   cursor: default; 
