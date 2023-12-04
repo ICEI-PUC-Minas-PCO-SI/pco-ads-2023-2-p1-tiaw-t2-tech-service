@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+<<<<<<< HEAD
   document
     .getElementById("btn-cadastro")
     .addEventListener("click", receberUser);
+=======
+  let form = document.getElementById("form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    receberUser();
+  });
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
 });
 URL = "http://localhost:3000/usuarios";
 let id = 1;
@@ -18,6 +26,7 @@ const userDefaul = {
   Vaga: [],
 };
 
+<<<<<<< HEAD
 function receberUser(event) {
   event.preventDefault();
   const userName = document.getElementById("UserName").value;
@@ -28,11 +37,22 @@ function receberUser(event) {
   //verificar campos do formulario
   if (userName.length < 3 || userSenha.length < 5) {
     if (userName.length < 3 && userSenha.length < 5) {
+=======
+function receberUser() {
+  const userName = document.getElementById("UserName").value;
+  const userSenha = document.getElementById("UserSenha").value;
+
+  if (userName.length < 3 || userSenha.length < 5) {
+    if (userName.length < 3 && userSenha.length < 5) {
+      console.log("nome < 3");
+      console.log("senha < 5");
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
     } else if (userName.length < 3) {
       console.log("nome < 3");
     } else {
       console.log("senha < 5");
     }
+<<<<<<< HEAD
     return;
   }
   //verificar campos do formulario
@@ -50,6 +70,17 @@ function receberUser(event) {
       if (!usuarioExiste) {
         let usuario = {
           id: 0,
+=======
+  } else {
+    let conferLocal = JSON.parse(localStorage.getItem("usuario"));
+    console.log(conferLocal);
+
+    if (!conferLocal) {
+      let usuario;
+      conferLocal = usuario = [
+        {
+          id: 1,
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
           login: userName,
           senha: userSenha,
           nome: "",
@@ -59,6 +90,7 @@ function receberUser(event) {
           imagem: "",
           servicos: [],
           Vaga: [],
+<<<<<<< HEAD
         };
         conferLocar.push(usuario);
         localStorage.setItem("usuario", JSON.stringify(conferLocar));
@@ -94,10 +126,37 @@ function receberUser(event) {
 }
 function posttAPI(dados) {
   fetch("http://localhost:3000/usuarios", {
+=======
+        },
+      ];
+      console.log(conferLocal);
+      console.log(conferLocal[0].login + " - " + conferLocal[0].senha);
+      localStorage.setItem("usuario", JSON.stringify(conferLocal));
+      getAPI(conferLocal);
+    } else {
+      for (let i = 0; i <= conferLocal.length; i++) {
+        if (conferLocal[i] == undefined) {
+          console.log("ola");
+          userDefaul.id = i + 1;
+          userDefaul.login = userName;
+          userDefaul.senha = userSenha;
+          conferLocal.push(userDefaul);
+          console.log(conferLocal);
+          localStorage.setItem("usuario", JSON.stringify(conferLocal));
+          break;
+        }
+      }
+    }
+  }
+}
+function getAPI(dados) {
+  fetch(URL, {
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
+<<<<<<< HEAD
     body: JSON.stringify(dados),
   })
     .then((response) => response.json())
@@ -112,6 +171,9 @@ function putAPI(dados) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(dados),
+=======
+    body: JSON.stringify({ dados }),
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
   })
     .then((response) => response.json())
     .then((data) => console.log(data));

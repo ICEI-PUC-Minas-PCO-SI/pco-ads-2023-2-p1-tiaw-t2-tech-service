@@ -1,6 +1,7 @@
 {
   "usuarios": [
     {
+<<<<<<< HEAD
       "id": 0,
       "login": "Rafael",
       "senha": "123456",
@@ -124,6 +125,11 @@
       "id": 10,
       "login": "Rafael",
       "senha": "123456",
+=======
+      "id": "02",
+      "login": "rafael",
+      "senha": "",
+>>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
       "nome": "",
       "sobre": "",
       "curriculo": "",
@@ -131,6 +137,40 @@
       "imagem": "",
       "servicos": [],
       "Vaga": []
+    },
+    {
+      "dados": [
+        {
+          "id": 1,
+          "login": "Rafael",
+          "senha": "123456",
+          "nome": "",
+          "sobre": "",
+          "curriculo": "",
+          "portfolio": "",
+          "imagem": "",
+          "servicos": [],
+          "Vaga": []
+        }
+      ],
+      "id": "wzTDcSw"
+    },
+    {
+      "dados": [
+        {
+          "id": 1,
+          "login": "joao",
+          "senha": "123456",
+          "nome": "",
+          "sobre": "",
+          "curriculo": "",
+          "portfolio": "",
+          "imagem": "",
+          "servicos": [],
+          "Vaga": []
+        }
+      ],
+      "id": "5JxpY_s"
     }
   ]
 }
