@@ -1,5 +1,12 @@
 URL = "http://localhost:3000/usuarios";
 
-fetch(URL)
-  .then((res) => res.json())
-  .then((usuarios) => {});
+function receberdados(fuc) {
+  fetch(URL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (dados) {
+      console.log(dados);
+      fuc();
+    });
+}
