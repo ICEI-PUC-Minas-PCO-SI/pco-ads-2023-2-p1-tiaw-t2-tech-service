@@ -45,52 +45,94 @@ function receberUser(event) {
     .then(function (data) {
       let conferLocar = JSON.parse(localStorage.getItem("usuario")) || [];
 
-      const usuarioExiste = data.find((user) => user.login === userName);
+      for (let i = 0; i < data.length; i++) {
+        const usuario = data[i];
 
-      if (!usuarioExiste) {
-        let usuario = {
-          id: 0,
-          login: userName,
-          senha: userSenha,
-          nome: "",
-          sobre: "",
-          curriculo: "",
-          portfolio: "",
-          imagem: "",
-          servicos: [],
-          Vaga: [],
-        };
-        conferLocar.push(usuario);
-        localStorage.setItem("usuario", JSON.stringify(conferLocar));
-        putAPI(usuario);
-      } else {
-        let usuario;
-        for (let i = 0; i <= data.length; i++) {
-          if (data[i] === undefined) {
-            usuario = {
-              id: i,
-              login: userName,
-              senha: userSenha,
-              nome: "",
-              sobre: "",
-              curriculo: "",
-              portfolio: "",
-              imagem: "",
-              servicos: [],
-              Vaga: [],
-            };
-            conferLocar.push(usuario);
+        if (!usuario.login.trim() || !usuario.senha.trim()) {
+          let usuario = {
+            id: i,
+            login: userName,
+            senha: userSenha,
+            nome: "",
+            sobre: "",
+            curriculo: "",
+            portfolio: "",
+            imagem: "",
+            servicos: [],
+            Vaga: [],
+          };
+          conferLocar.push(usuario);
+          localStorage.setItem("usuario", JSON.stringify(conferLocar));
+          putAPI(usuario);
+
+          alert(`Usuário no índice ${i} possui campos obrigatórios vazios.`);
+          break;
+        } else {
+          let usuario;
+          for (let i = 0; i <= data.length; i++) {
+            if (data[i] === undefined) {
+              usuario = {
+                id: i,
+                login: userName,
+                senha: userSenha,
+                nome: "",
+                sobre: "",
+                curriculo: "",
+                portfolio: "",
+                imagem: "",
+                servicos: [],
+                Vaga: [],
+              };
+              conferLocar.push(usuario);
+            }
           }
+          localStorage.setItem("usuario", JSON.stringify(conferLocar));
+          posttAPI(usuario);
         }
-        localStorage.setItem("usuario", JSON.stringify(conferLocar));
-        posttAPI(usuario);
       }
+
+      // if (!usuarioExiste) {
+      //   let usuario = {
+      //     id: 0,
+      //     login: userName,
+      //     senha: userSenha,
+      //     nome: "",
+      //     sobre: "",
+      //     curriculo: "",
+      //     portfolio: "",
+      //     imagem: "",
+      //     servicos: [],
+      //     Vaga: [],
+      //   };
+      //   conferLocar.push(usuario);
+      //   localStorage.setItem("usuario", JSON.stringify(conferLocar));
+      //   putAPI(usuario);
+      // } else {
+      //   let usuario;
+      //   for (let i = 0; i <= data.length; i++) {
+      //     if (data[i] === undefined) {
+      //       usuario = {
+      //         id: i,
+      //         login: userName,
+      //         senha: userSenha,
+      //         nome: "",
+      //         sobre: "",
+      //         curriculo: "",
+      //         portfolio: "",
+      //         imagem: "",
+      //         servicos: [],
+      //         Vaga: [],
+      //       };
+      //       conferLocar.push(usuario);
+      //     }
+      //   }
+      //   localStorage.setItem("usuario", JSON.stringify(conferLocar));
+      //   posttAPI(usuario);
+      // }
     });
-  userName = "";
-  userSenha = "";
-  setTimeout(() => {
-    window.location.href = "./HTML/Login.hmtl";
-  }, 4000);
+  // setTimeout(() => {
+  //   window.location.href = "./HTML/Login.hmtl";
+  // }, 4000);
 }
 function posttAPI(dados) {
   fetch("http://localhost:3000/usuarios", {

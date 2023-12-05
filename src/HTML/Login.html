@@ -14,11 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/login.js"></script>
-    <link
-      rel="stylesheet"
-      href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/CSS/style.css"
-    />
+    <script src="../js/login.js" defer></script>
     <title>Tech Match</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -27,21 +23,13 @@
     <link rel="stylesheet" href="../CSS/Login.css" />
   </head>
 
-  <body class="overflow-x-hidden" onload="mudancaHome()">
+  <body class="overflow-x-hidden">
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a
-          class="navbar-brand"
-          href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/index.html"
-        >
-          <img
-            src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/logo.png"
-            width="100px"
-            height="100px"
-            alt="logo"
-          />
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imgs/logo.png" width="100px" height="100px" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -73,33 +61,18 @@
               class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/src/HTML/index.html"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item mx-2">
-                <a
-                  class="nav-link"
-                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
-                  >Sobre</a
-                >
+                <a class="nav-link" href="Cadastro.html">Sobre</a>
               </li>
               <li class="nav-item mx-2">
-                <a
-                  class="nav-link"
-                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
-                  >Contato</a
-                >
+                <a class="nav-link" href="Cadastro.html">Contato</a>
               </li>
               <li class="nav-item mx-2">
-                <a
-                  class="nav-link"
-                  href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Forum.html"
-                  >Fórum</a
-                >
+                <a class="nav-link" href="Forum.html">Fórum</a>
               </li>
             </ul>
             <!-- Login/ Cadastro-->
@@ -107,13 +80,13 @@
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
+                href="Cadastro.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Cadastro</a
               >
               <a
-                href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Login.html"
+                href="Login.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Login</a
@@ -126,17 +99,18 @@
     <!--Main-->
     <div class="container mt-5 mb-5 p-3">
       <!-- Login -->
-      <div class="wrapper">
-        <form action="">
+      <div id="wrapper" class="wrapper">
+        <form id="form">
           <h1>Login</h1>
-
+          <p id="mensagerErr" class="mensager-succ">Insira os dados validos</p>
+          <p id="mensagerSucc" class="mensager-succ">Sucesso</p>
           <div class="input-box">
-            <input type="text" placeholder="Username" required />
+            <input type="text" placeholder="Username" id="userName" />
             <i class="bx bxs-user"></i>
           </div>
 
           <div class="input-box">
-            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Password" id="userSenha" />
             <i class="bx bxs-lock-alt"></i>
           </div>
 
@@ -150,13 +124,11 @@
           <div class="register-link">
             <p>
               Não possui uma conta?
-              <a
-                href="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/HTML/Cadastro.html"
-                >Criar Conta</a
-              >
+              <a href="Cadastro.html">Criar Conta</a>
             </p>
           </div>
         </form>
+        <div class="loader"></div>
       </div>
       <!-- Fim Login-->
     </div>
@@ -178,7 +150,7 @@
         >
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/facebook.png"
+              src="../imgs/facebook.png"
               alt="facebook"
               width="40px"
               height="40px"
@@ -186,7 +158,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/instagram.png"
+              src="../imgs/instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
@@ -194,7 +166,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/twitter.png"
+              src="../imgs/twitter.png"
               alt="twitter"
               width="40px"
               height="40px"
@@ -202,7 +174,7 @@
           </a>
           <a href="#">
             <img
-              src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/imgs/github.png"
+              src="../imgs/github.png"
               alt="github"
               width="40px"
               height="40px"
@@ -211,7 +183,6 @@
         </div>
       </div>
     </div>
-    <script src="/./pco-ads-2023-2-p1-tiaw-t2-tech-service-main/src/json/main.js"></script>
   </body>
 </html>
-<body class="overflow-x-hidden" onload="mudancaHome()"></body>
+<body class="overflow-x-hidden"></body>

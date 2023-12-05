@@ -2,7 +2,7 @@
   "usuarios": [
     {
       "id": 0,
-      "login": "Rafael",
+      "login": "Rhillary ",
       "senha": "123456",
       "nome": "",
       "sobre": "",
@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "login": "Rafael",
+      "login": "Elder  Luiz Viera Rosa",
       "senha": "123456",
       "nome": "",
       "sobre": "",
@@ -50,7 +50,7 @@
     },
     {
       "id": 4,
-      "login": "Rafael",
+      "login": "Gabriel",
       "senha": "123456",
       "nome": "",
       "sobre": "",
@@ -62,8 +62,8 @@
     },
     {
       "id": 5,
-      "login": "Rafael",
-      "senha": "123456",
+      "login": "Elder  Luiz Viera Silva",
+      "senha": "0202020202",
       "nome": "",
       "sobre": "",
       "curriculo": "",
@@ -71,66 +71,16 @@
       "imagem": "",
       "servicos": [],
       "Vaga": []
-    },
+    }
+  ],
+  "vagas": [
     {
-      "id": 6,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 7,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 8,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 9,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 10,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "id": 0,
+      "nomeVaga": "",
+      "site": "",
+      "descricao": "",
+      "filtro": [],
+      "software": []
     }
   ]
 }
