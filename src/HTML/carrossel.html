@@ -11,7 +11,7 @@
   <title>Página Inicial</title>
 </head>
 
-<body onload="acessarCarrosel()">
+<body>
   <!-- Navbar com menu mobile-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
     <div class="container">
@@ -55,6 +55,22 @@
   <!-- Carrossel -->
   <div class="container-fluid">
     <div class="row justify-content-center" id="tela"></div>
+  </div>
+
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()"><i class="fas fa-times" style="float: right;"></i></span>
+      <h1>Você aceitou a vaga!</h1>
+      <p>Ela já se encontra no seu perfil de usuário e a empresa já foi notificada.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="myModal2">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModalRecusa()"><i class="fas fa-times" style="float: right;"></i></span>
+      <h1>Você recusou a vaga!</h1>
+      <p>Não foi dessa vez. Continue buscando para achar a vaga que dará match com você!</p>
+    </div>
   </div>
 
   <!--Footer-->

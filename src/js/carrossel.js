@@ -1,14 +1,6 @@
 let bancoVagas = JSON.parse(localStorage.getItem("usuario")) || [];
 let slideAtual = 0;
 
-console.log(bancoVagas);
-
-if (bancoVagas.Vaga == "") {
-  alert(
-    "Para acessar completamente a pagina registre uma vaga, CLICANDO EM PERFIL \n (CRIAR VAGA) e precisarar adicionar dados em (EDITAR PERFIL)"
-  );
-}
-
 function criarSlide(slideAtual) {
   var strCarrossel = "";
   let slide = document.createElement("div");
@@ -16,6 +8,7 @@ function criarSlide(slideAtual) {
   const vaga = bancoVagas[slideAtual];
   const vagaIMAGEM = bancoVagas.imagem;
   let divConteudo = document.getElementById("tela");
+  slide.classList.add("fade");
 
   if (bancoVagas && bancoVagas.Vaga) {
     i = 0;
@@ -31,11 +24,11 @@ function criarSlide(slideAtual) {
         <div class="row">
                 <div class="col-md-6 mx-0 my-auto">
                     <div class="d-flex justify-content-center">
-                        <img src="${vagaIMAGEM}" width="250px" height="250px" alt="imagem-vaga" class="img-fluid rounded-5"/>
+                        <img src="${vagaIMAGEM}" width="250px" height="250px" alt="imagem-vaga" class="img-fluid rounded-5 mb-3"/>
                     </div>
                 </div>
                 <div class="div-dadosVagas col-md-6">
-                <h3>Descrição da Vaga</h3>
+                <h3 class="my-3">Detalhes</h3>
             <p class="paragraph-titulo"><strong>Nome da Vaga : </strong>${
               vagaAtual.nomeVaga
             }</p>
@@ -63,10 +56,29 @@ function criarSlide(slideAtual) {
       </div>`;
   }
   divConteudo.innerHTML = strCarrossel;
-  console.log(divConteudo);
+  setTimeout(() => {
+    slide.classList.remove("fade");
+  }, 100);
+}
+
+function abrirModal(){
+  document.getElementById("myModal").style.display = "block";
+}
+
+function fecharModal(){
+  document.getElementById("myModal").style.display = "none";
+}
+
+function abrirModalRecusa(){
+  document.getElementById("myModal2").style.display = "block";
+}
+
+function fecharModalRecusa(){
+  document.getElementById("myModal2").style.display = "none";
 }
 
 function aceitarVaga() {
+  abrirModal();
   slideAtual++;
   let divConteudo = document.getElementById("tela");
 
@@ -83,16 +95,15 @@ function aceitarVaga() {
             </div>
         </div>`;
       divConteudo.innerHTML = strCarrossel;
-
   }
-
   criarSlide(slideAtual);
 }
 
 function recusarVaga() {
+  abrirModalRecusa();
   slideAtual++;
 
-  if (slideAtual >= bancoVagas.length) {
+  if (bancoVagas.nomeVaga == undefined) {
     strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
             <div class="header d-flex justify-content-around my-5">
                 <i class="fas fa-fire fs-2"></i>
@@ -106,7 +117,8 @@ function recusarVaga() {
 
   criarSlide(slideAtual);
 }
-onload = () => {
+
+document.addEventListener("DOMContentLoaded", function () {
   criarSlide(slideAtual);
-};
+});
 
