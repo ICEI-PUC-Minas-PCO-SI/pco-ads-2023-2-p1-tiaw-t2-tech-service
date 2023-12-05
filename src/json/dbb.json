@@ -105,6 +105,42 @@
         }
       ],
       "id": "5JxpY_s"
+    },
+    {
+      "id": 8,
+      "login": "Jose",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 9,
+      "login": "Rafael",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 10,
+      "login": "Jose",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
     }
   ],
   "vagas": [
