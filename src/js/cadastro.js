@@ -49,6 +49,14 @@ function receberUser(event) {
         const usuario = data[i];
 
         if (!usuario.login.trim() || !usuario.senha.trim()) {
+          let Vagas = {
+            id: i,
+            nomeVaga: "",
+            site: "",
+            descricao: "",
+            filtro: [],
+            software: [],
+          };
           let usuario = {
             id: i,
             login: userName,
@@ -64,13 +72,23 @@ function receberUser(event) {
           conferLocar.push(usuario);
           localStorage.setItem("usuario", JSON.stringify(conferLocar));
           putAPI(usuario);
+          putApiVagas(Vagas);
 
           alert(`Usuário no índice ${i} possui campos obrigatórios vazios.`);
           break;
         } else {
           let usuario;
+          let Vagas;
           for (let i = 0; i <= data.length; i++) {
             if (data[i] === undefined) {
+              Vagas = {
+                id: i,
+                nomeVaga: "",
+                site: "",
+                descricao: "",
+                filtro: [],
+                software: [],
+              };
               usuario = {
                 id: i,
                 login: userName,
@@ -84,55 +102,15 @@ function receberUser(event) {
                 Vaga: [],
               };
               conferLocar.push(usuario);
+              break;
             }
           }
           localStorage.setItem("usuario", JSON.stringify(conferLocar));
           posttAPI(usuario);
+          postApiVagas(Vagas);
         }
       }
-
-      // if (!usuarioExiste) {
-      //   let usuario = {
-      //     id: 0,
-      //     login: userName,
-      //     senha: userSenha,
-      //     nome: "",
-      //     sobre: "",
-      //     curriculo: "",
-      //     portfolio: "",
-      //     imagem: "",
-      //     servicos: [],
-      //     Vaga: [],
-      //   };
-      //   conferLocar.push(usuario);
-      //   localStorage.setItem("usuario", JSON.stringify(conferLocar));
-      //   putAPI(usuario);
-      // } else {
-      //   let usuario;
-      //   for (let i = 0; i <= data.length; i++) {
-      //     if (data[i] === undefined) {
-      //       usuario = {
-      //         id: i,
-      //         login: userName,
-      //         senha: userSenha,
-      //         nome: "",
-      //         sobre: "",
-      //         curriculo: "",
-      //         portfolio: "",
-      //         imagem: "",
-      //         servicos: [],
-      //         Vaga: [],
-      //       };
-      //       conferLocar.push(usuario);
-      //     }
-      //   }
-      //   localStorage.setItem("usuario", JSON.stringify(conferLocar));
-      //   posttAPI(usuario);
-      // }
     });
-  // setTimeout(() => {
-  //   window.location.href = "./HTML/Login.hmtl";
-  // }, 4000);
 }
 function posttAPI(dados) {
   fetch("http://localhost:3000/usuarios", {
@@ -148,6 +126,30 @@ function posttAPI(dados) {
 
 function putAPI(dados) {
   URL = `http://localhost:3000/usuarios/${dados.id}`;
+  fetch(URL, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dados),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+function postApiVagas(dados) {
+  fetch("http://localhost:3000/vagas", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dados),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+
+function putApiVagas(dados) {
+  URL = `http://localhost:3000/vagas/${dados.id}`;
   fetch(URL, {
     method: "PUT",
     headers: {

@@ -1,3 +1,15 @@
+//Recuperando ID do usuario
+let params = new URLSearchParams(location.search);
+console.log(params);
+let id = params.get("id");
+console.log(id);
+let linkVagasDis = document.getElementById("a-Vagas");
+linkVagasDis.href = `VagasDisponiveis.html?id=${id}`;
+let linkPerfil = document.getElementById("a-Perfil");
+linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
+console.log(linkPerfil);
+
+//Recuperando ID do usuario
 let bancoVagas = JSON.parse(localStorage.getItem("usuario")) || [];
 let slideAtual = 0;
 
@@ -82,8 +94,7 @@ function aceitarVaga() {
               <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
         </div>`;
-      divConteudo.innerHTML = strCarrossel;
-
+    divConteudo.innerHTML = strCarrossel;
   }
 
   criarSlide(slideAtual);
@@ -116,4 +127,3 @@ onload = () => {
   criarSlide(slideAtual);
   $(".chat-box").hide();
 };
-
