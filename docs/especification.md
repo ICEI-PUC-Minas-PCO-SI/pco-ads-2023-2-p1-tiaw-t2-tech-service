@@ -141,24 +141,29 @@ Esses recursos ajudarão a automatizar os processos e facilitar o desenvolviment
 
 | ID     | Descrição do Requisito                                              | Prioridade | Responsável |
 | ------ | ------------------------------------------------------------------- | ---------- | ----------- |
-| RF-001 | SIS. deve permitir cadastro                                         | ALTA       | Gabriel     |
-| RF-002 | SIS. deve exibir chat a usuários cadastrados                        | ALTA       | Alice       |
-| RF-003 | SIS. deve permitir login a usuários cadastrados                     | ALTA       | Gabriel     |
-| RF-004 | SIS. deve mostrar vagas para usuários cadastrados                   | ALTA       | Gustavo.B   |
-| RF-005 | SIS. deve fazer contrato para usuários cadastrados                  | ALTA       | Rafael      |
+| RF-001 | SIS. deve exibir landing page como tela inicial da aplicação        | ALTA       | Alice       |
+| RF-002 | SIS. deve permitir landing page encaminhar para tela cadastro/login | ALTA       | Alice       |
+| RF-003 | SIS. deve permitir cadastro                                         | ALTA       | Gabriel     |
+| RF-004 | SIS. deve permitir login a usuários cadastrados                     | ALTA       | Gabriel     |
+| RF-005 | SIS. deve mostrar vagas para usuários cadastrados                   | ALTA       | Gustavo.B   |
 | RF-006 | SIS. deve exibir carrossel com vagas disponíveis na tela inicial    | ALTA       | Alice       |
 | RF-007 | SIS. deve ter Permissão/Negação a vagas de empregos                 | ALTA       | Alice       |
-| RF-008 | SIS. deve exibir fórum de dicas a usuários                          | MEDIA      | Gustavo O.  |
-| RF-009 | SIS. deve permitir usuário interagir com o fórum                    | MEDIA      | Gustavo O.  |
-| RF-010 | SIS. deve permitir filtragem de vagas a usuário cadastrado          | MEDIA      | Gustavo B.  |
-| RF-011 | SIS. deve permitir exibir o perfil do freelancer                    | MEDIA      | Luiza       |
-| RF-012 | SIS. deve permitir exibir o perfil da empresa                       | MEDIA      | Luiza       |
-| RF-013 | SIS. deve permitir freelancers cadastrados a editar perfil          | BAIXA      | Rafael      |
-| RF-014 | SIS. deve permitir empresas cadastradas a editar perfil             | BAIXA      | Rafael      |
-| RF-015 | SIS. deve exibir no perfil as avaliações do freelancer cadastrado   | BAIXA      | Luiza       |
-| RF-016 | SIS. deve exibir no perfil as avaliações da empresa cadastrada      | BAIXA      | Luiza       |
-| RF-017 | SIS. deve permitir usuário cadastrado comentar no perfil da empresa | BAIXA      | Luiza       |
-| RF-018 | SIS. deve permitir empresa cadastrar vaga                           | BAIXA      | Rafael      |
+| RF-008 | SIS. deve exibir, no perfil do usuário, as vagas que ele aceitou    | ALTA       | Alice       |
+| RF-009 | SIS. deve permitir empresa cadastrar vaga                           | ALTA       | Rafael      |
+| RF-010 | SIS. deve exibir fórum de dicas a usuários                          | MEDIA      | Gustavo O.  |
+| RF-011 | SIS. deve permitir usuário interagir com o fórum                    | MEDIA      | Gustavo O.  |
+| RF-012 | SIS. deve permitir filtragem de vagas a usuário cadastrado          | MEDIA      | Gustavo B.  |
+| RF-013 | SIS. deve fazer contrato para usuários cadastrados                  | MEDIA      | Rafael      |
+| RF-014 | SIS. deve permitir exibir o perfil do freelancer                    | MEDIA      | Luiza       |
+| RF-015 | SIS. deve permitir exibir o perfil da empresa                       | MEDIA      | Luiza       |
+| RF-016 | SIS. deve permitir freelancers cadastrados a editar perfil          | BAIXA      | Rafael      |
+| RF-017 | SIS. deve exibir chatbot que leva ao whatsapp, para tirar dúvidas   | BAIXA      | Alice       |
+| RF-018 | SIS. deve permitir empresas cadastradas a editar perfil             | BAIXA      | Rafael      |
+| RF-019 | SIS. deve exibir no perfil as avaliações do freelancer cadastrado   | BAIXA      | Luiza       |
+| RF-020 | SIS. deve exibir no perfil as avaliações da empresa cadastrada      | BAIXA      | Luiza       |
+| RF-021 | SIS. deve permitir usuário cadastrado comentar no perfil da empresa | BAIXA      | Luiza       |
+| RF-022 | SIS. deve permitir empresa cadastrada comentar no perfil do usuário | BAIXA      | Luiza       |
+
 
 ### Requisitos não Funcionais
 

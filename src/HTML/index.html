@@ -14,7 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/CSS/style.css" />
     <title>Tech Match</title>
   </head>
   <body class="overflow-x-hidden">
@@ -22,8 +22,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#">
-          <img src="logo.png" width="100px" height="100px" alt="logo" />
+        <a class="navbar-brand" href="/src/HTML/index.html">
+          <img
+            src="/src/imgs/logo.png"
+            width="100px"
+            height="100px"
+            alt="logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -58,13 +63,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#footer-sobre">Sobre</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#contato">Contato</a>
+                <a class="nav-link" href="#footer-midia">Contato</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#faq">Fórum</a>
+                <a class="nav-link" href="/src/HTML/Forum.html">Fórum</a>
               </li>
             </ul>
             <!-- Login/ Cadastro-->
@@ -72,13 +77,13 @@
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="#cadastro"
+                href="/src/HTML/Cadastro.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Cadastro</a
               >
               <a
-                href="#login"
+                href="/src/HTML/Login.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
                 >Login</a
@@ -102,13 +107,13 @@
             class="d-flex flex-column justify-content-center align-items-center gap-3"
           >
             <a
-              href="#cadastro"
+              href="/src/HTML/Cadastro.html"
               class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
               style="background-color: #f94ca4"
               >Cadastro</a
             >
             <a
-              href="#login"
+              href="/src/HTML/Login.html"
               class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
               style="background-color: #f94ca4"
               >Login</a
@@ -117,60 +122,60 @@
         </div>
         <div class="col-md-5 col-sm-10 ms-3">
           <img
-            src="icon-grande.png"
+            src="/src/imgs/icon-grande.png"
             alt="Ícone grande"
             class="img-fluid w-md-100 w-sm-75"
           />
         </div>
       </div>
-      <!--Footer-->
-      <div class="container mb-5 footer-container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3 class="text-white">Sobre a empresa</h3>
-            <p class="text-white mt-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem beatae corrupti consequuntur sint quod repellendus,
-              suscipit, nam optio a totam soluta tempore natus, tempora
-              aspernatur.
-            </p>
-          </div>
-          <div
-            class="col-md-5 d-flex align-items-center justify-content-center gap-3"
-          >
-            <a href="#">
-              <img
-                src="/src/imgs/facebook.png"
-                alt="facebook"
-                width="40px"
-                height="40px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/src/imgs/instagram.png"
-                alt="instagram"
-                width="40px"
-                height="40px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/src/imgs/twitter.png"
-                alt="twitter"
-                width="40px"
-                height="40px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="/src/imgs/github.png"
-                alt="github"
-                width="40px"
-                height="40px"
-              />
-            </a>
-          </div>
+    </div>
+    <!--Footer-->
+    <div class="container mb-5 footer-container">
+      <div class="row">
+        <div class="col-md-7">
+          <h3 class="text-white">Sobre a empresa</h3>
+          <p class="text-white mt-3" id="footer-sobre">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+            optio a totam soluta tempore natus, tempora aspernatur.
+          </p>
+        </div>
+        <div
+          class="col-md-5 d-flex align-items-center justify-content-center gap-3"
+          id="footer-midia"
+        >
+          <a href="#">
+            <img
+              src="/src/imgs/facebook.png"
+              alt="facebook"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/instagram.png"
+              alt="instagram"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/twitter.png"
+              alt="twitter"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/github.png"
+              alt="github"
+              width="40px"
+              height="40px"
+            />
+          </a>
         </div>
       </div>
     </div>

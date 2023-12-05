@@ -26,16 +26,31 @@ body {
 }
 
 /*CSS Layout Tela Editar Perfil*/
+#a-sair {
+  text-decoration: none;
+  width: 60px;
+  height: 40x;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #f94ca4;
+  display: flex;
+  justify-content: center;
+}
 .container-section {
   width: 100%;
   flex-wrap: wrap;
 }
 .section-editarPerfil {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 label {
   font-weight: 600;
+}
+.nav-button-sair {
+  width: 150px;
 }
 /*CSS Layout Tela Editar Perfil*/
 
@@ -44,7 +59,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 65%;
+  width: 100%;
 }
 .dados-img {
   display: flex;
@@ -53,6 +68,35 @@ label {
   width: 50%;
   align-items: center;
   flex-direction: column;
+}
+.input-img {
+  width: 80%;
+  font-size: 0.8rem;
+}
+#submit-img {
+  width: 30%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
+}
+#submit-usuario {
+  width: 40%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
+}
+.input-arquivos {
+  width: 150%;
 }
 .img-dados {
   width: 300px;
@@ -75,21 +119,39 @@ label {
   align-items: center;
 }
 .input-nome {
-  width: 60%;
+  width: 82%;
 }
 .label-sobre {
   display: flex;
-  width: 70%;
+  width: 90%;
   justify-content: flex-start;
 }
 .textarea-sobre {
-  width: 70%;
+  width: 90%;
 }
 
 .span-arquivos {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+}
+.span-arquivos1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#input-arquivo1 {
+  width: 90%;
+}
+#input-arquivo2 {
+  width: 90%;
+}
+.span-arquivos2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -101,7 +163,7 @@ label {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
 }
 .servicos-dados-titulo {
   width: 80%;
@@ -120,6 +182,14 @@ label {
 
 .submit-servicos {
   width: 50%;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #00ff22,
+    #00ff22,
+    #00ff22,
+    #ffffff
+  );
 }
 /*Dados Serviços*/
 

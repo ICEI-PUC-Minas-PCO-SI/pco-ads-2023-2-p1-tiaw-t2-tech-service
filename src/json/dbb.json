@@ -1,0 +1,156 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "login": "Rhillary ",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 1,
+      "login": "Rafael",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 2,
+      "login": "Elder  Luiz Viera Rosa",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 3,
+      "login": "Rafael",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 4,
+      "login": "Gabriel",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 5,
+      "login": "Elder  Luiz Viera Silva",
+      "senha": "0202020202",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "dados": [
+        {
+          "id": 1,
+          "login": "Rafael",
+          "senha": "123456",
+          "nome": "",
+          "sobre": "",
+          "curriculo": "",
+          "portfolio": "",
+          "imagem": "",
+          "servicos": [],
+          "Vaga": []
+        }
+      ],
+      "id": "wzTDcSw"
+    },
+    {
+      "dados": [
+        {
+          "id": 1,
+          "login": "joao",
+          "senha": "123456",
+          "nome": "",
+          "sobre": "",
+          "curriculo": "",
+          "portfolio": "",
+          "imagem": "",
+          "servicos": [],
+          "Vaga": []
+        }
+      ],
+      "id": "5JxpY_s"
+    },
+    {
+      "id": 8,
+      "login": "Jose",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 9,
+      "login": "Rafael",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    },
+    {
+      "id": 10,
+      "login": "Jose",
+      "senha": "123456",
+      "nome": "",
+      "sobre": "",
+      "curriculo": "",
+      "portfolio": "",
+      "imagem": "",
+      "servicos": [],
+      "Vaga": []
+    }
+  ],
+  "vagas": [
+    {
+      "id": 0,
+      "nomeVaga": "",
+      "site": "",
+      "descricao": "",
+      "filtro": [],
+      "software": []
+    }
+  ]
+}

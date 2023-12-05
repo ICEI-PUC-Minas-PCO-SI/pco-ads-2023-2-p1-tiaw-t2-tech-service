@@ -14,15 +14,108 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/src/js/TelaCriarVagas.min.js"></script>
     <link rel="stylesheet" href="/src/CSS/TelaCriarVaga.css" />
     <title>Tech Match</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="" onload="IniciarPagina()">
+    <!--Modal Confirmação-->
+    <div class="modal" tabindex="-1" id="meuModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-warning fs-1">Aviso!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="mensagem-confimacao">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="BTN-fechar"
+            >
+              Fechar
+            </button>
+            <button type="button" class="btn btn-success" id="btn-enviar">
+              Salvar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Mensagens Crias Vagas-->
+    <div class="modal" tabindex="-1" id="meuModal-Servico">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="titulo-modal" class="modal-title-serv fs-1">Aviso!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="paragraph-modal-serv">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="btn-fechar"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal mensagem Filtros-->
+    <div class="modal" tabindex="-1" id="meuModal-Filtro">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="titulo-modal2" class="modal-title-serv fs-1">Aviso!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="paragraph-modal-filtro">Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="btn-fechar2"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Navbar com menu mobile-->
-    <nav class="navbar navbar-expand-lg navbar-dark border" style="width: 100%">
+    <nav
+      class="navbar d-fle navbar-expand-lg navbar-dark justify-content-sm-center"
+    >
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/src/HTML/index.html">
           <img
             src="/src/imgs/logo.png"
             width="100px"
@@ -55,21 +148,35 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <div
+            class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0 justify-content-sm-center"
+          >
             <ul
               class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/src/HTML/carrossel.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="/src/HTML/Perfil.Freelancer.html"
+                  >Perfil</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#contato">Perfil</a>
+                <a class="nav-link" href="/src/HTML/TelaEditarPerfil.html"
+                  >Editar Perfil</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#faq">Fórum</a>
+                <a class="nav-link" href="/src/HTML/Forum.html">Fórum</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="/src/HTML/index.html" id="a-sair">Sair</a>
               </li>
             </ul>
           </div>
@@ -77,35 +184,200 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="container mt-5 mb-5 p-3">
-      <div class="row justify-content-center align-items-center gap-5">
-        <div class="col-md-5 col-sm-12 mt-sm-5 mt-md-0">
-          </div>
+    <div class="">
+      <div class="section-container">
+        <div class="sectior-criar-vagas col-md-7 col-sm-12">
+          <h2>Criar Vagas</h2>
+          <span class="dados-vagas">
+            <label class="label-nome" for="">Nome</label>
+            <input id="vaga-nome" type="text" placeholder="Escreva o nome" />
+            <label for="">Site da Empresa</label>
+            <input id="vaga-site" type="text" placeholder="Coloque o site" />
+          </span>
+          <span class="dados-descricao">
+            <label for="">Descrição</label>
+            <textarea
+              name=""
+              placeholder="Escreva sua descrição"
+              id="vaga-descricao"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              class="input-submit-descricao"
+              id="submit-receberDados"
+              type="submit"
+            />
+          </span>
         </div>
-        <div class="col-md-5 col-sm-10 ms-3"></div>
+        <div class="sectior-filtros-vagas">
+          <h2 class="dados-filtros" id="dados-filtros">Filtros</h2>
+          <ul class="ul-filtros-vagas">
+            <li>
+              <input
+                type="checkbox"
+                name="checkboxGroup"
+                id="filtro-desing"
+                value="Desing"
+              />
+              <label for="">Desing</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="filtro-rede"
+                name="checkboxGroup"
+                value="Redes"
+              />
+              <label for="">Redes</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="filtro-hardaware"
+                name="checkboxGroup"
+                value="Hardaware"
+              />
+              <label for="">Hardware</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="filtro-marketing"
+                name="checkboxGroup"
+                value="Marketing"
+              />
+              <label for="">Marketing</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="filtro-sofware"
+                name="checkboxGroup"
+                value="Software"
+              />
+              <label for="">Software</label>
+            </li>
+            <ul class="ul-filtros-vagas">
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-javascript"
+                  name="checkboxSoftware"
+                  value="JavaScript"
+                />
+                <label for="">JavaScript</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-c#"
+                  value="C#"
+                  name="checkboxSoftware"
+                />
+                <label for="">C#</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-c++"
+                  value="C++"
+                  name="checkboxSoftware"
+                />
+                <label for="">C++</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-Phyton"
+                  value="Phyton"
+                  name="checkboxSoftware"
+                />
+                <label for="">Phyton</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-Java"
+                  value="Java"
+                  name="checkboxSoftware"
+                />
+                <label for="">Java</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-PHP"
+                  value="PHP"
+                  name="checkboxSoftware"
+                />
+                <label for="">PHP</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="filtro-Roby"
+                  value="Roby"
+                  name="checkboxSoftware"
+                />
+                <label for="">Roby</label>
+              </li>
+            </ul>
+          </ul>
+        </div>
       </div>
     </div>
+    <!--Article-->
+    <h2 id="titulo-criarVagas">Vagas Criadas</h2>
+    <div id="vagas-criadas"></div>
+
     <!--Footer-->
-    <div class=" container mb-5 footer-container">
+    <div class="container mb-5 footer-container">
       <div class="row">
-          <div class="col-md-7">
-              <h3 class="text-white">Sobre a empresa</h3>
-              <p class="text-white mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem beatae corrupti consequuntur sint quod repellendus, suscipit, nam optio a totam soluta tempore natus, tempora aspernatur.</p>
-          </div>
-          <div class="col-md-5 d-flex align-items-center justify-content-center gap-3">
-              <a href="#">
-                  <img src="facebook.png" alt="facebook" width="40px" height="40px">
-              </a>
-              <a href="#">
-                  <img src="instagram.png" alt="instagram" width="40px" height="40px">
-              </a>
-              <a href="#">
-                  <img src="twitter.png" alt="twitter" width="40px" height="40px">
-              </a>
-              <a href="#">
-                  <img src="github.png" alt="github" width="40px" height="40px">
-              </a>
-          </div>
+        <div class="col-md-7" id="sobre">
+          <h3 class="text-white">Sobre a empresa</h3>
+          <p class="text-white mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+            beatae corrupti consequuntur sint quod repellendus, suscipit, nam
+            optio a totam soluta tempore natus, tempora aspernatur.
+          </p>
+        </div>
+        <div
+          class="col-md-5 d-flex align-items-center justify-content-center gap-3"
+        >
+          <a href="#">
+            <img
+              src="/src/imgs/facebook.png"
+              alt="facebook"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/instagram.png"
+              alt="instagram"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/twitter.png"
+              alt="twitter"
+              width="40px"
+              height="40px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/src/imgs/github.png"
+              alt="github"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </body>
