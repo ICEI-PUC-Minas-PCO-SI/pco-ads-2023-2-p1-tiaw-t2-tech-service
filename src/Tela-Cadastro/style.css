@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+body {
+  background: url("fundo.jpg") rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.footer-container {
+  margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(75, 0, 130, 0.7);
+    backdrop-filter: blur(10px);
+  }
+}

@@ -1,33 +1,32 @@
 {
   "usuarios": [
     {
-<<<<<<< HEAD
       "id": 0,
       "login": "Rafael",
       "senha": "123456",
-      "nome": "",
+      "nome": "Empresa IBM",
       "sobre": "",
-      "curriculo": "",
       "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "curriculo": "",
+      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos": "",
+      "Vaga": ""
     },
     {
       "id": 1,
-      "login": "Rafael",
+      "login": "Alice",
       "senha": "123456",
-      "nome": "",
+      "nome": "Empresa IBM",
       "sobre": "",
-      "curriculo": "",
       "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "curriculo": "",
+      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos": "",
+      "Vaga": ""
     },
     {
       "id": 2,
-      "login": "Rafael",
+      "login": "Gabriel",
       "senha": "123456",
       "nome": "",
       "sobre": "",
@@ -36,141 +35,50 @@
       "imagem": "",
       "servicos": [],
       "Vaga": []
+    }
+  ],
+  "vagas": [
+    {
+      "id": 0,
+      "nomeVaga": "Brandex",
+      "descricao": "Nada a se declarar",
+      "portfolio": "file:///D:/Curso%20OneBitCod/Certificados%20OneBitcode/RafaelBrandao.pdf",
+      "curriculo": "file:///D:/Arquivos%20e%20Programas/Downloads/O%20texto%20A%20p%C3%B3lis%20e%20a%20fam%C3%ADlia%20oferece%20uma%20an%C3%A1lise%20profunda%20da%20(1).pdf",
+      "filtro": [],
+      "software": []
     },
     {
-      "id": 3,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "id": 1,
+      "nomeVaga": "",
+      "site": "",
+      "descricao": "",
+      "filtro": [],
+      "software": []
     },
     {
-      "id": 4,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "id": 2,
+      "nomeVaga": "",
+      "site": "",
+      "descricao": "",
+      "filtro": [],
+      "software": []
+    }
+  ],
+  "servicos": [
+    {
+      "id": 0,
+      "title": "dsfaf",
+      "descricao": "sadf"
     },
     {
-      "id": 5,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "id": 1,
+      "title": "dafs",
+      "descricao": "fasdf"
     },
     {
-      "id": 6,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 7,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 8,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 9,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "id": 10,
-      "login": "Rafael",
-      "senha": "123456",
-=======
-      "id": "02",
-      "login": "rafael",
-      "senha": "",
->>>>>>> 36bcd7cfdd5039634a7bfdf2a10deb0030fd219e
-      "nome": "",
-      "sobre": "",
-      "curriculo": "",
-      "portfolio": "",
-      "imagem": "",
-      "servicos": [],
-      "Vaga": []
-    },
-    {
-      "dados": [
-        {
-          "id": 1,
-          "login": "Rafael",
-          "senha": "123456",
-          "nome": "",
-          "sobre": "",
-          "curriculo": "",
-          "portfolio": "",
-          "imagem": "",
-          "servicos": [],
-          "Vaga": []
-        }
-      ],
-      "id": "wzTDcSw"
-    },
-    {
-      "dados": [
-        {
-          "id": 1,
-          "login": "joao",
-          "senha": "123456",
-          "nome": "",
-          "sobre": "",
-          "curriculo": "",
-          "portfolio": "",
-          "imagem": "",
-          "servicos": [],
-          "Vaga": []
-        }
-      ],
-      "id": "5JxpY_s"
+      "id": 2,
+      "title": "",
+      "descricao": ""
     }
   ]
 }

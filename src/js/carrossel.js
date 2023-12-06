@@ -1,3 +1,15 @@
+//Recuperando ID do usuario
+let params = new URLSearchParams(location.search);
+console.log(params);
+let id = params.get("id");
+console.log(id);
+let linkVagasDis = document.getElementById("a-Vagas");
+linkVagasDis.href = `VagasDisponiveis.html?id=${id}`;
+let linkPerfil = document.getElementById("a-Perfil");
+linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
+console.log(linkPerfil);
+
+//Recuperando ID do usuario
 let bancoVagas = JSON.parse(localStorage.getItem("usuario")) || [];
 let slideAtual = 0;
 

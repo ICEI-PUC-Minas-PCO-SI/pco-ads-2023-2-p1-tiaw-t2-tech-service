@@ -14,7 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/src/CSS/VagasDisponiveis.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tech Match</title>
   </head>
   <body class="overflow-x-hidden">
@@ -22,13 +22,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="/src/HTML/index.html">
-          <img
-            src="/src/imgs/logo.png"
-            width="100px"
-            height="100px"
-            alt="logo"
-          />
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" width="100px" height="100px" alt="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -60,61 +55,75 @@
               class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/src/HTML/carrossel.html"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/src/HTML/PerfilDaEmpresa.html"
-                  >Perfil</a
-                >
+                <a class="nav-link" href="#sobre">Sobre</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="/src/HTML/Forum.html">Fórum</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#footer-midia">Contato</a>
+                <a class="nav-link" href="#faq">Fórum</a>
               </li>
             </ul>
             <!-- Login/ Cadastro-->
             <div
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
-            <a class="nav-link p-1" href="/src/HTML/index.html" id="a-sair"
-            >Sair</a>
-        </div>
+              <a
+                href="#cadastro"
+                class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94ca4"
+                >Cadastro</a
+              >
+              <a
+                href="#login"
+                class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94ca4"
+                >Login</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </nav>
     <!--Main-->
-    <h1 class="titulo">Vagas Disponíveis</h1>
-    <div class="job-list">
-      <div class="job-card" data-job-type="web-dev">Desenvolvedor Web</div>
-      <div class="job-card" data-job-type="graphic-designer">
-        Designer Gráfico
-      </div>
-      <a href="http://127.0.0.1:3000/src/HTML/Forum.html"><div class= "job-card" data-job-type ="writer">Redator</div></a>
-      <div class="job-card" data-job-type="translator">Tradutor</div>
-      <div class="job-card" data-job-type="video-editor">Editor de Vídeo</div>
-      <div class="job-card" data-job-type="social-media-manager">
-        Gestor de Mídias Sociais
-      </div>
-      <div class="job-card" data-job-type="data-scientist">
-        Cientista de Dados
-      </div>
-      <div class="job-card" data-job-type="photographer">Fotógrafo</div>
-      <div class="job-card" data-job-type="mobile-dev">
-        Desenvolvedor Mobile
-      </div>
-      <div class="job-card" data-job-type="marketing-specialist">
-        Especialista em Marketing
+    <div class="container mt-5 mb-5 p-3">
+      <div class="row justify-content-center align-items-center gap-5">
+        <div class="col-md-5 col-sm-12 mt-sm-5 mt-md-0">
+          <h1 class="text-white fs-sm-3">Tech Match</h1>
+          <p class="text-white fs-md-5 fs-sm-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            rutrum, mauris eget.
+          </p>
+          <h4 class="text-white mt-4 mb-4">Venha nos conhecer:</h4>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-3"
+          >
+            <a
+              href="#cadastro"
+              class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
+              style="background-color: #f94ca4"
+              >Cadastro</a
+            >
+            <a
+              href="#login"
+              class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
+              style="background-color: #f94ca4"
+              >Login</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-10 ms-3">
+          <img
+            src="icon-grande.png"
+            alt="Ícone grande"
+            class="img-fluid w-md-100 w-sm-75"
+          />
+        </div>
       </div>
     </div>
-
     <!--Footer-->
     <div class="container mb-5 footer-container">
       <div class="row">
@@ -130,36 +139,21 @@
           class="col-md-5 d-flex align-items-center justify-content-center gap-3"
         >
           <a href="#">
-            <img
-              src="/src/imgs/facebook.png"
-              alt="facebook"
-              width="40px"
-              height="40px"
-            />
+            <img src="facebook.png" alt="facebook" width="40px" height="40px" />
           </a>
           <a href="#">
             <img
-              src="/src/imgs/instagram.png"
+              src="instagram.png"
               alt="instagram"
               width="40px"
               height="40px"
             />
           </a>
           <a href="#">
-            <img
-              src="/src/imgs/twitter.png"
-              alt="twitter"
-              width="40px"
-              height="40px"
-            />
+            <img src="twitter.png" alt="twitter" width="40px" height="40px" />
           </a>
           <a href="#">
-            <img
-              src="/src/imgs/github.png"
-              alt="github"
-              width="40px"
-              height="40px"
-            />
+            <img src="github.png" alt="github" width="40px" height="40px" />
           </a>
         </div>
       </div>
