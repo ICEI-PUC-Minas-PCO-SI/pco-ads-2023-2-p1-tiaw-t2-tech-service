@@ -56,6 +56,22 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Inserção de dados válidos no formulário de login.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT05 - Exibição do carrossel de vagas na tela inicial**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário, depois de logar no sistema, é encaminhado para a tela inicial.<br>2) A aplicação exibirá, na tela inicial, um carrossel mostrando, de forma dinâmica, as vagas cadastradas no sistema, uma por uma e de forma limitada, para o usuário.
+**Requisitos associados** | RF-006
+**Resultado esperado** | Usuário vê o carrossel de vagas disponíveis.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT06 - Aceitar ou negar vagas no carrossel da tela inicial**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário tem as opções de aceitar ou negar uma vaga.<br>2) Se ele aceitar, aparecerá um modal falando que ele aceitou e a vaga será incluída no seu perfil, na seção de trabalhos atuais. <br> 3)Se ele negar, aparecerá um modal falando que ele negou e apenas passará para a próxima vaga no carrossel. <br> 4)Se acabarem as vagas a serem exibidas, aparecerá um aviso mostrando isso e exibirá um link para a tela de vagas.
+**Requisitos associados** | RF-007 e RF-008
+**Resultado esperado** | Usuário aceita ou nega vagas.
+**Dados de entrada** | Clique no botão do "X" ou coração.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
