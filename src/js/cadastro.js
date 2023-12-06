@@ -49,6 +49,11 @@ function receberUser(event) {
         const usuario = data[i];
 
         if (!usuario.login.trim() || !usuario.senha.trim()) {
+          let servicos = {
+            id: i,
+            title: "",
+            descricao: "",
+          };
           let Vagas = {
             id: i,
             nomeVaga: "",
@@ -73,14 +78,21 @@ function receberUser(event) {
           localStorage.setItem("usuario", JSON.stringify(conferLocar));
           putAPI(usuario);
           putApiVagas(Vagas);
+          putApiServi(servicos);
 
           alert(`Usuário no índice ${i} possui campos obrigatórios vazios.`);
           break;
         } else {
           let usuario;
           let Vagas;
+          let servicos;
           for (let i = 0; i <= data.length; i++) {
             if (data[i] === undefined) {
+              servicos = {
+                id: i,
+                title: "",
+                descricao: "",
+              };
               Vagas = {
                 id: i,
                 nomeVaga: "",
@@ -108,6 +120,7 @@ function receberUser(event) {
           localStorage.setItem("usuario", JSON.stringify(conferLocar));
           posttAPI(usuario);
           postApiVagas(Vagas);
+          postApiServ(servicos);
         }
       }
     });
@@ -152,6 +165,29 @@ function putApiVagas(dados) {
   URL = `http://localhost:3000/vagas/${dados.id}`;
   fetch(URL, {
     method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dados),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+function putApiServi(dados) {
+  URL = `http://localhost:300/servicos/${dados.id}`;
+  fetch(URL, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(dados),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+function postApiServ(dados) {
+  fetch("http://localhost:3000/servicos", {
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
