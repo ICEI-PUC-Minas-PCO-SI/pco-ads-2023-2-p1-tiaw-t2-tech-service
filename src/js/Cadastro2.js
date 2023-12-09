@@ -100,7 +100,14 @@ document.addEventListener("DOMContentLoaded", function () {
             for (let i = 0; i < data.length; i++) {
               if (data[i].login === login) {
                 console.log("Login ja usado");
-                console.log(data[i].login);
+                let campName = document.getElementById("");
+                msgErr.style.display = "block";
+                msgErr.textContent = "Login já usado";
+                msgErr.style.color = "yellow";
+
+                setTimeout(() => {
+                  msgErr.style.display = "none";
+                }, 2000);
                 qtt++;
                 break;
               }
