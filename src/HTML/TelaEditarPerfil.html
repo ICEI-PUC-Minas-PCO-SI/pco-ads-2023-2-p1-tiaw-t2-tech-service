@@ -14,12 +14,10 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/src/CSS/TelaEditarPerfil.css" />
-    <script src="/src/js/jquery-3.7.1.js"></script>
-    <script>
-      $(document).ready(function () {});
-    </script>
-    <script src="/src/js/TelaEditarPerfiljquery.min.js" defer></script>
+    <link rel="stylesheet" href="../CSS/TelaEditarPerfil.css" />
+    <!-- <script src="/src/js/jquery-3.7.1.js"></script> -->
+    <script src="../js/editarPerfil.js" defer></script>
+    <!-- <script src="/src/js/TelaEditarPerfiljquery.min.js" defer></script> -->
     <script></script>
     <title>Tech Match</title>
   </head>
@@ -29,13 +27,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title text-warning fs-1">Aviso!!</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 id="title-modal" class="modal-title fs-1">Aviso!!</h5>
           </div>
           <div class="modal-body">
             <p id="paragraph-modal">Modal body text goes here.</p>
@@ -61,13 +53,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title-serv fs-1">Aviso!!</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title-serv fs-1">Aviso!</h5>
           </div>
           <div class="modal-body">
             <p id="paragraph-modal-serv">Modal body text goes here.</p>
@@ -77,7 +63,7 @@
               type="button"
               class="btn btn-danger"
               data-bs-dismiss="modal"
-              id="btn-fechar"
+              id="btn-fecharServ"
             >
               Fechar
             </button>
@@ -147,10 +133,10 @@
                 <a class="nav-link" href="" id="a-CriarVaga">Criar Vaga</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" id="a-Forum" href="Forum.html">Fórum</a>
+                <a class="nav-link" id="a-Forum" href="">Fórum</a>
               </li>
               <li class="nav-item mx-2">
-                <a href="/src/HTML/index.html" id="a-sair">Sair</a>
+                <a href="index.html" id="a-sair">Sair</a>
               </li>
             </ul>
           </div>
@@ -158,7 +144,7 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="container-section">
+    <div id="container" class="container-section">
       <div class="section-editarPerfil">
         <div class="dados-perfil">
           <div class="dados-img">
@@ -185,6 +171,7 @@
                 placeholder="Escreva seu nome"
                 class="input-nome"
                 id="input-nome"
+                value=""
               />
             </p>
             <span class="span-sobre">
@@ -217,13 +204,13 @@
                   placeholder="Coloque seu link"
                 />
               </span>
-              <input id="submit-usuario" />
+              <input id="submit-usuario" type="submit" />
             </span>
           </div>
         </div>
         <div class="dados-servicos">
           <h2 class="titulo-servicos">Serviços Atuais</h2>
-          <form class="form-servicos">
+          <form id="form-Edit" class="form-servicos">
             <label class="" for="">Título</label>
             <input id="titulo-serv" type="text" placeholder="Escreva" />
             <label for="">Descrição</label>

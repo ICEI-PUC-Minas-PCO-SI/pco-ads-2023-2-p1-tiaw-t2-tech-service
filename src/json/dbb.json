@@ -2,39 +2,59 @@
   "usuarios": [
     {
       "id": 0,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "Empresa IBM",
+      "login": "admin",
+      "senha": "admin",
+      "senha2": "",
+      "nome": "Brandex",
+      "sobrenome": "Brandao",
+      "data": "",
       "sobre": "",
-      "portfolio": "",
+      "portifolio": "",
       "curriculo": "",
-      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "servicos": "",
-      "Vaga": ""
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "servicos": ""
     },
     {
       "id": 1,
-      "login": "Alice",
+      "login": "Juninho",
       "senha": "123456",
-      "nome": "Empresa IBM",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "11/11/1111",
       "sobre": "",
-      "portfolio": "",
+      "portifolio": "",
       "curriculo": "",
-      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "servicos": "",
-      "Vaga": ""
+      "imagem": "",
+      "servicos": ""
     },
     {
       "id": 2,
-      "login": "Gabriel",
+      "login": "Marcs",
       "senha": "123456",
-      "nome": "",
+      "senha2": "123456",
+      "nome": "Rafael",
+      "sobrenome": "Brandao",
+      "data": "11/11/11111",
       "sobre": "",
+      "portifolio": "",
       "curriculo": "",
-      "portfolio": "",
       "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "servicos": ""
+    },
+    {
+      "id": 3,
+      "login": "Jose",
+      "senha": "123456",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "01/11/0011",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": ""
     }
   ],
   "vagas": [
@@ -42,43 +62,18 @@
       "id": 0,
       "nomeVaga": "Brandex",
       "descricao": "Nada a se declarar",
-      "portfolio": "file:///D:/Curso%20OneBitCod/Certificados%20OneBitcode/RafaelBrandao.pdf",
-      "curriculo": "file:///D:/Arquivos%20e%20Programas/Downloads/O%20texto%20A%20p%C3%B3lis%20e%20a%20fam%C3%ADlia%20oferece%20uma%20an%C3%A1lise%20profunda%20da%20(1).pdf",
-      "filtro": [],
-      "software": []
-    },
-    {
-      "id": 1,
-      "nomeVaga": "",
       "site": "",
-      "descricao": "",
       "filtro": [],
-      "software": []
-    },
-    {
-      "id": 2,
-      "nomeVaga": "",
-      "site": "",
-      "descricao": "",
-      "filtro": [],
-      "software": []
+      "software": [],
+      "disponivel": ""
     }
   ],
   "servicos": [
     {
-      "id": 0,
-      "title": "dsfaf",
-      "descricao": "sadf"
-    },
-    {
-      "id": 1,
-      "title": "dafs",
-      "descricao": "fasdf"
-    },
-    {
-      "id": 2,
-      "title": "",
-      "descricao": ""
+      "title": "Acme Tech Solutions",
+      "descricao": "Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
+      "idE": 0,
+      "id": 1
     }
   ]
 }

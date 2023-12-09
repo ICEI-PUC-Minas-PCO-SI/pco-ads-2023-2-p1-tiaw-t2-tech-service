@@ -14,16 +14,48 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/cadastro.js"></script>
+    <!-- <script src="../js/cadastro.js"></script> -->
+    <script src="../js/Cadastro2.js"></script>
     <title>Tech Match</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="../CSS/Login copy.css" />
   </head>
 
   <body class="overflow-x-hidden">
+    <!--Modal-->
+    <div id="modal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sucesso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="p-modal">Cadastro Feito com Sucesso</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="fechar"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
       <div class="container">
@@ -104,16 +136,27 @@
       <!-- Cadastro -->
       <div class="wrapper">
         <form id="form">
-          <h1>Cadastro</h1>
-
+          <h1 class="h1-cadastro">Cadastro</h1>
+          <p class="msgErr">Senhas não coincidem</p>
           <div class="input-box">
+            <label for="">Digite o login</label>
             <input type="text" id="UserName" placeholder="Username" />
-            <i class="bx bxs-user"></i>
+            <!-- <i style="background-color: aqua" class="bx bxs-user"></i> -->
+            <label for="">Digite seu nome</label>
+            <input type="text" id="UserName1" />
           </div>
 
           <div class="input-box">
+            <label for="">Sobrenome</label>
+            <input type="text" id="UserSobrenome" />
+            <label for="">Data de nascimento</label>
+            <input type="date" id="UserDate" />
+            <label for="">Escreva sua senha</label>
+            <input type="password" id="UserSenha1" />
+            <label for="">Escreva novamente</label>
             <input type="password" id="UserSenha" />
-            <i class="bx bxs-lock-alt"></i>
+
+            <!-- <i class="bx bxs-lock-alt"></i> -->
           </div>
 
           <div class="remember-forgot">
@@ -121,7 +164,7 @@
             <a href="#">Termos & Condições</a>
           </div>
 
-          <button id="btn-cadastro" class="btn">Cadastro</button>
+          <button id="btn-cadastro" type="submit" class="btn">Cadastro</button>
 
           <div class="register-link">
             <p>
@@ -130,6 +173,7 @@
             </p>
           </div>
         </form>
+        <div class="loader"></div>
       </div>
       <!-- Fim Cadastro-->
     </div>
