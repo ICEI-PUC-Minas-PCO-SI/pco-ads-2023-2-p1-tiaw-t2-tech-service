@@ -72,6 +72,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Clique no botão do "X" ou coração.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT07 - Mostrar e filtrar vagas disponíveis**
+ :--------------: | ------------
+**Procedimento**  | 1) Na tela de vagas, deve ser mostrado todas as vagas que estão disponíveis, ou seja, que nenhum freelancer se inscreveu ainda. <br> 2) A tela deve apresentar filtros de vaga. 3) Se o usuário clicar no filtro, serão exibidas as vagas com aquelas informações.
+**Requisitos associados** | RF-005
+**Resultado esperado** | Usuário acessa as vagas disponíveis e consegue filtrar.
+**Dados de entrada** | Filtro de vagas.
+**Resultado obtido** | Sucesso.
+
 ## Registro dos Testes de Software
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
