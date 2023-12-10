@@ -57,17 +57,7 @@
       "servicos": ""
     }
   ],
-  "vagas": [
-    {
-      "id": 0,
-      "nomeVaga": "Brandex",
-      "descricao": "Nada a se declarar",
-      "site": "",
-      "filtro": [],
-      "software": [],
-      "disponivel": ""
-    }
-  ],
+  "vagas": [],
   "servicos": [
     {
       "title": "Acme Tech Solutions",
