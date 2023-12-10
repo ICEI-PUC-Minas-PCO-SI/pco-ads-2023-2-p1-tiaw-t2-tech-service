@@ -14,23 +14,18 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/src/js/TelaCriarVagas.min.js"></script>
-    <link rel="stylesheet" href="/src/CSS/TelaCriarVaga.css" />
+    <!-- <script src="/src/js/TelaCriarVagas.min.js"></script> -->
+    <script src="../js/criarvagas.js" defer></script>
+    <link rel="stylesheet" href="../CSS/TelaCriarVaga.css" />
     <title>Tech Match</title>
   </head>
-  <body class="" onload="IniciarPagina()">
+  <body class="">
     <!--Modal Confirmação-->
     <div class="modal" tabindex="-1" id="meuModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title text-warning fs-1">Aviso!!</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            <h5 class="modal-title">Aviso!!</h5>
           </div>
           <div class="modal-body">
             <p id="mensagem-confimacao">Modal body text goes here.</p>
@@ -40,7 +35,7 @@
               type="button"
               class="btn btn-danger"
               data-bs-dismiss="modal"
-              id="BTN-fechar"
+              id="btn-fechar"
             >
               Fechar
             </button>
@@ -57,12 +52,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 id="titulo-modal" class="modal-title-serv fs-1">Aviso!!</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
           </div>
           <div class="modal-body">
             <p id="paragraph-modal-serv">Modal body text goes here.</p>
@@ -72,7 +61,7 @@
               type="button"
               class="btn btn-danger"
               data-bs-dismiss="modal"
-              id="btn-fechar"
+              id="Btn-fechar"
             >
               Fechar
             </button>
@@ -194,7 +183,7 @@
     </nav>
     <!--Main-->
     <div class="">
-      <div class="section-container">
+      <div id="container" class="section-container">
         <div class="sectior-criar-vagas col-md-7 col-sm-12">
           <h2>Criar Vagas</h2>
           <span class="dados-vagas">
@@ -214,125 +203,21 @@
             ></textarea>
             <input
               class="input-submit-descricao"
-              id="submit-receberDados"
+              id="submit-newVaga"
               type="submit"
             />
           </span>
         </div>
         <div class="sectior-filtros-vagas">
           <h2 class="dados-filtros" id="dados-filtros">Filtros</h2>
-          <ul class="ul-filtros-vagas">
-            <li>
-              <input
-                type="checkbox"
-                name="checkboxGroup"
-                id="filtro-desing"
-                value="Desing"
-              />
-              <label for="">Desing</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="filtro-rede"
-                name="checkboxGroup"
-                value="Redes"
-              />
-              <label for="">Redes</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="filtro-hardaware"
-                name="checkboxGroup"
-                value="Hardaware"
-              />
-              <label for="">Hardware</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="filtro-marketing"
-                name="checkboxGroup"
-                value="Marketing"
-              />
-              <label for="">Marketing</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="filtro-sofware"
-                name="checkboxGroup"
-                value="Software"
-              />
-              <label for="">Software</label>
-            </li>
-            <ul class="ul-filtros-vagas">
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-javascript"
-                  name="checkboxSoftware"
-                  value="JavaScript"
-                />
-                <label for="">JavaScript</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-c#"
-                  value="C#"
-                  name="checkboxSoftware"
-                />
-                <label for="">C#</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-c++"
-                  value="C++"
-                  name="checkboxSoftware"
-                />
-                <label for="">C++</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-Phyton"
-                  value="Phyton"
-                  name="checkboxSoftware"
-                />
-                <label for="">Phyton</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-Java"
-                  value="Java"
-                  name="checkboxSoftware"
-                />
-                <label for="">Java</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-PHP"
-                  value="PHP"
-                  name="checkboxSoftware"
-                />
-                <label for="">PHP</label>
-              </li>
-              <li>
-                <input
-                  type="checkbox"
-                  id="filtro-Roby"
-                  value="Roby"
-                  name="checkboxSoftware"
-                />
-                <label for="">Roby</label>
-              </li>
-            </ul>
-          </ul>
+          <select name="select" id="select">
+            <option value=""></option>
+            <option value="Hardwere">Hardwere</option>
+            <option value="Software">Software</option>
+            <option value="Redes">Redes</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Design">Design</option>
+          </select>
         </div>
       </div>
     </div>
