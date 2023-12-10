@@ -91,7 +91,6 @@ label {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: ;
 }
 #vagas-criadas {
   display: flex;
@@ -131,6 +130,59 @@ label {
 /**/
 .footer-container {
   margin-top: 100px;
+}
+.newDiv {
+  margin-top: 20px;
+  width: 100%;
+}
+.select-soft {
+  width: 100%;
+}
+.div-selects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img-vaga {
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+}
+.newDivv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.div01 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 15%;
+  gap: 10px;
+}
+.div02 {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+.div-container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  width: 75%;
+  background-color: #120079;
+  background: #d3d3d3c1;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.btn-excluir {
+  width: 25%;
 }
 @media (max-width: 1400px) {
   body {
