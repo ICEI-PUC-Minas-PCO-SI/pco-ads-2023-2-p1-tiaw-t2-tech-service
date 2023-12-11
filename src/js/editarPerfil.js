@@ -70,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
     //Recebendo valores dos campos de perfil do Usuario
     let usuario = {
       id: id,
-      login: receberDados[id].login,
-      senha: receberDados[id].senha,
-      senha2: receberDados[id].senha2,
+      login: receberDados.login,
+      senha: receberDados.senha,
+      senha2: receberDados.senha2,
       nome: nome,
-      sobrenome: receberDados[id].sobrenome,
+      sobrenome: receberDados.sobrenome,
       data: "",
       sobre: descricao,
       portifolio: portfolio,
@@ -217,11 +217,12 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         } else {
           for (let i = 0; i < data.length; i++) {
+            console.log(receberDados);
             if (data[i].idE == id) {
               newCont += `
           <div class="div-container" data-value="${data[i].id}">
             <div class="div-img">
-              <img class="img-content" src="${receberDados[id].imagem}" alt="Minha Figura">
+              <img class="img-content" src="${receberDados[0].imagem}" alt="Minha Figura">
             </div>
             <div class="div-content">
               <p class="title-conte"><strong>Titulo :</strong> ${data[i].title}</p>
