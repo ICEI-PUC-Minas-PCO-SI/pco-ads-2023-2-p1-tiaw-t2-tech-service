@@ -24,21 +24,60 @@ Nesta seção o grupo deverá documentar os testes de software que verificam a c
 
 Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
 
-
-**Caso de Teste** | **CT01 - Criar conta parte 1**
+**Caso de Teste** | **CT01 - Acesso a tela de cadastro**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa nome, sobrenome, email, senha, Estado e Cidade e clica no botão "Continuar".<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Prosseguir para a parte 2 do cadastro.
+**Procedimento**  | 1) Usuário acessa a tela inicial do sistema e clica no botão "Cadastro", seja na barra de navegação ou no botão da tela.<br>2) A aplicação encaminha o usuário para a tela de cadastro.
+**Requisitos associados** | RF-001 e RF-002
+**Resultado esperado** | Encaminhar para a tela de cadastro e carregá-la.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT02 - Acesso a tela de login**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário acessa a tela inicial do sistema e clica no botão "Login", seja na barra de navegação ou no botão da tela.<br>2) A aplicação encaminha o usuário para a tela de login.
+**Requisitos associados** | RF-001 e RF-002
+**Resultado esperado** | Encaminhar para a tela de login e carregá-la.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT03 - Criar conta**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário informa nome, sobrenome, usuário, email, senha, seu tipo de usuário (empresa ou freelancer) e clica no botão "Cadastrar".<br>2) A aplicação verifica se os dados são válidos e estão preenchidos e informa ao usuário caso não sejam. <br> 3)A aplicação armazena os dados e direciona o usuário para a tela de login.
+**Requisitos associados** | RF-003
+**Resultado esperado** | Criação de cadastro.
 **Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
 **Resultado obtido** | Sucesso.
 
-**Caso de Teste** | **CT02 - Criar conta parte 2**
+**Caso de Teste** | **CT04 - Fazer login**
  :--------------: | ------------
-**Procedimento**  | 1) Usuário informa gênero, seu tipo de usuário (cuidador ou comum), data de nascimento e clica em criar.<br>2) A aplicação verifica se os dados são válidos e informa ao usuário caso não sejam.<br> 3) A aplicação armazena os dados e direciona o usuário para a tela de login.
-**Requisitos associados** | RF-001
-**Resultado esperado** | Criação de cadastro
-**Dados de entrada** | Inserção de dados válidos no formulário de cadastro.
+**Procedimento**  | 1) Usuário informa seu login e senha e clica em logar.<br>2) A aplicação verifica se o usuário já está cadastrado no sistema, se não, informa o usuário.<br> 3) A aplicação verifica os dados e caso o usuário exista, ele é encaminhado para tela inicial do sistema.
+**Requisitos associados** | RF-004
+**Resultado esperado** | Usuário entra no sistema com seu respectivo login.
+**Dados de entrada** | Inserção de dados válidos no formulário de login.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT05 - Exibição do carrossel de vagas na tela inicial**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário, depois de logar no sistema, é encaminhado para a tela inicial.<br>2) A aplicação exibirá, na tela inicial, um carrossel mostrando, de forma dinâmica, as vagas cadastradas no sistema, uma por uma e de forma limitada, para o usuário.
+**Requisitos associados** | RF-006
+**Resultado esperado** | Usuário vê o carrossel de vagas disponíveis.
+**Dados de entrada** | Nenhum.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT06 - Aceitar ou negar vagas no carrossel da tela inicial**
+ :--------------: | ------------
+**Procedimento**  | 1) Usuário tem as opções de aceitar ou negar uma vaga.<br>2) Se ele aceitar, aparecerá um modal falando que ele aceitou e a vaga será incluída no seu perfil, na seção de trabalhos atuais. <br> 3)Se ele negar, aparecerá um modal falando que ele negou e apenas passará para a próxima vaga no carrossel. <br> 4)Se acabarem as vagas a serem exibidas, aparecerá um aviso mostrando isso e exibirá um link para a tela de vagas.
+**Requisitos associados** | RF-007 e RF-008
+**Resultado esperado** | Usuário aceita ou nega vagas.
+**Dados de entrada** | Clique no botão do "X" ou coração.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT07 - Mostrar e filtrar vagas disponíveis**
+ :--------------: | ------------
+**Procedimento**  | 1) Na tela de vagas, deve ser mostrado todas as vagas que estão disponíveis, ou seja, que nenhum freelancer se inscreveu ainda. <br> 2) A tela deve apresentar filtros de vaga. 3) Se o usuário clicar no filtro, serão exibidas as vagas com aquelas informações.
+**Requisitos associados** | RF-005
+**Resultado esperado** | Usuário acessa as vagas disponíveis e consegue filtrar.
+**Dados de entrada** | Filtro de vagas.
 **Resultado obtido** | Sucesso.
 
 ## Registro dos Testes de Software

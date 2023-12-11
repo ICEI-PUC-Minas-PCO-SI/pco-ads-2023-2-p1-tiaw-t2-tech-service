@@ -19,7 +19,7 @@ Aplicação de freelance em que o usuário tem um perfil com seu currículo, por
 * Luiza Sampaio Ribeiro (ADS)
 * Gustavo Oliveira Castro (SI)
 * Rafael Brandão Silva (ADS)
-* Gustavo Borges (SI)
+* Gustavo Henrique Souza Borges (SI)
 
 ## Orientador
 
