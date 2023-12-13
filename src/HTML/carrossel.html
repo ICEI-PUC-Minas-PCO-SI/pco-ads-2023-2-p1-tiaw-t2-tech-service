@@ -72,24 +72,21 @@
       <div class="row justify-content-center" id="tela"></div>
     </div>
 
-  <!-- Carrossel -->
-  <div class="container-fluid">
-    <div class="row justify-content-center" id="tela"></div>
-  </div>
-
   <div class="modal" id="myModal">
     <div class="modal-content">
       <span class="close" onclick="fecharModal()"><i class="fas fa-times" style="float: right;"></i></span>
-      <h1>Você aceitou a vaga!</h1>
-      <p>Ela já se encontra no seu perfil de usuário e a empresa já foi notificada.</p>
+      <i class="fas fa-heart text-success fs-1 text-center mb-3"></i>
+      <h1 class="text-center">Você aceitou a vaga!</h1>
+      <p class="text-center">Ela já se encontra no seu perfil de usuário e a empresa já foi notificada.</p>
     </div>
   </div>
 
   <div class="modal" id="myModal2">
     <div class="modal-content">
       <span class="close" onclick="fecharModalRecusa()"><i class="fas fa-times" style="float: right;"></i></span>
-      <h1>Você recusou a vaga!</h1>
-      <p>Não foi dessa vez. Continue buscando para achar a vaga que dará match com você!</p>
+      <i class="fas fa-times text-danger fs-1 text-center mb-3"></i>
+      <h1 class="text-center">Você recusou a vaga!</h1>
+      <p class="text-center">Não foi dessa vez. Continue buscando para achar a vaga que dará match com você!</p>
     </div>
   </div>
 
@@ -99,9 +96,7 @@
       <div class="col-md-8">
         <h3 class="text-white">Sobre a empresa</h3>
         <p class="text-white mt-3">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-          optio a totam soluta tempore natus, tempora aspernatur.
+          TechMatch: A plataforma que une talento e oportunidade com a facilidade de um deslize. Encontre seu próximo projeto de forma rápida e eficiente. Sua jornada freelancer começa aqui!
         </p>
       </div>
       <div class="col-md-4 d-flex align-items-center justify-content-center gap-3">
@@ -129,7 +124,7 @@
   </div>
 
   <script src="/src/js/jquery-3.7.1.js"></script>
-  <script src="/src/js/carrossel.js"></script>
+  <script src="/src/js/carrossel.js" defer></script>
 </body>
 
 </html>
