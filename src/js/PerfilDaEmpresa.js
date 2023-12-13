@@ -15,43 +15,123 @@ document.addEventListener("DOMContentLoaded", function () {
   let linkCriarVa = document.getElementById("a-CriarVagas");
   linkCriarVa.href = `TelaCriarVagas.html?id=${id}`;
   console.log(linkCriarVa);
+  ReceberID(id);
+  Vagas(id);
 });
-function ledados() {
-  let vagascriadas = localStorage.getItem("usuario");
-  let objvagas = {};
-  if (vagas) {
-    objvagas = JSON.parse(vagascriadas);
-  } else {
-    objvagas = {
-      vaga: [
-        "Segunda a quinta das 08:00 às 18:00 e sexta-feira: 08:00 às 17:00 horas função: Ser responsável por preservar a identidade visual das marcas e desenvolvimento da comunicação visual dos projetos do grupo e seus clientes. ",
-      ],
-    };
-  }
 
-  return objvagas;
+function ReceberID(id) {
+  let Json = 'http://localhost:3000/usuarios';
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if (data[id] && data[id].nome && data[id].sobre && data[id].imagem) {
+        console.log(data);
+        let img = document.getElementById("logo-perfil");
+        let nome = document.getElementById("perfil-nome");
+        let sobre = document.getElementById("desc");
+
+        sobre.innerText = data[id].sobre;
+        img.src = data[id].imagem;
+        nome.innerText = data[id].nome;
+      } else {
+        window.stop();
+        alert("Você não possui um perfil.");
+        window.location.href = "/src/HTML/TelaEditarPerfil.html";
+      }
+    });
 }
 
-function salvardados(dados) {
-  localStorage.setItem("usuario", JSON.stringify(dados));
+function Servicos(id) {
+  let servicos = 'http://localhost:3000/servicos';
+  fetch(servicos)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+
+      let card = document.getElementById("conteudo");
+      let strHtml = "";
+
+      if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+          const ser = data[i];
+
+          if (ser.title && ser.descricao) {
+            strHtml += `
+            <div class="card-vagas">
+              <div class="card-body" id="cardvagas">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col-md-4">
+                      <img class="icon-vagas" src="${ser.imagem}" />
+                    </div>
+                    <div class="col-md-8">
+                      <h6>${ser[id].title}</h6>
+                      <p id="descVaga">
+                        ${ser[id].descricao}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+          }
+        }
+      } else {
+        strHtml = "<p>O usuario ainda não possui serviços</p>";
+      }
+
+      card.innerHTML = strHtml;
+      console.log(card);
+    });
 }
 
-function imprimeDados() {
-  let vagas = document.getElementById("cardvagas");
-  let strHtml = "";
-  let objvagas = ledados();
-  for (i = 0; i < objDados.vaga.length; i++) {
-    strHtml =
-      strHtml +
-      `<div class="vaga-disponivel" data-identificador="${i}">
-        <div class="div-img">
-          <img src="${vagaIMG}" alt="Img-Usuario" class="img-vaga"/>
-        </div>
-        <div class="div-dadosVagas">
-          <p class="paragraph-titulo"><strong> </strong>${cardvagas.nomeVaga}</p>
-          <p class="paragraph-descricao"><strong>Descrição : </strong>${cardvagas.descricao}</p>
-        </div>
-      </div>`;
-  }
-  cardvagas.innerHTML = strHtml;
+
+function Vagas(id) {
+  let vagas = 'http://localhost:3000/vagas';
+  fetch(vagas)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+
+      let card = document.getElementById("conteudo");
+      let strHtml = "";
+
+      if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+          const vagaAtual = data[i];
+
+          if (vagaAtual.nomeVaga && vagaAtual.descricao) {
+            strHtml += `
+            <div class="card-vagas">
+              <div class="card-body" id="cardvagas">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col-md-4">
+                      <img class="icon-vagas" src="${vagaAtual[id].imagem}" />
+                    </div>
+                    <div class="col-md-8">
+                      <h6>${vagaAtual[id].nomeVaga}</h6>
+                      <p id="descVaga">
+                      ${vagaAtual[id].descricao}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>`;
+          }
+        }
+      } else {
+        strHtml = "<p>Nenhuma vaga disponível.</p>";
+      }
+
+      card.innerHTML = strHtml;
+      console.log(card);
+    });
 }
