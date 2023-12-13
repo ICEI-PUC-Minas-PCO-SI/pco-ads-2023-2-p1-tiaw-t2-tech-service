@@ -12,7 +12,8 @@
       "portifolio": "",
       "curriculo": "",
       "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
-      "servicos": ""
+      "servicos": "",
+      "tipo": 1
     },
     {
       "id": 1,
@@ -26,7 +27,8 @@
       "portifolio": "",
       "curriculo": "",
       "imagem": "",
-      "servicos": ""
+      "servicos": "",
+      "tipo": 2
     },
     {
       "id": 2,
@@ -40,7 +42,8 @@
       "portifolio": "",
       "curriculo": "",
       "imagem": "",
-      "servicos": ""
+      "servicos": "",
+      "tipo": 1
     },
     {
       "id": 3,
@@ -54,7 +57,8 @@
       "portifolio": "",
       "curriculo": "",
       "imagem": "",
-      "servicos": ""
+      "servicos": "",
+      "tipo": 1
     },
     {
       "id": 4,
@@ -64,13 +68,15 @@
       "portifolio": "",
       "curriculo": "",
       "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
-      "servicos": ""
+      "servicos": "",
+      "tipo": 1
     }
   ],
   "vagas": [
     {
       "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
-      "nomeVaga": "Empresa IBM",
+      "nomeEmpresa": "Empresa IBM",
+      "nomeVaga": "Programador",
       "descricao": ". Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
       "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
       "filtro": "Software",
@@ -83,7 +89,8 @@
     },
     {
       "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
-      "nomeVaga": "Localiza",
+      "nomeEmpresa": "Localiza",
+      "nomeVaga": "Desenvolvedor",
       "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros,",
       "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
       "filtro": "Software",
@@ -96,7 +103,8 @@
     },
     {
       "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
-      "nomeVaga": "Empresa IBM",
+      "nomeEmpresa": "Photoshop",
+      "nomeVaga": "Designer",
       "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
       "site": "https://chat.openai.com/c/6ea210b5-14eb-4f08-8fef-a8f9cd7c1a3f",
       "filtro": "Design",
@@ -106,6 +114,7 @@
     },
     {
       "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "nomeEmpresa": "Localiza",
       "nomeVaga": "Localiza",
       "descricao": "Nada de mais ",
       "site": "https://chat.openai.com/c/6ea210b5-14eb-4f08-8fef-a8f9cd7c1a3f",
