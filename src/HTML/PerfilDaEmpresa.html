@@ -1,264 +1,137 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+document.addEventListener("DOMContentLoaded", function () {
+  //Recuperando ID do usuario
+  let params = new URLSearchParams(location.search);
+  console.log(params);
+  let id = params.get("id");
+  console.log(id);
+  let linkHome = document.getElementById("a-Carrossel");
+  linkHome.href = `carrossel.html?id=${id}`;
+  let linkForum = document.getElementById("a-Forum");
+  linkForum.href = `Forum.html?id=${id}`;
+  let linkVagaDisp = document.getElementById("a-VagasDisp");
+  linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
+  let linkEditar = document.getElementById("a-EditarPerfil");
+  linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
+  let linkCriarVa = document.getElementById("a-CriarVagas");
+  linkCriarVa.href = `TelaCriarVagas.html?id=${id}`;
+  console.log(linkCriarVa);
+  ReceberID(id);
+  Vagas(id);
+});
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/src/CSS/PerfilDaEmpresa.css">
-  <script src="/src/js/PerfilDaEmpresa.js"></script>
-  <title>Perfil Da Empresa</title>
-</head>
+function ReceberID(id) {
+  let Json = 'http://localhost:3000/usuarios';
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      if (data[id] && data[id].nome && data[id].sobre && data[id].imagem) {
+        console.log(data);
+        let img = document.getElementById("logo-perfil");
+        let nome = document.getElementById("perfil-nome");
+        let sobre = document.getElementById("desc");
 
-<body class="overflow-x-hidden">
-  <!-- Navbar com menu mobile-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
-    <div class="container-fluid">
-      <!--Logo-->
-      <a class="navbar-brand" href="/src/HTML/index.html">
-        <img class="img-logo" src="/src/imgs/logo.png" width="100px" height="100px" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--Menu lateral-->
-      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header text-white border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-          <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" id="a-Carrossel" href="/src/HTML/index.html">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" id="a-Forum" href="/src/HTML/Forum.html">Fórum</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#footer-midia">Contato</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="/src/HTML/VagasDisponiveis.html">Vagas</a>
-            </li>
-          </ul> 
-          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-            <a href="/src/HTML/index.html" class="text-white text-decoration-none px-3 py-1 mx-5 rounded-4" style="background-color: #f94ca4">Sair</a>
-          </div>
-        </div>
-  </nav>
+        sobre.innerText = data[id].sobre;
+        img.src = data[id].imagem;
+        nome.innerText = data[id].nome;
+      } else {
+        window.stop();
+        alert("Você não possui um perfil.");
+        window.location.href = "/src/HTML/TelaEditarPerfil.html";
+      }
+    });
+}
 
-  <!--CORPO-->
+function Servicos(id) {
+  let servicos = 'http://localhost:3000/servicos';
+  fetch(servicos)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
 
-  <main class="container-body">
-    <!-- Perfil do uruario -->
-    <section class="perfil">
-      <div class="row row-cols-2">
-        <div class="coluna-1-1 col-sm-5">
-          <img class="logo-perfil" src="/src/imgs/LogoPerfilDaEmpresa.jpg" class="img-thumbnail" alt="...">
-        </div>
-        <div class="coluna-1-2 col-sm-7">
-          <h2 class="subtitle-1">Perfil Da Empresa</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat recusandae vitae aliquid cumque rem
-            repellendus.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, quidem fuga beatae voluptates consequuntur
-            autem?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores pariatur maiores tempora hic,
-            reprehenderit esse!.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et architecto deserunt, similique nihil
-            officiis.
-          </p>
-        </div>
-      </div>
+      let card = document.getElementById("conteudo");
+      let strHtml = "";
 
-    </section>
+      if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+          const ser = data[i];
 
-    <section class="avaliacoes">
-
-      <div class="linha">.</div>
-      <h2 class="subtitle">Experiência dos freelancers</h2>
-      <!--primeira parte dos cards-->
-
-      <div class="cards">
-        <div class="container-card text-center">
-          <div class="row row-cols-1">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <div class="container-card-body text-center">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img class="icon-user" src="/src/imgs/icon-user.png">
-                        <h6>Carlos</h6>
-                      </div>
-                      <div class="col-md-8">
-                        <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                        <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                        <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                        <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                        <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                        <p>Ótima empresa. Fui muito bem tratado e fornecem ótimos beneficios aos empregados </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--segundo card-->
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <div class="container-card-body text-center">
-                  <div class="row">
+          if (ser.title && ser.descricao) {
+            strHtml += `
+            <div class="card-vagas">
+              <div class="card-body" id="cardvagas">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
                     <div class="col-md-4">
-                      <img class="icon-user" src="/src/imgs/icon-user.png">
-                      <h6>Eduarda</h6>
+                      <img class="icon-vagas" src="${ser.imagem}" />
                     </div>
                     <div class="col-md-8">
-                      <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                      <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                      <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                      <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                      <span class="star-icon" style="color:#ffe500; font-size:40px">&#9733;</span>
-                      <p>Tive experiências incriveis na empresa. Gostei muito dos costumes que seguem</p>
+                      <h6>${ser[id].title}</h6>
+                      <p id="descVaga">
+                        ${ser[id].descricao}
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>`;
+          }
+        }
+      } else {
+        strHtml = "<p>O usuario ainda não possui serviços</p>";
+      }
+
+      card.innerHTML = strHtml;
+      console.log(card);
+    });
+}
 
 
-    <!-- vagas abertas -->
+function Vagas(id) {
+  let vagas = 'http://localhost:3000/vagas';
+  fetch(vagas)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
 
-    <section class="vagas" id="vagas">
+      let card = document.getElementById("conteudo");
+      let strHtml = "";
 
-      <h2 class="servicos">Serviços Abertos</h2>
-      <button type="button" class="btn">
-        <div class="card-vagas">
-          <div class="card-body" id="card-vagas">
-            <div class="container text-center">
-              <div class="row row-cols-2">
-                <div class="col-md-4"><img class="icon-vagas" src="/src/imgs/icon-user.png"></div>
-                <div class="col-md-8">
-                  <h6>Descrição</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore non fuga at quae corrupti. Deserunt.</p>
+      if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+          const vagaAtual = data[i];
+
+          if (vagaAtual.nomeVaga && vagaAtual.descricao) {
+            strHtml += `
+            <div class="card-vagas">
+              <div class="card-body" id="cardvagas">
+                <div class="container text-center">
+                  <div class="row row-cols-2">
+                    <div class="col-md-4">
+                      <img class="icon-vagas" src="${vagaAtual[id].imagem}" />
+                    </div>
+                    <div class="col-md-8">
+                      <h6>${vagaAtual[id].nomeVaga}</h6>
+                      <p id="descVaga">
+                      ${vagaAtual[id].descricao}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </button>
+            </div>`;
+          }
+        }
+      } else {
+        strHtml = "<p>Nenhuma vaga disponível.</p>";
+      }
 
-
-      <button type="button" class="btn">
-        <div class="card-vagas">
-          <div class="card-body" id="cardvagas">
-            <div class="container text-center">
-              <div class="row row-cols-2">
-                <div class="col-md-4"><img class="icon-vagas" src="/src/imgs/icon-user.png"></div>
-                <div class="col-md-8">
-                  <h6>Descrição</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore non fuga at quae corrupti. Deserunt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
-
-
-      <button type="button" class="btn">
-        <div class="card-vagas">
-          <div class="card-body" id="cardvagas">
-            <div class="container text-center">
-              <div class="row row-cols-2">
-                <div class="col-md-4"><img class="icon-vagas" src="/src/imgs/icon-user.png"></div>
-                <div class="col-md-8">
-                  <h6>Descrição</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore non fuga at quae corrupti. Deserunt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
-
-
-      <button type="button" class="btn">
-        <div class="card-vagas">
-          <div class="card-body" id="cardvagas">
-            <div class="container text-center">
-              <div class="row row-cols-2">
-                <div class="col-md-4"><img class="icon-vagas" id="vagaIMG" src="/src/imgs/icon-user.png"></div>
-                <div class="col-md-8">
-                  <h6 id="nomeVaga">Descrição</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore non fuga at quae corrupti. Deserunt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
-
-
-      <button type="button" class="btn">
-        <div class="card-vagas">
-          <div class="card-body" id="cardvagas">
-            <div class="container text-center">
-              <div class="row row-cols-2">
-                <div class="col-md-4"><img class="icon-vagas" src="/src/imgs/icon-user.png"></div>
-                <div class="col-md-8">
-                  <h6>Descrição</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Inventore non fuga at quae corrupti. Deserunt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </button>
-    </section>
-
-  </main>
-
-  <!--footer-->
-  <div class="container-fluid mb-0 footer-container p-5" id="footer-midia">
-    <div class="row">
-      <div class="col-md-7">
-        <h3 class="text-dark">Sobre a empresa</h3>
-        <p class="text-dark mt-3">TechMatch: A plataforma que une talento e oportunidade com a facilidade de um deslize. Encontre seu próximo projeto de forma rápida e eficiente. Sua jornada freelancer começa aqui!</p>
-      </div>
-      <div class="col-md-5 d-flex align-items-center justify-content-center gap-3">
-        <a href="#">
-          <img src="/src/imgs/facebook.png" alt="facebook" width="40px" height="40px">
-        </a>
-        <a href="#">
-          <img src="/src/imgs/instagram.png" alt="instagram" width="40px" height="40px">
-        </a>
-        <a href="#">
-          <img src="/src/imgs/twitter.png" alt="twitter" width="40px" height="40px">
-        </a>
-        <a href="#">
-          <img src="/src/imgs/github.png" alt="github" width="40px" height="40px">
-        </a>
-      </div>
-
-</body>
-
-</html>
+      card.innerHTML = strHtml;
+      console.log(card);
+    });
+}
