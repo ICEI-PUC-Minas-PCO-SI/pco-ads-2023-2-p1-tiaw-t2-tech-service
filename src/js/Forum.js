@@ -133,3 +133,159 @@ function fetchAndRenderPosts(url) {
 function setupEventListeners() {
 
 }
+
+// Inclusão json
+{
+  "posts": [
+    { "id": 1, "title": "Post 1", "content": "Conteúdo do Post 1" },
+    { "id": 2, "title": "Post 2", "content": "Conteúdo do Post 2" },
+    { "id": 3, "title": "Post 3", "content": "Conteúdo do Post 3" },
+    { "id": 4, "title": "Post 4", "content": "Conteúdo do Post 4" },
+    { "id": 5, "title": "Post 5", "content": "Conteúdo do Post 5" }
+  ]
+}
+
+json-server --watch db.json --port 3000
+
+{
+"posts": [
+  {
+    "id": 1,
+    "title": "Desenvolvedor Web Sênior",
+    "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
+    "commentsCount": 1,
+    "likesCount": 15,
+    "viewsCount": 100,
+    "date": "2023-11-30T12:00:00Z"
+  },
+
+  {
+    "id": 2,
+    "title": "Desenvolvedor Web Sênior",
+    "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
+    "commentsCount": 1,
+    "likesCount": 8,
+    "viewsCount": 80,
+    "date": "2023-11-05T12:20:00Z"
+  },
+
+   {
+    "id": 3,
+    "title": "Desenvolvedor Web Sênior",
+    "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
+    "commentsCount": 1,
+    "likesCount": 1,
+    "viewsCount": 17,
+    "date": "2023-11-09T12:17:00Z"
+  },
+
+  {
+    "id": 4,
+    "title": "Desenvolvedor Web Sênior",
+    "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
+    "commentsCount": 1,
+    "likesCount": 8,
+    "viewsCount": 56,
+    "date": "2023-11-12T12:15:00Z"
+  },
+
+  {
+    "id": 5,
+    "title": "Desenvolvedor Web Sênior",
+    "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
+    "commentsCount": 1,
+    "likesCount": 11,
+    "viewsCount": 45,
+    "date": "2023-11-18T12:09:00Z"  //
+  }
+],
+
+  "comments": [
+  {
+    "id": 1,
+    "postId": 1,
+    "text": "Ótima op ortunidade! Estou interessado."
+  },
+
+  {
+    "id": 2,
+    "postId": 1,
+    "text": "Ótima oportunidade! Estou interessado."
+  },
+
+    {
+      "id": 3,
+      "postId": 1,
+      "text": "Ótima oportunidade! Estou interessado."
+    },
+
+      {
+        "id": 4,
+        "postId": 1,
+        "text": "Ótima oportunidade! Estou interessado."
+      },
+
+          {
+          "id": 5,
+          "postId": 1,
+          "text": "Ótima oportunidade! Estou interessado."
+        },
+  
+],
+
+        "likes": [
+          {
+            "id": 1,
+            "postId": 15
+          },
+
+        {
+          "id": 2,
+          "postId": 8
+        },
+
+        {
+          "id": 3,
+          "postId": 1
+        },
+
+          {
+          "id": 4,
+          "postId": 8
+        },
+
+        {
+          "id": 5,
+          "postId": 11
+        },
+        
+],
+
+      "views": [
+          {
+            "id": 1,
+            "postId": 100
+          },
+
+        {
+        "id": 2,
+        "postId": 80
+      },
+
+      {
+        "id": 3,
+        "postId": 17
+      },
+
+      {
+        "id": 4,
+        "postId": 46
+      },
+
+      {
+        "id": 5,
+        "postId": 55
+      },
+
+  ]
+}
