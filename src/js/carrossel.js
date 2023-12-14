@@ -2,16 +2,14 @@
 let params = new URLSearchParams(location.search);
 console.log(params);
 let id = params.get("id");
-console.log(id);
-// let linkVagasDis = document.getElementById("a-Vagas");
-// // linkVagasDis.href = `VagasDisponiveis.html?id=${id}`;
-// let linkPerfil = document.getElementById("a-Perfil");
-// linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
-// console.log(linkPerfil);
+let aPerfil = document.getElementById("a-Perfil");
+let aVagas = document.getElementById("a-Vagas");
+aVagas.href = `VagasDisponiveis.html?id${id}`;
+aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 
 let slideAtual = 0;
-let URLVagas = 'http://localhost:3000/vagas';
-let URLServicos = 'http://localhost:3000/servicos';
+let URLVagas = "http://localhost:3000/vagas";
+let URLServicos = "http://localhost:3000/servicos";
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";
@@ -22,12 +20,12 @@ function criarSlide(slideAtual) {
   let divConteudo = document.getElementById("tela");
 
   fetch(URLVagas)
-  .then(res => res.json())
-  .then(function(dados){
-    vagas = dados;
+    .then((res) => res.json())
+    .then(function (dados) {
+      vagas = dados;
 
-    if (id != null) {
-        if(vagas[slideAtual].status){
+      if (id != null) {
+        if (vagas[slideAtual].status) {
           strCarrossel = `
         <div class="vaga-disponivel container bg-light p-4 w-75 h-75 mt-5 rounded-5"" data-identificador="${slideAtual}">
           <div class="header d-flex justify-content-around my-5">
@@ -45,15 +43,9 @@ function criarSlide(slideAtual) {
                   </div>
                   <div class="div-dadosVagas col-md-6">
                   <h3 class="my-3">Detalhes da Vaga</h3>
-              <p class="paragraph-titulo"><strong>Empresa : </strong>${
-                    vagas[slideAtual].nomeEmpresa
-              }</p>
-              <p class="paragraph-titulo"><strong>Vaga : </strong>${
-                vagas[slideAtual].nomeVaga
-              }</p>
-              <p class="paragraph-descricao"><strong>Descrição : </strong>${
-                vagas[slideAtual].descricao
-              }</p>
+              <p class="paragraph-titulo"><strong>Empresa : </strong>${vagas[slideAtual].nomeEmpresa}</p>
+              <p class="paragraph-titulo"><strong>Vaga : </strong>${vagas[slideAtual].nomeVaga}</p>
+              <p class="paragraph-descricao"><strong>Descrição : </strong>${vagas[slideAtual].descricao}</p>
               <p class="paragraph-filtro"><strong>Categoria : </strong>${vagas[slideAtual].filtro}</p>
               <p class="paragraph-site"><strong>Site da Empresa : </strong>
                 <a href="${vagas[slideAtual].site}" target="_blank">${vagas[slideAtual].site}</a>
@@ -75,28 +67,26 @@ function criarSlide(slideAtual) {
                 </div>
         </div>`;
         }
-    }else{
-      strCarrossel = `<p>Você precisa estar cadastrado para ter acesso a esse conteúdo.</p>`;
-    }
-    divConteudo.innerHTML = strCarrossel;
-  })
-
-  
+      } else {
+        strCarrossel = `<p>Você precisa estar cadastrado para ter acesso a esse conteúdo.</p>`;
+      }
+      divConteudo.innerHTML = strCarrossel;
+    });
 }
 
-function abrirModal(){
+function abrirModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
-function fecharModal(){
+function fecharModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-function abrirModalRecusa(){
+function abrirModalRecusa() {
   document.getElementById("myModal2").style.display = "block";
 }
 
-function fecharModalRecusa(){
+function fecharModalRecusa() {
   document.getElementById("myModal2").style.display = "none";
 }
 
@@ -119,7 +109,7 @@ function aceitarVaga() {
               <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
         </div>`;
-      divConteudo.innerHTML = strCarrossel;
+    divConteudo.innerHTML = strCarrossel;
   }
   criarSlide(slideAtual);
 }
@@ -143,54 +133,49 @@ function recusarVaga() {
   criarSlide(slideAtual);
 }
 
-function apagaVaga(slideAtual){
+function apagaVaga(slideAtual) {
   fetch(URLVagas)
-  .then(res => res.json())
-  .then(function(dados){
-    vagas = dados;
-    vaga = vagas[slideAtual];
+    .then((res) => res.json())
+    .then(function (dados) {
+      vagas = dados;
+      vaga = vagas[slideAtual];
 
-    fetch(`${URLVagas}/${vaga.id}`, {
-      method: 'DELETE',
-      headers: {
-          'Content-Type': 'application/json'
-      }
-  })
-  .then(res => res.json())
-  .then(() => location.reload()); 
-  })
+      fetch(`${URLVagas}/${vaga.id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .then(() => location.reload());
+    });
 }
 
-function cadastraServico(slideAtual){
+function cadastraServico(slideAtual) {
   fetch(URLVagas)
-  .then(res => res.json())
-  .then(function(dados){
-    vagas = dados;
-    vaga = vagas[slideAtual];
+    .then((res) => res.json())
+    .then(function (dados) {
+      vagas = dados;
+      vaga = vagas[slideAtual];
 
-    const servico = JSON.stringify({
-      id: vaga.id,
-      title: vaga.nomeVaga,
-      descricao: vaga.descricao,
-      empresa: vaga.idE.toString(),
-      usuario: id.toString()  
+      const servico = JSON.stringify({
+        id: vaga.id,
+        title: vaga.nomeVaga,
+        descricao: vaga.descricao,
+        empresa: vaga.idE.toString(),
+        usuario: id.toString(),
+      });
+
+      fetch(URLServicos, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: servico,
+      }).then((res) => res.json());
     });
-
-    fetch(URLServicos, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: servico
-        })
-        .then(res => res.json()); 
-  })
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   criarSlide(slideAtual);
 });
-
-
-
-

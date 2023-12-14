@@ -5,10 +5,10 @@ let linkPerfil = document.getElementById("a-Perfil");
 let linkCarrosel = document.getElementById("a-Carrossel");
 let linkEditar = document.getElementById("a-EditarPerfil");
 let linkForum = document.getElementById("a-Forum");
-// linkForum.href = `Forum.html?id=${id}`;
-// linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
-// linkCarrosel.href = `carrossel.html?id=${id}`;
-// linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
+linkForum.href = `Forum.html?id=${id}`;
+linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
+linkCarrosel.href = `carrossel.html?id=${id}`;
+linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
 
 //Recuperando ID do usuario
 let recebeAPI = [];
