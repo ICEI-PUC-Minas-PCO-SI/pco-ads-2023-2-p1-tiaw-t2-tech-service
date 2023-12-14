@@ -77,71 +77,52 @@
     </section>
 
     <section class="avaliacoes">
-      <div class="linha">.</div>
-      <h2 class="title-avaliacoes" id="avaliacoes">Avaliações</h2>
-      <!--primeira parte dos cards-->
+      <h2 class="title-avaliacoes mx-0 my-auto" id="avaliacoes">Avaliações</h2>
+      <!--primeira parte dos cards--> 
 
-      <div class="cards">
-
-
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="container-card-body text-center">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img class="icon-user" src="../imgs/icon-user.png" />
-                    <h6 id="nome-ava">Carlos</h6>
-                  </div>
-                  <div class="col-md-8" id="card-2">
-                    <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                    <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                    <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                    <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                    <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                    <p class="des-ava">
-                      Ótima empresa. Fui muito bem tratado e fornecem
-                      ótimos beneficios aos empregados
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--segundo card-->
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <div class="container-card-body text-center">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img class="icon-user" src="/src/imgs/icon-user.png" />
-                      <h6 id="nome-ava">Eduarda</h6>
-                    </div>
-                    <div class="col-md-8" id="card-2">
-                      <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                      <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                      <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                      <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                      <span class="star-icon" style="color: #ffe500;">&#9733;</span>
-                      <p class="des-ava">
-                        Tive experiências incriveis na empresa. Gostei muito
-                        dos costumes que seguem
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="cards mt-3" id="cards">
+      </div>
+        <a class="btn btn-dark btn-md" style="margin-left: 200px;"
+          data-bs-toggle="modal" data-bs-target="#avaliacao-modal">
+          <i class="fa fa-plus"></i> Avaliar freelancer
+        </a>
       </div>
     </section>
+
+    <div class="modal fade" id="avaliacao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Avaliar Freelancer <span id="edit-prod-id"></span></h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form id="avaliacao-form" method="post" action="">
+                      <div class="form-group">
+                          <label for="nome" class="col-form-label">Nome:</label>
+                          <input type="text" class="form-control" id="nome" min="1" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="comentario" class="col-form-label">Comentário:</label>
+                          <input type="text" class="form-control" id="comentario" required>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Salvar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
 
     <!-- vagas abertas -->
 
     <section class="vagas" id="vagas">
-      <h2 class="servicos">Serviços Atuais</h2>
+      <h2 class="servicos">Serviços Prestados</h2>
       <div id="conteudo">
 
       </div>

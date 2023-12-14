@@ -74,31 +74,6 @@
   ],
   "vagas": [
     {
-      "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
-      "nomeEmpresa": "Localiza",
-      "nomeVaga": "Desenvolvedor",
-      "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros,",
-      "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
-      "filtro": "Software",
-      "soft1": "Java",
-      "soft2": "R",
-      "soft3": "C#",
-      "idE": 4,
-      "status": true,
-      "id": 2
-    },
-    {
-      "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
-      "nomeEmpresa": "Photoshop",
-      "nomeVaga": "Designer",
-      "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
-      "site": "https://chat.openai.com/c/6ea210b5-14eb-4f08-8fef-a8f9cd7c1a3f",
-      "filtro": "Design",
-      "idE": 4,
-      "status": true,
-      "id": 3
-    },
-    {
       "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
       "nomeEmpresa": "Localiza",
       "nomeVaga": "Localiza",
@@ -127,8 +102,7 @@
       "descricao": ". Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
       "empresa": "0",
       "usuario": "3",
-      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
-      "idE": 0
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
     },
     {
       "id": 2,
@@ -136,8 +110,7 @@
       "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros,",
       "empresa": "4",
       "usuario": "0",
-      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
-      "idE": 0
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
     },
     {
       "id": 3,
@@ -145,8 +118,7 @@
       "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
       "empresa": "4",
       "usuario": "3",
-      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
-      "idE": 2
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
     },
     {
       "id": 4,
@@ -154,8 +126,7 @@
       "descricao": "Nada de mais ",
       "empresa": "4",
       "usuario": "0",
-      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
-      "idE": 3
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
     },
     {
       "id": 5,
@@ -165,6 +136,32 @@
       "usuario": "0",
       "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
       "idE": 1
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "nome": "0",
+      "usuario": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "comentario": 1
+    },
+    {
+      "id": 2,
+      "nome": "João Oliveira",
+      "usuario": "3",
+      "comentario": "Muito bom profissional, sempre responde rápido e entrega o que promete."
+    },
+    {
+      "id": 3,
+      "nome": "Alice Machado",
+      "usuario": "3",
+      "comentario": "Adorei os trabalhos dele, muito bom."
+    },
+    {
+      "id": 4,
+      "nome": "Alice Machado",
+      "usuario": "4",
+      "comentario": "Empresa muito profissional e preocupada com os trabalhadores."
     }
   ]
 }

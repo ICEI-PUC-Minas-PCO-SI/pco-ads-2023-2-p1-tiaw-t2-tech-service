@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
     ReceberID(id);
     Servicos(id);
+    Avaliacao(id);
 });
 
 function ReceberID(id) {
@@ -71,3 +72,74 @@ function Servicos(id) {
             card.appendChild(newDiv);
         });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const URLComentario = 'http://localhost:3000/comentarios';
+    const avaliacaoForm = document.getElementById('avaliacao-form');
+
+    avaliacaoForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        fetch(URLComentario)
+            .then(res => res.json())
+            .then(function (dados) {
+                const comentario = dados;
+                let params = new URLSearchParams(location.search);
+                let id = params.get("id");
+                const avaliacao = {
+                    id: comentario.length + 1,
+                    nome: document.getElementById('nome').value,
+                    usuario: id,
+                    comentario: document.getElementById('comentario').value
+                }
+
+                return fetch(URLComentario, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(avaliacao)
+                });
+            })
+            .then(res => res.json())
+            .catch(error => console.error('Erro:', error));
+    });
+});
+
+function Avaliacao(id) {
+    let divComentario = document.getElementById('cards');
+    let Json = `http://localhost:3000/comentarios`;
+    fetch(Json)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            let strAvaliacao = '';
+            for(let i = 0; i < data.length; i++){
+                if (data[i].usuario == id) {
+                    strAvaliacao += `<div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="container-card-body text-center">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <img class="icon-user" src="/src/imgs/icon-user.png" />
+                              <h6 id="nome-ava">${data[i].nome}</h6>
+                            </div>
+                            <div class="col-md-8" id="card-2">
+                              <p class="des-ava mt-3">
+                                ${data[i].comentario}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>`;
+                }
+            }
+
+            divComentario.innerHTML = strAvaliacao;
+        });
+}
+
