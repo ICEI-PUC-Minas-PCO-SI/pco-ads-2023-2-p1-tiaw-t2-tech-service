@@ -113,7 +113,7 @@ function Posts(id) {
                       <div class="container-card-body text-center">
                         <div class="row">
                           <div class="col-md-4">
-                            <img src="/src/imgs/icon-user.png" width="100px" height="100px" class="rounded-5 img-fluid"/>
+                            <img src="imgs/icon-user.png" width="100px" height="100px" class="rounded-5 img-fluid"/>
                             <h6 id="nome-ava">${data[i].nome}</h6>
                           </div>
                           <div class="col-md-8" id="card-2">
