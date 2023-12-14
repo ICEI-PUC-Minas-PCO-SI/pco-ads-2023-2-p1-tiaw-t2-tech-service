@@ -8,4 +8,4 @@ Gustavo O.:
 
 Luiza:
 
-Gustavo Borges:
+Gustavo Borges: Fui responsavel por fazer a responsividade da tela de Vagas disponiveis, ajudei na documentação e com duvidas dos colegas.
