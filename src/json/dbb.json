@@ -69,20 +69,6 @@
   ],
   "vagas": [
     {
-      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
-      "nomeEmpresa": "Empresa IBM",
-      "nomeVaga": "Empresa IBM",
-      "descricao": "Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída.",
-      "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
-      "filtro": "Software",
-      "soft1": "Python",
-      "soft2": "C++",
-      "soft3": "C#",
-      "idE": 0,
-      "status": true,
-      "id": 1
-    },
-    {
       "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
       "nomeEmpresa": "Empresa IBM",
       "nomeVaga": "Localiza",
@@ -117,6 +103,16 @@
       "idE": 4,
       "status": true,
       "id": 4
+    },
+    {
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "nomeVaga": "dfasdf",
+      "descricao": "asdfsfd",
+      "site": "dfasdf",
+      "filtro": "Hardwere",
+      "idE": 0,
+      "status": true,
+      "id": 5
     }
   ],
   "servicos": [
