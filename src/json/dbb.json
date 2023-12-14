@@ -2,83 +2,138 @@
   "usuarios": [
     {
       "id": 0,
-      "login": "Rafael",
-      "senha": "123456",
-      "nome": "Empresa IBM",
-      "sobre": "",
-      "portfolio": "",
+      "login": "admin",
+      "senha": "admin",
+      "senha2": "",
+      "nome": "Brandex",
+      "sobrenome": "Brandao",
+      "data": "",
+      "sobre": "Desenvolvedor do site",
+      "portifolio": "",
       "curriculo": "",
-      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
       "servicos": "",
-      "Vaga": ""
+      "tipo": 1
     },
     {
       "id": 1,
-      "login": "Alice",
+      "login": "Juninho",
       "senha": "123456",
-      "nome": "Empresa IBM",
-      "sobre": "",
-      "portfolio": "",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "11/11/1111",
+      "sobre": "Desenvolvedor do site",
+      "portifolio": "",
       "curriculo": "",
-      "imagem": "https://images.pexels.com/photos/18862148/pexels-photo-18862148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imagem": "",
       "servicos": "",
-      "Vaga": ""
+      "tipo": 2
     },
     {
       "id": 2,
-      "login": "Gabriel",
+      "login": "Marcs",
       "senha": "123456",
-      "nome": "",
+      "senha2": "123456",
+      "nome": "Rafael",
+      "sobrenome": "Brandao",
+      "data": "11/11/11111",
       "sobre": "",
+      "portifolio": "",
       "curriculo": "",
-      "portfolio": "",
       "imagem": "",
-      "servicos": [],
-      "Vaga": []
+      "servicos": "",
+      "tipo": 1
+    },
+    {
+      "id": 3,
+      "login": "Jose",
+      "senha": "123456",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "01/11/0011",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": "",
+      "tipo": 1
+    },
+    {
+      "id": 4,
+      "nome": "Ana",
+      "data": "",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "servicos": "",
+      "tipo": 1
     }
   ],
   "vagas": [
     {
-      "id": 0,
-      "nomeVaga": "Brandex",
-      "descricao": "Nada a se declarar",
-      "portfolio": "file:///D:/Curso%20OneBitCod/Certificados%20OneBitcode/RafaelBrandao.pdf",
-      "curriculo": "file:///D:/Arquivos%20e%20Programas/Downloads/O%20texto%20A%20p%C3%B3lis%20e%20a%20fam%C3%ADlia%20oferece%20uma%20an%C3%A1lise%20profunda%20da%20(1).pdf",
-      "filtro": [],
-      "software": []
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "nomeEmpresa": "Empresa IBM",
+      "nomeVaga": "Programador",
+      "descricao": ". Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
+      "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
+      "filtro": "Software",
+      "soft1": "Python",
+      "soft2": "C++",
+      "soft3": "C#",
+      "idE": 0,
+      "status": true,
+      "id": 1
     },
     {
-      "id": 1,
-      "nomeVaga": "",
-      "site": "",
-      "descricao": "",
-      "filtro": [],
-      "software": []
+      "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
+      "nomeEmpresa": "Localiza",
+      "nomeVaga": "Desenvolvedor",
+      "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros,",
+      "site": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button",
+      "filtro": "Software",
+      "soft1": "Java",
+      "soft2": "R",
+      "soft3": "C#",
+      "idE": 4,
+      "status": true,
+      "id": 2
     },
     {
-      "id": 2,
-      "nomeVaga": "",
-      "site": "",
-      "descricao": "",
-      "filtro": [],
-      "software": []
+      "imagem": "https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg",
+      "nomeEmpresa": "Photoshop",
+      "nomeVaga": "Designer",
+      "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
+      "site": "https://chat.openai.com/c/6ea210b5-14eb-4f08-8fef-a8f9cd7c1a3f",
+      "filtro": "Design",
+      "idE": 4,
+      "status": true,
+      "id": 3
+    },
+    {
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "nomeEmpresa": "Localiza",
+      "nomeVaga": "Localiza",
+      "descricao": "Nada de mais ",
+      "site": "https://chat.openai.com/c/6ea210b5-14eb-4f08-8fef-a8f9cd7c1a3f",
+      "filtro": "Hardwere",
+      "idE": 4,
+      "status": true,
+      "id": 4
+    },
+    {
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "nomeVaga": "dfasdf",
+      "descricao": "asdfsfd",
+      "site": "dfasdf",
+      "filtro": "Hardwere",
+      "idE": 0,
+      "status": true,
+      "id": 5
     }
   ],
   "servicos": [
-    {
-      "id": 0,
-      "title": "dsfaf",
-      "descricao": "sadf"
-    },
-    {
-      "id": 1,
-      "title": "dafs",
-      "descricao": "fasdf"
-    },
-    {
-      "id": 2,
-      "title": "",
-      "descricao": ""
-    }
   ]
 }

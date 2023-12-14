@@ -75,29 +75,22 @@
                 <a class="nav-link" href="Forum.html">Fórum</a>
               </li>
             </ul>
-            <!-- Login/ Cadastro-->
+            <!-- Sair-->
             <div
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="Cadastro.html"
+                href="index.html"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: #f94ca4"
-                >Cadastro</a
-              >
-              <a
-                href="Login.html"
-                class="text-white text-decoration-none px-3 py-1 rounded-4"
-                style="background-color: #f94ca4"
-                >Login</a
-              >
+                >Sair</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
     <!--Main-->
-    <div class="container mt-5 mb-5 p-3">
+    <div class="container mt-5 mb-5 p-3" id="container">
       <!-- Login -->
       <div id="wrapper" class="wrapper">
         <form id="form">
@@ -105,18 +98,23 @@
           <p id="mensagerErr" class="mensager-succ">Insira os dados validos</p>
           <p id="mensagerSucc" class="mensager-succ">Sucesso</p>
           <div class="input-box">
-            <input type="text" placeholder="Username" id="userName" />
+            <input type="text" placeholder="Usuario" id="userName" />
             <i class="bx bxs-user"></i>
           </div>
 
           <div class="input-box">
-            <input type="password" placeholder="Password" id="userSenha" />
+            <input
+              type="password"
+              placeholder="Senha"
+              id="userSenha"
+              placeholder="Digite aqui"
+              onfocus="this.placeholder=''"
+            />
             <i class="bx bxs-lock-alt"></i>
           </div>
 
           <div class="remember-forgot">
             <label><input type="checkbox" />Lembrar de mim</label>
-            <a href="#">Esqueceu a senha?</a>
           </div>
 
           <button type="submit" class="btn">Entrar</button>
@@ -139,9 +137,7 @@
         <div class="col-md-7">
           <h3 class="text-white">Sobre a empresa</h3>
           <p class="text-white mt-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            beatae corrupti consequuntur sint quod repellendus, suscipit, nam
-            optio a totam soluta tempore natus, tempora aspernatur.
+            TechMatch: A plataforma que une talento e oportunidade com a facilidade de um deslize. Encontre seu próximo projeto de forma rápida e eficiente. Sua jornada freelancer começa aqui!
           </p>
         </div>
         <div

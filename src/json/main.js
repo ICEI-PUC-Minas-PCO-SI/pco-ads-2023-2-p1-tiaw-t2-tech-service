@@ -1,12 +1,19 @@
-URL = "http://localhost:3000/usuarios";
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("");
 
-function receberdados(fuc) {
-  fetch(URL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (dados) {
-      console.log(dados);
-      fuc();
-    });
-}
+const middlewares = jsonServer.defaults();
+
+server.use(middlewares);
+
+server.use(
+  jsonServer.rewriter({
+    "/*": "/$1",
+  })
+);
+server.use(router);
+server.listen(3000, () => {
+  console.log("JSON Server is running");
+});
+
+module.exports = server;
