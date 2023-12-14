@@ -125,17 +125,5 @@
     }
   ],
   "servicos": [
-    {
-      "title": "Acme Tech Solutions",
-      "descricao": "Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
-      "idE": 0,
-      "id": 1
-    },
-    {
-      "title": "Localiza",
-      "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros, atuante nas principais cidades e aeroportos do Brasil, México e também em diversos países da América Latina, como Argentina, Paraguai, Colômbia, Equador e Uruguai",
-      "idE": 4,
-      "id": 2
-    }
   ]
 }

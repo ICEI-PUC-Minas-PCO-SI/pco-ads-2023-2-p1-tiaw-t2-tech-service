@@ -11,8 +11,7 @@ console.log(id);
 
 let slideAtual = 0;
 let URLVagas = 'http://localhost:3000/vagas';
-
-criarSlide(slideAtual);
+let URLServicos = 'http://localhost:3000/servicos';
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";
@@ -103,6 +102,8 @@ function fecharModalRecusa(){
 
 function aceitarVaga() {
   abrirModal();
+  cadastraServico(slideAtual);
+  apagaVaga(slideAtual);
   slideAtual++;
   let divConteudo = document.getElementById("tela");
 
@@ -140,6 +141,50 @@ function recusarVaga() {
   }
 
   criarSlide(slideAtual);
+}
+
+function apagaVaga(slideAtual){
+  fetch(URLVagas)
+  .then(res => res.json())
+  .then(function(dados){
+    vagas = dados;
+    vaga = vagas[slideAtual];
+
+    fetch(`${URLVagas}/${vaga.id}`, {
+      method: 'DELETE',
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  })
+  .then(res => res.json())
+  .then(() => location.reload()); 
+  })
+}
+
+function cadastraServico(slideAtual){
+  fetch(URLVagas)
+  .then(res => res.json())
+  .then(function(dados){
+    vagas = dados;
+    vaga = vagas[slideAtual];
+
+    const servico = JSON.stringify({
+      id: vaga.id,
+      title: vaga.nomeVaga,
+      descricao: vaga.descricao,
+      empresa: vaga.idE.toString(),
+      usuario: id.toString()  
+    });
+
+    fetch(URLServicos, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: servico
+        })
+        .then(res => res.json()); 
+  })
 }
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -35,10 +35,6 @@ function ReceberID(id) {
         sobre.innerText = data[id].sobre;
         img.src = data[id].imagem;
         nome.innerText = data[id].nome;
-      } else {
-        window.stop();
-        alert("Você não possui um perfil.");
-        window.location.href = "/src/HTML/TelaEditarPerfil.html";
       }
     });
 }
