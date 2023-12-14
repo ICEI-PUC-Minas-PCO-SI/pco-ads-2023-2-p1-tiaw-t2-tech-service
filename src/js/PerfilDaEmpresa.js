@@ -10,10 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   linkForum.href = `Forum.html?id=${id}`;
   let linkVagaDisp = document.getElementById("a-VagasDisp");
   linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
-  let linkEditar = document.getElementById("a-EditarPerfil");
-  linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
-  let linkCriarVa = document.getElementById("a-CriarVagas");
-  linkCriarVa.href = `TelaCriarVagas.html?id=${id}`;
   ReceberID(id);
   Servicos(id);
 });

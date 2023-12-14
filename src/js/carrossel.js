@@ -66,6 +66,18 @@ function criarSlide(slideAtual) {
                     </div>
                 </div>
         </div>`;
+        }else{
+          strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
+            <div class="header d-flex justify-content-around my-5">
+                <i class="fas fa-fire fs-2"></i>
+                <i class="fas fa-comments fs-2"></i>
+                <i class="fas fa-user fs-2"></i>
+            </div>
+            <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
+            <div class="text-center">
+              <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
+            </div>
+        </div>`;
         }
       } else {
         strCarrossel = `<p>Você precisa estar cadastrado para ter acesso a esse conteúdo.</p>`;
@@ -109,13 +121,16 @@ function aceitarVaga() {
               <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
         </div>`;
-    divConteudo.innerHTML = strCarrossel;
+      divConteudo.innerHTML = strCarrossel;
+  }else{
+    criarSlide(slideAtual);
   }
-  criarSlide(slideAtual);
+  
 }
 
 function recusarVaga() {
   abrirModalRecusa();
+  apagaVaga(slideAtual);
   slideAtual++;
 
   if (slideAtual >= vagas.length) {
@@ -126,11 +141,14 @@ function recusarVaga() {
                 <i class="fas fa-user fs-2"></i>
             </div>
             <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
+            <div class="text-center">
+              <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
+            </div>
         </div>`;
     document.querySelector("#tela").innerHTML = strCarrossel;
+  }else{
+    criarSlide(slideAtual);
   }
-
-  criarSlide(slideAtual);
 }
 
 function apagaVaga(slideAtual) {
@@ -177,5 +195,25 @@ function cadastraServico(slideAtual) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  criarSlide(slideAtual);
+  fetch(URLVagas)
+  .then(res => res.json())
+  .then(function(dados){
+    vagas = dados;
+    if (slideAtual >= vagas.length) {
+      strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
+              <div class="header d-flex justify-content-around my-5">
+                  <i class="fas fa-fire fs-2"></i>
+                  <i class="fas fa-comments fs-2"></i>
+                  <i class="fas fa-user fs-2"></i>
+              </div>
+              <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
+              <div class="text-center">
+              <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
+            </div>
+          </div>`;
+      document.querySelector("#tela").innerHTML = strCarrossel;
+    }else{
+      criarSlide(slideAtual);
+    }
+  })
 });
