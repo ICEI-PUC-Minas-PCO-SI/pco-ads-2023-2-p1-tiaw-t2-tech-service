@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let id = params.get("id");
   console.log(id);
   let linkHome = document.getElementById("a-Carrossel");
+  let linkCriar = document.getElementById("a-CriarVagas");
+  linkCriar.href = `TelaCriarVagas.html?id=${id}`;
   linkHome.href = `carrossel.html?id=${id}`;
   let linkForum = document.getElementById("a-Forum");
   linkForum.href = `Forum.html?id=${id}`;
@@ -27,8 +29,12 @@ function ReceberID(id) {
       let descri = document.getElementById("desc");
       console.log(data);
 
-      if (img) {
+      if (data.imagem) {
         img.src = `${data.imagem}`;
+        name.textContent = `${data.nome} ${data.sobrenome}`;
+        descri.textContent = `${data.sobre}`;
+      } else {
+        img.src = "imgs/icon-user.png";
         name.textContent = `${data.nome} ${data.sobrenome}`;
         descri.textContent = `${data.sobre}`;
       }
@@ -123,7 +129,7 @@ function Avaliacao(id) {
                         <div class="container-card-body text-center">
                           <div class="row">
                             <div class="col-md-4">
-                              <img class="icon-user" src="/src/imgs/icon-user.png" />
+                              <img class="icon-user" src="imgs/icon-user.png" />
                               <h6 id="nome-ava">${data[i].nome}</h6>
                             </div>
                             <div class="col-md-8" id="card-2">

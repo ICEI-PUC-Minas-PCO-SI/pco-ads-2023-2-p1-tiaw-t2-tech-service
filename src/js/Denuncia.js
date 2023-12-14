@@ -26,7 +26,7 @@ fetch("https://tech-servic.vercel.app/usuarios")
       } else {
         userS += `
       <div class="Denu-User">
-        <img src="../imgs/icon-user.png" alt="Minha Figura" class="img-Denu">
+        <img src="imgs/icon-user.png" alt="Minha Figura" class="img-Denu">
         <p class="Parahrap-Denu">${data[i].nome}</p>
       </div>
       `;

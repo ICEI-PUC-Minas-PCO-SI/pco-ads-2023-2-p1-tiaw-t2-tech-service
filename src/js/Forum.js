@@ -7,6 +7,7 @@ let aVagas = document.getElementById("a-Vagas");
 aVagas.href = `VagasDisponiveis.html?id=${id}`;
 let aDenuncia = document.getElementById("a-Denuncia");
 aDenuncia.href = `Denuncia.html?id=${id}`;
+Posts(id);
 
 //Recuperando ID do usuario
 function returnToMainPage() {
@@ -21,267 +22,113 @@ function closeForm() {
 }
 
 function filterAll() {
-  fetch("http://localhost:3000/posts")
+  fetch("https://tech-servic.vercel.app/posts")
     .then((response) => response.json())
     .then((posts) => {
       updateUI(posts);
     });
 }
 
-// function updateUI(posts) {
-//   var forumContainer = document.querySelector(".container");
-//   forumContainer.innerHTML = "";
+document.addEventListener("DOMContentLoaded", function () {
+  const URLUsuario = "https://tech-servic.vercel.app/usuarios";
+  const URLPost = "https://tech-servic.vercel.app/posts";
+  const postForm = document.getElementById("post-form");
 
-//   posts.forEach((post) => {
-//     var forumDiv = document.createElement("div");
-//     forumDiv.className = "forum";
+  postForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-//     var titleHeading = document.createElement("h2");
-//     titleHeading.textContent = post.title;
+    fetch(URLPost)
+      .then((res) => res.json())
+      .then(function (dados) {
+        const post = dados;
+        let params = new URLSearchParams(location.search);
+        let id = params.get("id");
 
-//     var contentParagraph = document.createElement("p");
-//     contentParagraph.textContent = post.content;
+        fetch(URLUsuario)
+          .then((res) => res.json())
+          .then(function (dados) {
+            usuario = dados;
+            for (let i = 0; i < usuario.length; i++) {
+              if (usuario[i].id == id) {
+                let posicao = usuario[i];
 
-//     var infoDiv = document.createElement("div");
-//     infoDiv.className = "info";
+                const postagem = {
+                  id: post.length + 1,
+                  nome: posicao.nome,
+                  usuario: id,
+                  imagem: posicao.imagem,
+                  comentario: document.getElementById("comentario").value,
+                };
 
-//     var commentsSpan = document.createElement("span");
-//     commentsSpan.textContent = "Comentários: " + post.commentsCount;
+                return fetch(URLPost, {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(postagem),
+                });
+              }
+            }
+          });
+      })
+      .then((res) => res.json())
+      .catch((error) => console.error("Erro:", error));
+  });
+});
 
-//     var likesSpan = document.createElement("span");
-//     likesSpan.textContent = "Curtidas: " + post.likesCount;
+function Posts(id) {
+  let divPost = document.getElementById("cards");
+  let Json = `https://tech-servic.vercel.app/posts`;
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let strAvaliacao = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].imagem) {
+          strAvaliacao += `<div class="col mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="container-card-body text-center">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="${data[i].imagem}" width="100px" height="100px" class="rounded-5 img-fluid"/>
+                            <h6 id="nome-ava">${data[i].nome}</h6>
+                          </div>
+                          <div class="col-md-8" id="card-2">
+                            <p class="des-ava mt-3">
+                              ${data[i].comentario}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+        } else {
+          strAvaliacao += `<div class="col mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="container-card-body text-center">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="/src/imgs/icon-user.png" width="100px" height="100px" class="rounded-5 img-fluid"/>
+                            <h6 id="nome-ava">${data[i].nome}</h6>
+                          </div>
+                          <div class="col-md-8" id="card-2">
+                            <p class="des-ava mt-3">
+                              ${data[i].comentario}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+        }
+      }
 
-//     var viewsSpan = document.createElement("span");
-//     viewsSpan.textContent = "Visualizações: " + post.viewsCount;
-
-//     infoDiv.appendChild(commentsSpan);
-//     infoDiv.appendChild(likesSpan);
-//     infoDiv.appendChild(viewsSpan);
-
-//     forumDiv.appendChild(titleHeading);
-//     forumDiv.appendChild(contentParagraph);
-//     forumDiv.appendChild(infoDiv);
-
-//     forumContainer.appendChild(forumDiv);
-//   });
-// }
-
-// function filterRecent() {
-//   fetch("http://localhost:3000/posts?_sort=date&_order=desc")
-//     .then((response) => response.json())
-//     .then((recentPosts) => {
-//       updateUI(recentPosts);
-//     });
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   filterAll();
-//   setupEventListeners();
-// });
-
-// function renderPosts(posts) {
-//   var forumContainer = document.querySelector(".container");
-//   forumContainer.innerHTML = "";
-
-//   posts.forEach((post) => {
-//     var forumDiv = document.createElement("div");
-//     forumDiv.className = "forum";
-
-//     var titleHeading = document.createElement("h2");
-//     titleHeading.textContent = post.title;
-
-//     var contentParagraph = document.createElement("p");
-//     contentParagraph.textContent = post.content;
-
-//     var infoDiv = document.createElement("div");
-//     infoDiv.className = "info";
-
-//     var commentsSpan = document.createElement("span");
-//     commentsSpan.textContent = "Comentários: " + post.commentsCount;
-
-//     var likesSpan = document.createElement("span");
-//     likesSpan.textContent = "Curtidas: " + post.likesCount;
-
-//     var viewsSpan = document.createElement("span");
-//     viewsSpan.textContent = "Visualizações: " + post.viewsCount;
-
-//     infoDiv.appendChild(commentsSpan);
-//     infoDiv.appendChild(likesSpan);
-//     infoDiv.appendChild(viewsSpan);
-
-//     forumDiv.appendChild(titleHeading);
-//     forumDiv.appendChild(contentParagraph);
-//     forumDiv.appendChild(infoDiv);
-
-//     forumContainer.appendChild(forumDiv);
-//   });
-// }
-
-// function fetchAndRenderPosts(url) {
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((posts) => {
-//       renderPosts(posts);
-//     })
-//     .catch((error) => {
-//       console.error("Erro ao buscar posts:", error);
-//     });
-// }
-
-// function setupEventListeners() {}
-
-// Inclusão json
-// {
-//   "posts": [
-//     { "id": 1, "title": "Post 1", "content": "Conteúdo do Post 1" },
-//     { "id": 2, "title": "Post 2", "content": "Conteúdo do Post 2" },
-//     { "id": 3, "title": "Post 3", "content": "Conteúdo do Post 3" },
-//     { "id": 4, "title": "Post 4", "content": "Conteúdo do Post 4" },
-//     { "id": 5, "title": "Post 5", "content": "Conteúdo do Post 5" }
-//   ]
-// }
-
-// json-server --watch db.json --port 3000
-
-// {
-// "posts": [
-//   {
-//     "id": 1,
-//     "title": "Desenvolvedor Web Sênior",
-//     "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
-//     "commentsCount": 1,
-//     "likesCount": 15,
-//     "viewsCount": 100,
-//     "date": "2023-11-30T12:00:00Z"
-//   },
-
-//   {
-//     "id": 2,
-//     "title": "Desenvolvedor Web Sênior",
-//     "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
-//     "commentsCount": 1,
-//     "likesCount": 8,
-//     "viewsCount": 80,
-//     "date": "2023-11-05T12:20:00Z"
-//   },
-
-//    {
-//     "id": 3,
-//     "title": "Desenvolvedor Web Sênior",
-//     "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
-//     "commentsCount": 1,
-//     "likesCount": 1,
-//     "viewsCount": 17,
-//     "date": "2023-11-09T12:17:00Z"
-//   },
-
-//   {
-//     "id": 4,
-//     "title": "Desenvolvedor Web Sênior",
-//     "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
-//     "commentsCount": 1,
-//     "likesCount": 8,
-//     "viewsCount": 56,
-//     "date": "2023-11-12T12:15:00Z"
-//   },
-
-//   {
-//     "id": 5,
-//     "title": "Desenvolvedor Web Sênior",
-//     "content": "O TechMatch está procurando um desenvolvedor web sênior com experiência em...",
-//     "commentsCount": 1,
-//     "likesCount": 11,
-//     "viewsCount": 45,
-//     "date": "2023-11-18T12:09:00Z"  //
-//   }
-// ],
-
-//   "comments": [
-//   {
-//     "id": 1,
-//     "postId": 1,
-//     "text": "Ótima op ortunidade! Estou interessado."
-//   },
-
-//   {
-//     "id": 2,
-//     "postId": 1,
-//     "text": "Ótima oportunidade! Estou interessado."
-//   },
-
-//     {
-//       "id": 3,
-//       "postId": 1,
-//       "text": "Ótima oportunidade! Estou interessado."
-//     },
-
-//       {
-//         "id": 4,
-//         "postId": 1,
-//         "text": "Ótima oportunidade! Estou interessado."
-//       },
-
-//           {
-//           "id": 5,
-//           "postId": 1,
-//           "text": "Ótima oportunidade! Estou interessado."
-//         },
-  
-// ],
-
-//         "likes": [
-//           {
-//             "id": 1,
-//             "postId": 15
-//           },
-
-//         {
-//           "id": 2,
-//           "postId": 8
-//         },
-
-//         {
-//           "id": 3,
-//           "postId": 1
-//         },
-
-//           {
-//           "id": 4,
-//           "postId": 8
-//         },
-
-//         {
-//           "id": 5,
-//           "postId": 11
-//         },
-        
-// ],
-
-//       "views": [
-//           {
-//             "id": 1,
-//             "postId": 100
-//           },
-
-//         {
-//         "id": 2,
-//         "postId": 80
-//       },
-
-//       {
-//         "id": 3,
-//         "postId": 17
-//       },
-
-//       {
-//         "id": 4,
-//         "postId": 46
-//       },
-
-//       {
-//         "id": 5,
-//         "postId": 55
-//       },
-
-//   ]
-// }
+      divPost.innerHTML = strAvaliacao;
+    });
+}

@@ -6,10 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(id);
   let linkHome = document.getElementById("a-Carrossel");
   linkHome.href = `carrossel.html?id=${id}`;
+  let linkCriar = document.getElementById("a-CriarVagas");
+  linkCriar.href = `TelaCriarVagas.html?id=${id}`;
   let linkForum = document.getElementById("a-Forum");
   linkForum.href = `Forum.html?id=${id}`;
   let linkVagaDisp = document.getElementById("a-VagasDisp");
   linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
+  let linkEditar = document.getElementById("a-EditarPerfil");
+  linkEditar.href`TelaEditarPerfil.html?id=${id}`;
   ReceberID(id);
   Vagas(id);
   Avaliacao(id);
@@ -29,6 +33,10 @@ function ReceberID(id) {
 
       if (img) {
         img.src = `${data.imagem}`;
+        name.textContent = `${data.nome}`;
+        descri.textContent = `${data.sobre}`;
+      } else {
+        img.src = `imgs/icon-user.png`;
         name.textContent = `${data.nome}`;
         descri.textContent = `${data.sobre}`;
       }
@@ -178,7 +186,7 @@ function Avaliacao(id) {
                       <div class="container-card-body text-center">
                         <div class="row">
                           <div class="col-md-4">
-                            <img class="icon-user" src="/src/imgs/icon-user.png" />
+                            <img class="icon-user" src="imgs/icon-user.png" />
                             <h6 id="nome-ava">${data[i].nome}</h6>
                           </div>
                           <div class="col-md-8" id="card-2">
