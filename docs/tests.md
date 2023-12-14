@@ -74,11 +74,63 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 **Caso de Teste** | **CT07 - Mostrar e filtrar vagas disponíveis**
  :--------------: | ------------
-**Procedimento**  | 1) Na tela de vagas, deve ser mostrado todas as vagas que estão disponíveis, ou seja, que nenhum freelancer se inscreveu ainda. <br> 2) A tela deve apresentar filtros de vaga. 3) Se o usuário clicar no filtro, serão exibidas as vagas com aquelas informações.
-**Requisitos associados** | RF-005
+**Procedimento**  | 1) Na tela de vagas, deve ser mostrado todas as vagas que estão disponíveis, ou seja, que nenhum freelancer se inscreveu ainda. <br> 2) A tela deve apresentar filtros de vaga. <br> 3) Se o usuário clicar no filtro, serão exibidas as vagas com aquelas informações.
+**Requisitos associados** | RF-005 RF-012
 **Resultado esperado** | Usuário acessa as vagas disponíveis e consegue filtrar.
 **Dados de entrada** | Filtro de vagas.
 **Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT09 - Permitir a empresa cadastrar vagas**
+ :--------------: | ------------
+**Procedimento**  | 1) Na Tela de criar vagas, deve ser apresentado uma função em que a empresa possa adicionar vagas <br> 2) A tela ira mostrar várias opções de detalhes da vaga em que a empresa pode adicionar, 3)As vagas criadas irão aparecer logo em seguida na página.
+**Requisitos associados** | RF-009
+**Resultado esperado** | A empresa poderá registrar vagas.
+**Dados de entrada** | Características da vaga.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT010 - Exibir fórum de dias a usuários**
+ :--------------: | ------------
+**Procedimento**  | 1) A aplicação deve apresentar um atalho que ira direcionar a tela de fórum <br> 2) A tela de fórum deve permitir que os usuários possam interagir com os outros em formato de chat.
+**Requisitos associados** | RF-010 e RF-011.
+**Resultado esperado** | Os usuários poderá interagir no fórum.
+**Dados de entrada** | Clique no atalho "Fórum" da barra de navegação.
+**Resultado obtido** | Não foi concluído.
+
+**Caso de Teste** | **CT010 - Exibir o perfil do freelancer**
+ :--------------: | ------------
+**Procedimento**  | 1) A aplicação deve apresentar um atalho que ira direcionar a tela de perfil do freelancer, onde serão apresentados os dados cadastrados pelo usuário <br> 2) A tela deve apresentar também a sessão se serviços em que estarão todos os trabalhos que o usuário já participou.
+**Requisitos associados** | RF-014.
+**Resultado esperado** | Os freelancers devem conseguir acessar o perfil.
+**Dados de entrada** | Clique no atalho "Perfil" da barra de navegação.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT010 - Exibir o perfil da empresa**
+ :--------------: | ------------
+**Procedimento**  | 1) A aplicação deve apresentar um atalho que ira direcionar a tela de perfil da empresa, onde serão apresentados os dados cadastrados pela firma <br> 2) A tela deve apresentar também a sessão de vagas onde estarão todas as vagas abertas que a empresa oferece aos usuários.
+**Requisitos associados** | RF-015.
+**Resultado esperado** | As empresas irão conseguir acessar o perfil.
+**Dados de entrada** | Clique no atalho "Perfil" da barra de navegação.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT010 - Permitir que empresas e freelancers editem o perfil**
+ :--------------: | ------------
+**Procedimento**  | 1) Na tela de editar perfil, o usuário deve ter a opção de modificar seus dados conforme o necessário <br> 2) Serão disponibilizados campos onde o usuário ira preencher. <br> 3) Essa funcionalidade devera alterar também os dados da página de perfil do usuário
+**Requisitos associados** | RF-016 e RF-018.
+**Resultado esperado** | Os usuários irão conseguir editar o perfil.
+**Dados de entrada** | Clique no atalho "Editar Perfil" da barra de navegação.
+**Resultado obtido** | Sucesso.
+
+**Caso de Teste** | **CT010 - Exibir um chatbot que leva ao WhatsApp**
+ :--------------: | ------------
+**Procedimento**  | 1) O usuário deve ter a opção de ter um chatbot que ira encaminhar para um chat no WhatsApp com a empresa para tirar dúvidas. <br> 2) Essa funcionalidade ficara disponível na tela principal 
+**Requisitos associados** | RF-017.
+**Resultado esperado** | O usuário poderá ser encaminhado para um chat no WhatsApp.
+**Dados de entrada** | Clique no atalho do chatbot na tela principal.
+**Resultado obtido** | Sucesso.
+
+
+
+
 
 ## Registro dos Testes de Software
 
