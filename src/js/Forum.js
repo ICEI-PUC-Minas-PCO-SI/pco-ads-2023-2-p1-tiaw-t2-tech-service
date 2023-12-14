@@ -27,5 +27,3 @@ function filterAll() {
       updateUI(posts);
     });
 }
-
-git;
