@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
           software: "",
           disponivel: "",
         };
-        URL = "http://localhost:3000/usuarios ";
+        URL = "https://tech-servic.vercel.app/usuarios ";
 
         fetch(URL)
           .then(function (response) {
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function postUser(dados) {
-  URL = "http://localhost:3000/usuarios ";
+  URL = "https://tech-servic.vercel.app/usuarios ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -198,7 +198,7 @@ function postUser(dados) {
     });
 }
 function postVagas(dados) {
-  URL = "http://localhost:3000/vagas ";
+  URL = "https://tech-servic.vercel.app/vagas ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -215,7 +215,7 @@ function postVagas(dados) {
 }
 
 function postServicos(dados) {
-  URL = "http://localhost:3000/servicos";
+  URL = "https://tech-servic.vercel.app/servicos";
   fetch(URL, {
     method: "POST",
     headers: {

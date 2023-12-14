@@ -1,54 +1,54 @@
 document.addEventListener("DOMContentLoaded", function () {
-    //Recuperando ID do usuario
-    let params = new URLSearchParams(location.search);
-    console.log(params);
-    let id = params.get("id");
-    console.log(id);
-    let linkHome = document.getElementById("a-Carrossel");
-    linkHome.href = `carrossel.html?id=${id}`;
-    let linkForum = document.getElementById("a-Forum");
-    linkForum.href = `Forum.html?id=${id}`;
-    let linkVagaDisp = document.getElementById("a-VagasDisp");
-    linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
-    ReceberID(id);
-    Servicos(id);
-    Avaliacao(id);
+  //Recuperando ID do usuario
+  let params = new URLSearchParams(location.search);
+  console.log(params);
+  let id = params.get("id");
+  console.log(id);
+  let linkHome = document.getElementById("a-Carrossel");
+  linkHome.href = `carrossel.html?id=${id}`;
+  let linkForum = document.getElementById("a-Forum");
+  linkForum.href = `Forum.html?id=${id}`;
+  let linkVagaDisp = document.getElementById("a-VagasDisp");
+  linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
+  ReceberID(id);
+  Servicos(id);
+  Avaliacao(id);
 });
 
 function ReceberID(id) {
-    let Json = `http://localhost:3000/usuarios/${id}`;
-    fetch(Json)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            let img = document.getElementById("logo-perfil");
-            let name = document.getElementById("perfil-nome");
-            let descri = document.getElementById("desc");
-            console.log(data);
+  let Json = `https://tech-servic.vercel.app/usuarios/${id}`;
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let img = document.getElementById("logo-perfil");
+      let name = document.getElementById("perfil-nome");
+      let descri = document.getElementById("desc");
+      console.log(data);
 
-            if (img) {
-                img.src = `${data.imagem}`;
-                name.textContent = `${data.nome} ${data.sobrenome}`;
-                descri.textContent = `${data.sobre}`;
-            }
-        });
+      if (img) {
+        img.src = `${data.imagem}`;
+        name.textContent = `${data.nome} ${data.sobrenome}`;
+        descri.textContent = `${data.sobre}`;
+      }
+    });
 }
 
 function Servicos(id) {
-    let servicos = "http://localhost:3000/servicos";
-    fetch(servicos)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            let card = document.getElementById("conteudo");
-            let newDiv = document.createElement("div");
-            newDiv.classList.add("newDiv");
-            let strHtml = "";
-            for (let i = 0; i < data.length; i++) {
-                if (data[i].usuario == id) {
-                    strHtml += `
+  let servicos = "https://tech-servic.vercel.app/servicos";
+  fetch(servicos)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let card = document.getElementById("conteudo");
+      let newDiv = document.createElement("div");
+      newDiv.classList.add("newDiv");
+      let strHtml = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].usuario == id) {
+          strHtml += `
                     <div class="card-vagas p-5">
                       <div class="card-body">
                         <div class="container text-center">
@@ -66,58 +66,58 @@ function Servicos(id) {
                         </div>
                       </div>
                     </div>`;
-                }
-            }
-            newDiv.innerHTML = strHtml;
-            card.appendChild(newDiv);
-        });
+        }
+      }
+      newDiv.innerHTML = strHtml;
+      card.appendChild(newDiv);
+    });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const URLComentario = 'http://localhost:3000/comentarios';
-    const avaliacaoForm = document.getElementById('avaliacao-form');
+document.addEventListener("DOMContentLoaded", function () {
+  const URLComentario = "https://tech-servic.vercel.app/comentarios";
+  const avaliacaoForm = document.getElementById("avaliacao-form");
 
-    avaliacaoForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+  avaliacaoForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-        fetch(URLComentario)
-            .then(res => res.json())
-            .then(function (dados) {
-                const comentario = dados;
-                let params = new URLSearchParams(location.search);
-                let id = params.get("id");
-                const avaliacao = {
-                    id: comentario.length + 1,
-                    nome: document.getElementById('nome').value,
-                    usuario: id,
-                    comentario: document.getElementById('comentario').value
-                }
+    fetch(URLComentario)
+      .then((res) => res.json())
+      .then(function (dados) {
+        const comentario = dados;
+        let params = new URLSearchParams(location.search);
+        let id = params.get("id");
+        const avaliacao = {
+          id: comentario.length + 1,
+          nome: document.getElementById("nome").value,
+          usuario: id,
+          comentario: document.getElementById("comentario").value,
+        };
 
-                return fetch(URLComentario, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(avaliacao)
-                });
-            })
-            .then(res => res.json())
-            .catch(error => console.error('Erro:', error));
-    });
+        return fetch(URLComentario, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(avaliacao),
+        });
+      })
+      .then((res) => res.json())
+      .catch((error) => console.error("Erro:", error));
+  });
 });
 
 function Avaliacao(id) {
-    let divComentario = document.getElementById('cards');
-    let Json = `http://localhost:3000/comentarios`;
-    fetch(Json)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            let strAvaliacao = '';
-            for(let i = 0; i < data.length; i++){
-                if (data[i].usuario == id) {
-                    strAvaliacao += `<div class="col">
+  let divComentario = document.getElementById("cards");
+  let Json = `https://tech-servic.vercel.app/comentarios`;
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let strAvaliacao = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].usuario == id) {
+          strAvaliacao += `<div class="col">
                     <div class="card">
                       <div class="card-body">
                         <div class="container-card-body text-center">
@@ -136,10 +136,9 @@ function Avaliacao(id) {
                       </div>
                     </div>
                   </div>`;
-                }
-            }
+        }
+      }
 
-            divComentario.innerHTML = strAvaliacao;
-        });
+      divComentario.innerHTML = strAvaliacao;
+    });
 }
-

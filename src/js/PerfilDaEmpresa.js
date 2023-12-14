@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function ReceberID(id) {
-  let Json = `http://localhost:3000/usuarios/${id}`;
+  let Json = `https://tech-servic.vercel.app/usuarios/${id}`;
   fetch(Json)
     .then(function (response) {
       return response.json();
@@ -81,7 +81,7 @@ function ReceberID(id) {
 // }
 
 function Vagas(id) {
-  let vagas = "http://localhost:3000/vagas";
+  let vagas = "https://tech-servic.vercel.app/vagas";
   fetch(vagas)
     .then(function (response) {
       return response.json();
@@ -96,7 +96,7 @@ function Vagas(id) {
         for (let i = 0; i < data.length; i++) {
           const vagaAtual = data[i];
 
-          if(vagaAtual.idE == id){
+          if (vagaAtual.idE == id) {
             if (vagaAtual.nomeVaga && vagaAtual.descricao && vagaAtual.imagem) {
               strHtml += `
               <div class="card-vagas p-5">
@@ -128,51 +128,51 @@ function Vagas(id) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const URLComentario = 'http://localhost:3000/comentarios';
-  const avaliacaoForm = document.getElementById('avaliacao-form');
+document.addEventListener("DOMContentLoaded", function () {
+  const URLComentario = "https://tech-servic.vercel.app/comentarios";
+  const avaliacaoForm = document.getElementById("avaliacao-form");
 
-  avaliacaoForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  avaliacaoForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-      fetch(URLComentario)
-          .then(res => res.json())
-          .then(function (dados) {
-              const comentario = dados;
-              let params = new URLSearchParams(location.search);
-              let id = params.get("id");
-              const avaliacao = {
-                  id: comentario.length + 1,
-                  nome: document.getElementById('nome').value,
-                  usuario: id,
-                  comentario: document.getElementById('comentario').value
-              }
+    fetch(URLComentario)
+      .then((res) => res.json())
+      .then(function (dados) {
+        const comentario = dados;
+        let params = new URLSearchParams(location.search);
+        let id = params.get("id");
+        const avaliacao = {
+          id: comentario.length + 1,
+          nome: document.getElementById("nome").value,
+          usuario: id,
+          comentario: document.getElementById("comentario").value,
+        };
 
-              return fetch(URLComentario, {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify(avaliacao)
-              });
-          })
-          .then(res => res.json())
-          .catch(error => console.error('Erro:', error));
+        return fetch(URLComentario, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(avaliacao),
+        });
+      })
+      .then((res) => res.json())
+      .catch((error) => console.error("Erro:", error));
   });
 });
 
 function Avaliacao(id) {
-  let divComentario = document.getElementById('cards');
-  let Json = `http://localhost:3000/comentarios`;
+  let divComentario = document.getElementById("cards");
+  let Json = `https://tech-servic.vercel.app/comentarios`;
   fetch(Json)
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (data) {
-          let strAvaliacao = '';
-          for(let i = 0; i < data.length; i++){
-              if (data[i].usuario == id) {
-                  strAvaliacao += `<div class="col">
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let strAvaliacao = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].usuario == id) {
+          strAvaliacao += `<div class="col">
                   <div class="card">
                     <div class="card-body">
                       <div class="container-card-body text-center">
@@ -191,9 +191,9 @@ function Avaliacao(id) {
                     </div>
                   </div>
                 </div>`;
-              }
-          }
+        }
+      }
 
-          divComentario.innerHTML = strAvaliacao;
-      });
+      divComentario.innerHTML = strAvaliacao;
+    });
 }

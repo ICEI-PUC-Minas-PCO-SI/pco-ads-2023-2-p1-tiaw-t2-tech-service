@@ -7,7 +7,7 @@ linkForum.href = `Forum.html?id=${id}`;
 linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 linkCarrosel.href = `carrossel.html?id=${id}`;
 
-fetch("http://localhost:3000/usuarios")
+fetch("https://tech-servic.vercel.app/usuarios")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);

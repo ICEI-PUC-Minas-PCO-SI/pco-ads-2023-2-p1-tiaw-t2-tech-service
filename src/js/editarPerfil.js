@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   //Chamando JSONServer User
-  fetch(`http://localhost:3000/usuarios/${id}`)
+  fetch(`https://tech-servic.vercel.app/usuarios/${id}`)
     .then(function (response) {
       return response.json();
     })
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Metodo PUT Perfil User
   function putUse(dados) {
-    URL = `http://localhost:3000/usuarios/${id}`;
+    URL = `https://tech-servic.vercel.app/usuarios/${id}`;
     fetch(URL, {
       method: "PUT",
       headers: {
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let receberServ = [];
   //Chamando JSONServer Serviço
   function carregarJsonServ(dados) {
-    fetch("http://localhost:3000/servicos")
+    fetch("https://tech-servic.vercel.app/servicos")
       .then(function (response) {
         return response.json();
       })
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Funçao FETC POSTServ
   function postServicos(dados) {
-    fetch("http://localhost:3000/servicos", {
+    fetch("https://tech-servic.vercel.app/servicos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Excluir(value) {
   document.querySelector(`.div-container[data-value="${value}"]`).remove();
-  fetch(`http://localhost:3000/servicos/${value}`, {
+  fetch(`https://tech-servic.vercel.app/servicos/${value}`, {
     method: "DELETE",
   }).then((response) => console.log("Item excluido"));
 }

@@ -13,7 +13,7 @@ linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
 //Recuperando ID do usuario
 let recebeAPI = [];
 
-fetch(`http://localhost:3000/usuarios/${id}`)
+fetch(`https://tech-servic.vercel.app/usuarios/${id}`)
   .then(function (response) {
     return response.json();
   })
@@ -244,7 +244,7 @@ newVaga.addEventListener("click", async function (ev) {
 });
 
 function postVagas(dados) {
-  fetch("http://localhost:3000/vagas", {
+  fetch("https://tech-servic.vercel.app/vagas", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -256,7 +256,7 @@ function postVagas(dados) {
 }
 getVagas();
 function getVagas() {
-  fetch("http://localhost:3000/vagas")
+  fetch("https://tech-servic.vercel.app/vagas")
     .then((response) => response.json())
     .then(function (data) {
       let container = document.getElementById("vagas-criadas");
@@ -307,7 +307,7 @@ function getVagas() {
 }
 function Excluir(value) {
   document.querySelector(`.div-container[data-value="${value}"]`).remove();
-  fetch(`http://localhost:3000/vagas/${value}`, {
+  fetch(`https://tech-servic.vercel.app/vagas/${value}`, {
     method: "DELETE",
   }).then((response) => console.log("Item excluido"));
 }

@@ -8,8 +8,8 @@ aVagas.href = `VagasDisponiveis.html?id${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 
 let slideAtual = 0;
-let URLVagas = "http://localhost:3000/vagas";
-let URLServicos = "http://localhost:3000/servicos";
+let URLVagas = "https://tech-servic.vercel.app/vagas";
+let URLServicos = "https://tech-servic.vercel.app/servicos";
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";
@@ -66,7 +66,7 @@ function criarSlide(slideAtual) {
                     </div>
                 </div>
         </div>`;
-        }else{
+        } else {
           strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
             <div class="header d-flex justify-content-around my-5">
                 <i class="fas fa-fire fs-2"></i>
@@ -121,11 +121,10 @@ function aceitarVaga() {
               <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
         </div>`;
-      divConteudo.innerHTML = strCarrossel;
-  }else{
+    divConteudo.innerHTML = strCarrossel;
+  } else {
     criarSlide(slideAtual);
   }
-  
 }
 
 function recusarVaga() {
@@ -146,7 +145,7 @@ function recusarVaga() {
             </div>
         </div>`;
     document.querySelector("#tela").innerHTML = strCarrossel;
-  }else{
+  } else {
     criarSlide(slideAtual);
   }
 }
@@ -196,11 +195,11 @@ function cadastraServico(slideAtual) {
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch(URLVagas)
-  .then(res => res.json())
-  .then(function(dados){
-    vagas = dados;
-    if (slideAtual >= vagas.length) {
-      strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
+    .then((res) => res.json())
+    .then(function (dados) {
+      vagas = dados;
+      if (slideAtual >= vagas.length) {
+        strCarrossel = `<div class="container bg-light p-4 w-75 h-75 mt-5 rounded-5">
               <div class="header d-flex justify-content-around my-5">
                   <i class="fas fa-fire fs-2"></i>
                   <i class="fas fa-comments fs-2"></i>
@@ -211,9 +210,9 @@ document.addEventListener("DOMContentLoaded", function () {
               <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
           </div>`;
-      document.querySelector("#tela").innerHTML = strCarrossel;
-    }else{
-      criarSlide(slideAtual);
-    }
-  })
+        document.querySelector("#tela").innerHTML = strCarrossel;
+      } else {
+        criarSlide(slideAtual);
+      }
+    });
 });
