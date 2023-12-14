@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "jso-server": "^0.17.0"
+    "json-server": "^0.17.0"
   },
   "name": "api-storage-tiaw",
   "version": "1.0.0",
