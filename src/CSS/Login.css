@@ -144,3 +144,25 @@ align-items: center;}
 .register-link p a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 99%;
+  }
+
+  .wrapper h1 {
+    font-size: 30px;
+  }
+
+  .wrapper .input-box input {
+    font-size: 14px;
+  }
+
+  .remember-forgot {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 90%;
+  }
+}
