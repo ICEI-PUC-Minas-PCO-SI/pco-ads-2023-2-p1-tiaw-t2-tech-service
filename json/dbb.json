@@ -1,0 +1,115 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "login": "admin",
+      "senha": "admin",
+      "senha2": "",
+      "nome": "Brandex",
+      "sobrenome": "Brandao",
+      "data": "",
+      "sobre": "Desenvolvedor do site",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "servicos": "",
+      "tipo": 1
+    },
+    {
+      "id": 1,
+      "login": "Juninho",
+      "senha": "123456",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "11/11/1111",
+      "sobre": "Desenvolvedor do site",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": "",
+      "tipo": 2
+    },
+    {
+      "id": 2,
+      "login": "Marcs",
+      "senha": "123456",
+      "senha2": "123456",
+      "nome": "Rafael",
+      "sobrenome": "Brandao",
+      "data": "11/11/11111",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": "",
+      "tipo": 1
+    },
+    {
+      "id": 3,
+      "login": "Jose",
+      "senha": "123456",
+      "senha2": "123456",
+      "nome": "DG",
+      "sobrenome": "Brandao",
+      "data": "01/11/0011",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": "",
+      "tipo": 1
+    },
+    {
+      "id": 4,
+      "nome": "Ana",
+      "data": "",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "servicos": "",
+      "tipo": 1
+    }
+  ],
+  "vagas": [],
+  "servicos": [
+    {
+      "id": 1,
+      "title": "Programador",
+      "descricao": ". Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
+      "empresa": "0",
+      "usuario": "0",
+      "idE": 0
+    },
+    {
+      "id": 2,
+      "title": "Desenvolvedor",
+      "descricao": "Localiza Rent a Car, conhecida apenas como Localiza, é uma rede brasileira de lojas especializadas em aluguel de carros,",
+      "empresa": "4",
+      "usuario": "0",
+      "idE": 0
+    },
+    {
+      "id": 3,
+      "title": "Designer",
+      "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
+      "empresa": "4",
+      "usuario": "0"
+    },
+    {
+      "id": 4,
+      "title": "Localiza",
+      "descricao": "Nada de mais ",
+      "empresa": "4",
+      "usuario": "0"
+    },
+    {
+      "id": 5,
+      "title": "dfasdf",
+      "descricao": "asdfsfd",
+      "empresa": "0",
+      "usuario": "0"
+    }
+  ]
+}
