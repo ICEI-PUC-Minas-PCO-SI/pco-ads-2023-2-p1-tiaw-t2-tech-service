@@ -1,6 +1,6 @@
-Rafael:
+Rafael: Fui responsável por fazer as funcionalidades de login e cadastro, tela de criar vagas e editar perfil, fiz alterações visuais no site, dei auxílio aos membros do grupo e fui responsável por fazer o deploy do projeto.
 
-Alice: Fui responsável por fazer as funcionalidades referentes a tela principal (aceitar e negar vagas), refiz a tela de vagas disponíveis cadastrando com JSONServer, chat com whatsapp, alterações visuais em todas as telas e ajudei na criação dos casos de teste.
+Alice: Fui responsável por fazer as funcionalidades referentes a tela principal (aceitar e negar vagas), fórum, refiz a tela de vagas disponíveis cadastrando com JSONServer, chat com whatsapp, alterações visuais em todas as telas e ajudei na criação dos casos de teste.
 
 Gabriel: Fui responsavel por arrumar a responsividade das telas de Login/Cadastro, ajudei na tomada de decisões e documentação.
 
