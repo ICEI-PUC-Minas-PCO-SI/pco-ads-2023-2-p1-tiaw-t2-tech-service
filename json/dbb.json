@@ -163,5 +163,21 @@
       "usuario": "4",
       "comentario": "Empresa muito profissional e preocupada com os trabalhadores."
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "nome": "DG",
+      "usuario": "3",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "comentario": "aaaaaaaaa"
+    },
+    {
+      "id": 2,
+      "nome": "Rafael",
+      "usuario": "2",
+      "imagem": "",
+      "comentario": "BBBBBBBBBBBBBBBB"
+    }
   ]
 }

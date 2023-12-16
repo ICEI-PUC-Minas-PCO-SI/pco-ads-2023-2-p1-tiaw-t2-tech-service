@@ -13,7 +13,7 @@ linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
 //Recuperando ID do usuario
 let recebeAPI = [];
 
-fetch(`https://tech-servic.vercel.app/usuarios/${id}`)
+fetch(`https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`)
   .then(function (response) {
     return response.json();
   })
@@ -244,7 +244,7 @@ newVaga.addEventListener("click", async function (ev) {
 });
 
 function postVagas(dados) {
-  fetch("https://tech-servic.vercel.app/vagas", {
+  fetch("https://jsonserver-techmatch--brandds.repl.co/vagas", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -252,11 +252,11 @@ function postVagas(dados) {
     body: JSON.stringify(dados),
   })
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {});
 }
 getVagas();
 function getVagas() {
-  fetch("https://tech-servic.vercel.app/vagas")
+  fetch("https://jsonserver-techmatch--brandds.repl.co/vagas")
     .then((response) => response.json())
     .then(function (data) {
       let container = document.getElementById("vagas-criadas");
@@ -307,7 +307,7 @@ function getVagas() {
 }
 function Excluir(value) {
   document.querySelector(`.div-container[data-value="${value}"]`).remove();
-  fetch(`https://tech-servic.vercel.app/vagas/${value}`, {
+  fetch(`https://jsonserver-techmatch--brandds.repl.co/vagas/${value}`, {
     method: "DELETE",
   }).then((response) => console.log("Item excluido"));
 }

@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
           software: "",
           disponivel: "",
         };
-        URL = "https://tech-servic.vercel.app/usuarios ";
+        URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios ";
 
         fetch(URL)
           .then(function (response) {
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function postUser(dados) {
-  URL = "https://tech-servic.vercel.app/usuarios ";
+  URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -198,7 +198,7 @@ function postUser(dados) {
     });
 }
 function postVagas(dados) {
-  URL = "https://tech-servic.vercel.app/vagas ";
+  URL = "https://jsonserver-techmatch--brandds.repl.co/vagas ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -215,7 +215,7 @@ function postVagas(dados) {
 }
 
 function postServicos(dados) {
-  URL = "https://tech-servic.vercel.app/servicos";
+  URL = "https://jsonserver-techmatch--brandds.repl.co/servicos";
   fetch(URL, {
     method: "POST",
     headers: {

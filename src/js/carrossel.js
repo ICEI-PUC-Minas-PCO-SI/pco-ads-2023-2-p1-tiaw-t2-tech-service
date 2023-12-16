@@ -4,12 +4,12 @@ console.log(params);
 let id = params.get("id");
 let aPerfil = document.getElementById("a-Perfil");
 let aVagas = document.getElementById("a-Vagas");
-aVagas.href = `VagasDisponiveis.html?id${id}`;
+aVagas.href = `VagasDisponiveis.html?id=${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 
 let slideAtual = 0;
-let URLVagas = "https://tech-servic.vercel.app/vagas";
-let URLServicos = "https://tech-servic.vercel.app/servicos";
+let URLVagas = "https://jsonserver-techmatch--brandds.repl.co/vagas";
+let URLServicos = "https://jsonserver-techmatch--brandds.repl.co/servicos";
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";

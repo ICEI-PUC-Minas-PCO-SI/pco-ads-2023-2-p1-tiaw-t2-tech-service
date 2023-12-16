@@ -22,7 +22,7 @@ function closeForm() {
 }
 
 function filterAll() {
-  fetch("https://tech-servic.vercel.app/posts")
+  fetch("https://jsonserver-techmatch--brandds.repl.co/posts")
     .then((response) => response.json())
     .then((posts) => {
       updateUI(posts);
@@ -30,8 +30,8 @@ function filterAll() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const URLUsuario = "https://tech-servic.vercel.app/usuarios";
-  const URLPost = "https://tech-servic.vercel.app/posts";
+  const URLUsuario = "https://jsonserver-techmatch--brandds.repl.co/usuarios";
+  const URLPost = "https://jsonserver-techmatch--brandds.repl.co/posts";
   const postForm = document.getElementById("post-form");
 
   postForm.addEventListener("submit", (e) => {
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Posts(id) {
   let divPost = document.getElementById("cards");
-  let Json = `https://tech-servic.vercel.app/posts`;
+  let Json = `https://jsonserver-techmatch--brandds.repl.co/posts`;
   fetch(Json)
     .then(function (response) {
       return response.json();

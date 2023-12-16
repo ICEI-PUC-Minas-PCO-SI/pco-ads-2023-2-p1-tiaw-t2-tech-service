@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
   linkCriar.href = `TelaCriarVagas.html?id=${id}`;
   linkHome.href = `carrossel.html?id=${id}`;
   let linkForum = document.getElementById("a-Forum");
+  let linkEdit = document.getElementById("a-EditarPerfil");
+  linkEdit.href = `TelaEditarPerfil.html?id=${id}`;
   linkForum.href = `Forum.html?id=${id}`;
   let linkVagaDisp = document.getElementById("a-VagasDisp");
   linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function ReceberID(id) {
-  let Json = `https://tech-servic.vercel.app/usuarios/${id}`;
+  let Json = `https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`;
   fetch(Json)
     .then(function (response) {
       return response.json();
@@ -42,7 +44,7 @@ function ReceberID(id) {
 }
 
 function Servicos(id) {
-  let servicos = "https://tech-servic.vercel.app/servicos";
+  let servicos = "https://jsonserver-techmatch--brandds.repl.co/servicos";
   fetch(servicos)
     .then(function (response) {
       return response.json();
@@ -80,7 +82,8 @@ function Servicos(id) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const URLComentario = "https://tech-servic.vercel.app/comentarios";
+  const URLComentario =
+    "https://jsonserver-techmatch--brandds.repl.co/comentarios";
   const avaliacaoForm = document.getElementById("avaliacao-form");
 
   avaliacaoForm.addEventListener("submit", (e) => {
@@ -114,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Avaliacao(id) {
   let divComentario = document.getElementById("cards");
-  let Json = `https://tech-servic.vercel.app/comentarios`;
+  let Json = `https://jsonserver-techmatch--brandds.repl.co/comentarios`;
   fetch(Json)
     .then(function (response) {
       return response.json();

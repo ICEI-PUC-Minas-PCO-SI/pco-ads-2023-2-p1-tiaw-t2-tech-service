@@ -1,4 +1,4 @@
-URL = "https://tech-servic.vercel.app/usuarios";
+URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios";
 let mensagerSucc = document.getElementById("mensagerSucc");
 mensagerSucc.style.display = "none";
 mensagerSucc.style.color = "green";

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function ReceberID(id) {
-  let Json = `https://tech-servic.vercel.app/usuarios/${id}`;
+  let Json = `https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`;
   fetch(Json)
     .then(function (response) {
       return response.json();
@@ -89,7 +89,7 @@ function ReceberID(id) {
 // }
 
 function Vagas(id) {
-  let vagas = "https://tech-servic.vercel.app/vagas";
+  let vagas = "https://jsonserver-techmatch--brandds.repl.co/vagas";
   fetch(vagas)
     .then(function (response) {
       return response.json();
@@ -137,7 +137,8 @@ function Vagas(id) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const URLComentario = "https://tech-servic.vercel.app/comentarios";
+  const URLComentario =
+    "https://jsonserver-techmatch--brandds.repl.co/comentarios";
   const avaliacaoForm = document.getElementById("avaliacao-form");
 
   avaliacaoForm.addEventListener("submit", (e) => {
@@ -171,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Avaliacao(id) {
   let divComentario = document.getElementById("cards");
-  let Json = `https://tech-servic.vercel.app/comentarios`;
+  let Json = `https://jsonserver-techmatch--brandds.repl.co/comentarios`;
   fetch(Json)
     .then(function (response) {
       return response.json();

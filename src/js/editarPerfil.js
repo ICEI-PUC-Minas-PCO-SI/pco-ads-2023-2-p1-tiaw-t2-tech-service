@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   //Chamando JSONServer User
-  fetch(`https://tech-servic.vercel.app/usuarios/${id}`)
+  fetch(`https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`)
     .then(function (response) {
       return response.json();
     })
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Metodo PUT Perfil User
   function putUse(dados) {
-    URL = `https://tech-servic.vercel.app/usuarios/${id}`;
+    URL = `https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`;
     fetch(URL, {
       method: "PUT",
       headers: {
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let receberServ = [];
   //Chamando JSONServer Serviço
   function carregarJsonServ(dados) {
-    fetch("https://tech-servic.vercel.app/servicos")
+    fetch("https://jsonserver-techmatch--brandds.repl.co/servicos")
       .then(function (response) {
         return response.json();
       })
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Funçao FETC POSTServ
   function postServicos(dados) {
-    fetch("https://tech-servic.vercel.app/servicos", {
+    fetch("https://jsonserver-techmatch--brandds.repl.co/servicos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function Excluir(value) {
   document.querySelector(`.div-container[data-value="${value}"]`).remove();
-  fetch(`https://tech-servic.vercel.app/servicos/${value}`, {
+  fetch(`https://jsonserver-techmatch--brandds.repl.co/servicos/${value}`, {
     method: "DELETE",
   }).then((response) => console.log("Item excluido"));
 }

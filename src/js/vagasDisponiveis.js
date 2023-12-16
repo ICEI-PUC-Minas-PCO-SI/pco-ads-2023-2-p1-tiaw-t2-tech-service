@@ -6,7 +6,7 @@ let aForum = document.getElementById("a-Forum");
 aForum.href = `Forum.html?id=${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 namee.href = `carrossel.html?id=${id}`;
-URLVagas = "https://tech-servic.vercel.app/vagas";
+URLVagas = "https://jsonserver-techmatch--brandds.repl.co/vagas";
 
 function carregarVagas() {
   let divVaga = document.getElementById("job-list");
