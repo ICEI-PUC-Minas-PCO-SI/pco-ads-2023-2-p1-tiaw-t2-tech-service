@@ -14,9 +14,15 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/VagasDisponiveis.css" />
+    <script src="js/vagasdisp.js" defer></script>
     <title>Tech Match</title>
   </head>
+
   <body class="overflow-x-hidden">
     <!-- Navbar com menu mobile-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-3">
@@ -55,81 +61,77 @@
               class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
             >
               <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  id="a-Carrossel"
+                  href="/src/HTML/carrossel.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#footer-sobre">Sobre</a>
+                <a
+                  class="nav-link"
+                  id="a-Perfil"
+                  href="/src/HTML/PerfilDaEmpresa.html"
+                  >Perfil</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="a-Forum" href="/src/HTML/Forum.html"
+                  >Fórum</a
+                >
               </li>
               <li class="nav-item mx-2">
                 <a class="nav-link" href="#footer-midia">Contato</a>
               </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="Forum.html">Fórum</a>
-              </li>
             </ul>
-            <!-- Login/ Cadastro-->
+            <!-- Sair-->
             <div
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
-              <a
-                href="Cadastro.html"
-                class="text-white text-decoration-none px-3 py-1 rounded-4"
-                style="background-color: #f94ca4"
-                >Cadastro</a
-              >
-              <a
-                href="Login.html"
-                class="text-white text-decoration-none px-3 py-1 rounded-4"
-                style="background-color: #f94ca4"
-                >Login</a
-              >
+              <a class="nav-link p-1" href="index.html" id="a-sair">Sair</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
     <!--Main-->
-    <div class="container mt-5 mb-5 p-3">
-      <div class="row justify-content-center align-items-center gap-5">
-        <div class="col-md-5 col-sm-12 mt-sm-5 mt-md-0">
-          <h1 class="text-white fs-sm-3">Tech Match</h1>
-          <p class="text-white fs-md-5 fs-sm-6">
-            Conectando talentos e oportunidades com o poder de um deslize. Seu
-            próximo projeto está a um match de distância!
-          </p>
-          <h4 class="text-white mt-4 mb-4">Venha nos conhecer:</h4>
-          <div
-            class="d-flex flex-column justify-content-center align-items-center gap-3"
-          >
-            <a
-              href="Cadastro.html"
-              class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
-              style="background-color: #f94ca4"
-              >Cadastro</a
+    <h1 class="titulo mb-5">Vagas Disponíveis</h1>
+    <div id="job-list"></div>
+
+    <div
+      class="modal fade"
+      id="vaga-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="vaga-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Detalhes da Vaga</h5>
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
             >
-            <a
-              href="Login.html"
-              class="text-white text-decoration-none px-3 py-2 w-50 text-center rounded-4 fs-6"
-              style="background-color: #f94ca4"
-              >Login</a
-            >
+              <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+            </button>
           </div>
-        </div>
-        <div class="col-md-5 col-sm-10 ms-3">
-          <img
-            src="imgs/icon-grande.png"
-            alt="Ícone grande"
-            class="img-fluid w-md-100 w-sm-75"
-          />
+          <div class="modal-body" id="vagaModalBody"></div>
         </div>
       </div>
     </div>
+
     <!--Footer-->
     <div class="container mb-5 footer-container">
       <div class="row">
         <div class="col-md-7">
           <h3 class="text-white">Sobre a empresa</h3>
-          <p class="text-white mt-3" id="footer-sobre">
+          <p class="text-white mt-3">
             TechMatch: A plataforma que une talento e oportunidade com a
             facilidade de um deslize. Encontre seu próximo projeto de forma
             rápida e eficiente. Sua jornada freelancer começa aqui!
@@ -137,7 +139,6 @@
         </div>
         <div
           class="col-md-5 d-flex align-items-center justify-content-center gap-3"
-          id="footer-midia"
         >
           <a href="#">
             <img
@@ -176,3 +177,6 @@
     </div>
   </body>
 </html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/vagasDisponiveis.js"></script>

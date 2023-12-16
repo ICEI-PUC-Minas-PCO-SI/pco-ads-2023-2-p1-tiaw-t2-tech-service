@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
 body {
   width: 100%;
-  background-color: rgba(75, 0, 130, 0.6);
+  background: rgb(230, 63, 251);
+  background: radial-gradient(circle, rgba(230, 63, 251, 1) 0%, rgba(116, 52, 169, 1) 100%);
   font-family: "Poppins", sans-serif;
 }
 
@@ -13,17 +16,20 @@ body {
   border-radius: 20px;
   justify-content: center;
 }
+
 #btn-sair {
   border-radius: 20px;
   height: 35px;
   width: 50px;
 }
+
 #desc {
   font-size: 1.2rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
   color: #fff;
 }
+
 .title-serv {
   font-size: 1.7rem;
   font-family: "Times New Roman", Times, serif;
@@ -35,23 +41,21 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .img-Serv {
   width: 150px;
   height: 150px;
   border-radius: 100px;
 }
+
 .img-logo {
   margin-left: 30px;
 }
+
 .container-body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-}
-.linha {
-  background-color: black;
-  height: 2px;
-  margin-top: 50px;
 }
 
 .logo-perfil {
@@ -68,9 +72,11 @@ body {
   margin-bottom: 30px;
   padding-right: 100px;
 }
+
 .subtitle {
   text-align: center;
 }
+
 .avaliacoes {
   grid-column: 1;
   grid-row: 2/4;
@@ -81,23 +87,26 @@ body {
   margin-top: 50px;
   text-align: center;
 }
+
 .title-avaliacoes {
   margin-top: 50px;
   text-align: center;
 }
+
 .container-Serv {
   display: flex;
   flex-direction: column;
   background-color: aliceblue;
   padding: 20px;
-  border: 4px solid black;
   gap: 10px;
 }
+
 .icon-vagas {
-  width: 70%;
+  width: 90%;
   padding: 10px;
   border-radius: 100px;
 }
+
 #conteudo {
   overflow: auto;
   height: 500px;
@@ -106,7 +115,6 @@ body {
 .card-vagas {
   margin-top: 10px;
   width: 80%;
-  height: 20%;
   background-color: white;
   border-radius: 10px;
   margin-left: 50px;
@@ -118,6 +126,7 @@ body {
   margin-left: 100px;
   width: 80%;
 }
+
 .icon-user {
   width: 40%;
   border-radius: 500%;
@@ -131,6 +140,7 @@ body {
 .slider-box-1 {
   margin-top: 50px;
 }
+
 .card {
   height: 80%;
   width: 90%;
@@ -142,20 +152,20 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .vagas {
   grid-row: 1/4;
   grid-column: 2;
-  border-left: 2px solid black;
+  border-left: 2px solid rgb(255, 255, 255);
   padding-left: 50px;
   padding-top: 70px;
   padding-right: 20px;
 }
+
 nav {
-  border-bottom: 2px solid black;
+  margin-bottom: 30px;
 }
-#footer-midia {
-  border-top: 2px solid black;
-}
+
 .edit {
   border-radius: 10px;
   height: 40px;
@@ -167,6 +177,7 @@ nav {
   body {
     height: 100%;
   }
+
   #desc {
     margin-left: 50px;
     width: 250px;
@@ -181,12 +192,14 @@ nav {
   #perfil-nome {
     margin-left: -400px;
   }
+
   #logo-perfil {
     width: 250px;
     height: 250px;
     margin-top: 120px;
     margin-left: 300px;
   }
+
   #desc {
     margin-right: 100px;
   }
@@ -194,9 +207,11 @@ nav {
   .subtitle-1 {
     white-space: nowrap;
   }
+
   .star-icon {
     font-size: 20px;
   }
+
   .icon-user {
     width: 60px;
   }
@@ -206,13 +221,18 @@ nav {
     height: 150px;
     margin-left: 100px;
   }
+
+  .cards{margin: 0 auto;}
+
   .icon-vagas {
     width: 200px;
     margin-top: 30px;
   }
+
   .card-body {
     font-size: 15px;
   }
+
   .sidebar {
     background-color: rgba(75, 0, 130, 0.7);
     backdrop-filter: blur(10px);
@@ -222,9 +242,11 @@ nav {
     display: flex;
     flex-direction: column;
   }
+
   #vagas {
     margin-bottom: 50px;
   }
+
   .subtitle-1 {
     font-size: 35px;
   }
@@ -254,10 +276,12 @@ nav {
   .vagas {
     border-top: 2px solid black;
   }
+
   .servicos {
     font-size: 35px;
     margin-left: -200px;
   }
+
   .card-vagas {
     padding: 15px;
     width: 600px;
@@ -270,6 +294,7 @@ nav {
     width: 300px;
     height: 300px;
   }
+
   #desc {
     margin-top: 350px;
     margin-left: -250px;
@@ -287,15 +312,18 @@ nav {
   .servicos {
     font-size: 35px;
   }
+
   .card-vagas {
     padding: 15px;
     width: 560px;
     margin-left: 10px;
   }
+
   .card {
     margin-left: 30px;
   }
 }
+
 @media (max-width: 770px) {
   #perfil-nome {
     margin-left: -300px;
@@ -316,6 +344,7 @@ nav {
   .card {
     width: 450px;
   }
+
   .star-icon {
     font-size: 25px;
   }
@@ -330,6 +359,7 @@ nav {
     width: 300px;
     margin-left: 120px;
   }
+
   #nome-ava {
     margin-left: -300px;
     font-size: 18px;
@@ -340,17 +370,21 @@ nav {
   #perfil-nome {
     margin-left: -100px;
   }
+
   .subtitle-1 {
     font-size: 35px;
   }
+
   .card {
     margin-left: -10px;
   }
+
   #logo-perfil {
     margin-left: 120px;
     width: 300px;
     height: 300px;
   }
+
   #desc {
     font-size: 16px;
     margin-left: -150px;
@@ -367,6 +401,7 @@ nav {
     margin-left: -10px;
     padding: 10px;
   }
+
   #descVaga {
     margin-left: -80px;
     width: 300px;
@@ -378,6 +413,7 @@ nav {
     margin-left: -50px;
     padding: 0px;
   }
+
   .nome-ava {
     font-size: 10px;
   }
@@ -390,6 +426,7 @@ nav {
 
     margin-left: 160px;
   }
+
   #desc {
     margin-top: 300px;
     width: 450px;
@@ -401,6 +438,7 @@ nav {
     height: 150px;
     margin-left: -10px;
   }
+
   #descVaga {
     font-size: 10px;
     margin-left: -80px;

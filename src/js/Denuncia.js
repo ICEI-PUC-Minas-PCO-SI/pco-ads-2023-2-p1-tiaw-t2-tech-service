@@ -7,7 +7,7 @@ linkForum.href = `Forum.html?id=${id}`;
 linkPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 linkCarrosel.href = `carrossel.html?id=${id}`;
 
-fetch("http://localhost:3000/usuarios")
+fetch("https://tech-servic.vercel.app/usuarios")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -26,7 +26,7 @@ fetch("http://localhost:3000/usuarios")
       } else {
         userS += `
       <div class="Denu-User">
-        <img src="../imgs/icon-user.png" alt="Minha Figura" class="img-Denu">
+        <img src="imgs/icon-user.png" alt="Minha Figura" class="img-Denu">
         <p class="Parahrap-Denu">${data[i].nome}</p>
       </div>
       `;

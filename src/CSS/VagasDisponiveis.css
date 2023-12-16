@@ -33,7 +33,7 @@ body {
 }
 
 .card.job-card {
-  min-height: 300px; 
+  min-height: 300px;
   max-height: 300px;
 }
 
@@ -90,5 +90,4 @@ body {
 #job-details {
   margin: 20px;
   font-weight: bold;
-  
 }

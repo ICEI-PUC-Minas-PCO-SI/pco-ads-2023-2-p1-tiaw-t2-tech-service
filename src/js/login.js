@@ -1,4 +1,4 @@
-URL = "http://localhost:3000/usuarios";
+URL = "https://tech-servic.vercel.app/usuarios";
 let mensagerSucc = document.getElementById("mensagerSucc");
 mensagerSucc.style.display = "none";
 mensagerSucc.style.color = "green";

@@ -6,20 +6,21 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(id);
   let linkHome = document.getElementById("a-Carrossel");
   linkHome.href = `carrossel.html?id=${id}`;
+  let linkCriar = document.getElementById("a-CriarVagas");
+  linkCriar.href = `TelaCriarVagas.html?id=${id}`;
   let linkForum = document.getElementById("a-Forum");
   linkForum.href = `Forum.html?id=${id}`;
   let linkVagaDisp = document.getElementById("a-VagasDisp");
   linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
   let linkEditar = document.getElementById("a-EditarPerfil");
-  linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
-  let linkCriarVa = document.getElementById("a-CriarVagas");
-  linkCriarVa.href = `TelaCriarVagas.html?id=${id}`;
+  linkEditar.href`TelaEditarPerfil.html?id=${id}`;
   ReceberID(id);
-  Servicos(id);
+  Vagas(id);
+  Avaliacao(id);
 });
 
 function ReceberID(id) {
-  let Json = `http://localhost:3000/usuarios/${id}`;
+  let Json = `https://tech-servic.vercel.app/usuarios/${id}`;
   fetch(Json)
     .then(function (response) {
       return response.json();
@@ -34,13 +35,62 @@ function ReceberID(id) {
         img.src = `${data.imagem}`;
         name.textContent = `${data.nome}`;
         descri.textContent = `${data.sobre}`;
+      } else {
+        img.src = `imgs/icon-user.png`;
+        name.textContent = `${data.nome}`;
+        descri.textContent = `${data.sobre}`;
       }
     });
 }
 
-function Servicos(id) {
-  let servicos = "http://localhost:3000/servicos";
-  fetch(servicos)
+// function Servicos(id) {
+//   let servicos = "http://localhost:3000/servicos";
+//   fetch(servicos)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       let card = document.getElementById("conteudo");
+//       let newDiv = document.createElement("div");
+//       newDiv.classList.add("newDiv");
+//       let strHtml = "";
+//       for (let i = 0; i < data.length; i++) {
+//         if (data[i].empresa == id) {
+//           console.log("ola");
+//           if (data[i].imagem) {
+//             strHtml += `
+//             <div class="container-Serv">
+//               <div class="Divimg-Serv">
+//                 <img src="${data[i].imagem}" class="img-Serv" alt="Minha Figura">
+//               </div>
+//               <div class="Divdados-serv">
+//                 <p class="title-serv">${data[i].title}</p>
+//                 <p class="descri-serv">${data[i].descricao}</p>
+//               </div>
+//             </div> `;
+//           } else {
+//             strHtml += `
+//             <div class="container-Serv">
+//               <div class="Divimg-Serv">
+//                 <img src="../imgs/icon-user.png" class="img-Serv" alt="Minha Figura">
+//               </div>
+//               <div class="Divdados-serv">
+//                 <p class="title-serv">${data[i].title}</p>
+//                 <p class="descri-serv">${data[i].descricao}</p>
+//               </div>
+//             </div>
+//             `;
+//           }
+//         }
+//       }
+//       newDiv.innerHTML = strHtml;
+//       card.appendChild(newDiv);
+//     });
+// }
+
+function Vagas(id) {
+  let vagas = "https://tech-servic.vercel.app/vagas";
+  fetch(vagas)
     .then(function (response) {
       return response.json();
     })
@@ -48,85 +98,110 @@ function Servicos(id) {
       console.log(data);
 
       let card = document.getElementById("conteudo");
-      let newDiv = document.createElement("div");
-      newDiv.classList.add("newDiv");
       let strHtml = "";
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].idE == id) {
-          console.log("ola");
-          if (data[i].imagem) {
-            strHtml += `
-            <div class="container-Serv">
-              <div class="Divimg-Serv">
-                <img src="${data[i].imagem}" class="img-Serv" alt="Minha Figura">
-              </div>
-              <div class="Divdados-serv">
-                <p class="title-serv">${data[i].title}</p>
-                <p class="descri-serv">${data[i].descricao}</p>
-              </div>
-            </div> `;
-          } else {
-            strHtml += `
-            <div class="container-Serv">
-              <div class="Divimg-Serv">
-                <img src="../imgs/icon-user.png" class="img-Serv" alt="Minha Figura">
-              </div>
-              <div class="Divdados-serv">
-                <p class="title-serv">${data[i].title}</p>
-                <p class="descri-serv">${data[i].descricao}</p>
-              </div>
-            </div>
-            `;
+
+      if (data.length > 0) {
+        for (let i = 0; i < data.length; i++) {
+          const vagaAtual = data[i];
+
+          if (vagaAtual.idE == id) {
+            if (vagaAtual.nomeVaga && vagaAtual.descricao && vagaAtual.imagem) {
+              strHtml += `
+              <div class="card-vagas p-5">
+                <div class="card-body">
+                  <div class="container text-center">
+                    <div class="row row-cols-2">
+                      <div class="col-md-4">
+                        <img class="icon-vagas" src="${vagaAtual.imagem}" />
+                      </div>
+                      <div class="col-md-8">
+                        <h6>${vagaAtual.nomeVaga}</h6>
+                        <p id="descVaga">
+                        ${vagaAtual.descricao}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
+            }
           }
         }
+      } else {
+        strHtml = "<p>Nenhuma vaga disponível.</p>";
       }
-      newDiv.innerHTML = strHtml;
-      card.appendChild(newDiv);
+
+      card.innerHTML = strHtml;
+      console.log(card);
     });
 }
 
-// function Vagas(id) {
-//   let vagas = "http://localhost:3000/vagas";
-//   fetch(vagas)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
+document.addEventListener("DOMContentLoaded", function () {
+  const URLComentario = "https://tech-servic.vercel.app/comentarios";
+  const avaliacaoForm = document.getElementById("avaliacao-form");
 
-//       let card = document.getElementById("conteudo");
-//       let strHtml = "";
+  avaliacaoForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-//       if (data.length > 0) {
-//         for (let i = 0; i < data.length; i++) {
-//           const vagaAtual = data[i];
+    fetch(URLComentario)
+      .then((res) => res.json())
+      .then(function (dados) {
+        const comentario = dados;
+        let params = new URLSearchParams(location.search);
+        let id = params.get("id");
+        const avaliacao = {
+          id: comentario.length + 1,
+          nome: document.getElementById("nome").value,
+          usuario: id,
+          comentario: document.getElementById("comentario").value,
+        };
 
-//           if (vagaAtual.nomeVaga && vagaAtual.descricao) {
-//             strHtml += `
-//             <div class="card-vagas">
-//               <div class="card-body" id="cardvagas">
-//                 <div class="container text-center">
-//                   <div class="row row-cols-2">
-//                     <div class="col-md-4">
-//                       <img class="icon-vagas" src="${vagaAtual[id].imagem}" />
-//                     </div>
-//                     <div class="col-md-8">
-//                       <h6>${vagaAtual[id].nomeVaga}</h6>
-//                       <p id="descVaga">
-//                       ${vagaAtual[id].descricao}
-//                       </p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>`;
-//           }
-//         }
-//       } else {
-//         strHtml = "<p>Nenhuma vaga disponível.</p>";
-//       }
+        return fetch(URLComentario, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(avaliacao),
+        });
+      })
+      .then((res) => res.json())
+      .catch((error) => console.error("Erro:", error));
+  });
+});
 
-//       card.innerHTML = strHtml;
-//       console.log(card);
-//     });
-// }
+function Avaliacao(id) {
+  let divComentario = document.getElementById("cards");
+  let Json = `https://tech-servic.vercel.app/comentarios`;
+  fetch(Json)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let strAvaliacao = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].usuario == id) {
+          strAvaliacao += `<div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="container-card-body text-center">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img class="icon-user" src="imgs/icon-user.png" />
+                            <h6 id="nome-ava">${data[i].nome}</h6>
+                          </div>
+                          <div class="col-md-8" id="card-2">
+                            <p class="des-ava mt-3">
+                              ${data[i].comentario}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>`;
+        }
+      }
+
+      divComentario.innerHTML = strAvaliacao;
+    });
+}

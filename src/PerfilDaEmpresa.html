@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/PerfilDaEmpresa.css">
+  <script src="js/PerfilDaEmpresa.js"></script>
+  <title>Perfil Da Empresa</title>
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- Navbar com menu mobile-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
+    <div class="container-fluid">
+      <!--Logo-->
+      <a class="navbar-brand" href="index.html">
+        <img class="img-logo" src="imgs/logo.png" width="100px" height="100px" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Menu lateral-->
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+          <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" id="a-Carrossel" href="/src/HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" id="a-Home" href="/src/HTML/carrossel.html">Feed</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" id="a-VagasDisp" href="/src/HTML/VagasDisponiveis.html">Vagas Disponíveis</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" id="a-Forum" href="/src/HTML/Forum.html">Fórum</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <a href="index.html" class="text-white text-decoration-none px-3 py-1 mx-5 rounded-4"
+              style="background-color: #f94ca4">Sair</a>
+          </div>
+        </div>
+  </nav>
+
+  <!--CORPO-->
+
+  <main class="container-body">
+    <!-- Perfil do uruario -->
+    <section class="perfil">
+      <div class="row row-cols-2">
+        <div class="coluna-1-1 col-sm-5">
+          <img class="logo-perfil" id="logo-perfil" class="img-thumbnail" alt="..." />
+        </div>
+        <div class="coluna-1-2 col-sm-7">
+          <strong>
+            <h2 class="subtitle-1" id="perfil-nome"></h2>
+          </strong>
+          <p id="desc">
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="avaliacoes">
+      <h2 class="title-avaliacoes mx-0 my-auto" id="avaliacoes">Avaliações</h2>
+      <!--primeira parte dos cards--> 
+
+      <div class="cards mt-3" id="cards">
+      </div>
+        <a class="btn btn-dark btn-md" style="margin-left: 300px;"
+          data-bs-toggle="modal" data-bs-target="#avaliacao-modal">
+          <i class="fa fa-plus"></i> Avaliar empresa
+        </a>
+      </div>
+    </section>
+
+    <div class="modal fade" id="avaliacao-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Avaliar Empresa <span id="edit-prod-id"></span></h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form id="avaliacao-form" method="post" action="">
+                      <div class="form-group">
+                          <label for="nome" class="col-form-label">Nome:</label>
+                          <input type="text" class="form-control" id="nome" min="1" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="comentario" class="col-form-label">Comentário:</label>
+                          <input type="text" class="form-control" id="comentario" required>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                          <button type="submit" class="btn btn-primary">Salvar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- vagas abertas -->
+
+
+    <section class="vagas" id="vagas">
+      <h2 class="servicos">Serviços Abertos</h2>
+      <div id="conteudo">
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!--footer-->
+  <footer>
+    <div class="container-fluid mb-0 footer-container p-5" id="footer-midia">
+      <div class="row">
+        <div class="col-md-7">
+          <h3 class="text-dark">Sobre a empresa</h3>
+          <p class="text-dark mt-3">TechMatch: A plataforma que une talento e oportunidade com a facilidade de um deslize. Encontre seu próximo projeto de forma rápida e eficiente. Sua jornada freelancer começa aqui!
+          </p>
+        </div>
+        <div class="col-md-5 d-flex align-items-center justify-content-center gap-3">
+          <a href="#">
+            <img src="imgs/facebook.png" alt="facebook" width="40px" height="40px">
+          </a>
+          <a href="#">
+            <img src="imgs/instagram.png" alt="instagram" width="40px" height="40px">
+          </a>
+          <a href="#">
+            <img src="imgs/twitter.png" alt="twitter" width="40px" height="40px">
+          </a>
+          <a href="#">
+            <img src="imgs/github.png" alt="github" width="40px" height="40px">
+          </a>
+        </div>
+  </footer>
+</body>
+
+</html>
