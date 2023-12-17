@@ -3,7 +3,11 @@
 body {
   width: 100%;
   background: rgb(230, 63, 251);
-  background: radial-gradient(circle, rgba(230, 63, 251, 1) 0%, rgba(116, 52, 169, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(230, 63, 251, 1) 0%,
+    rgba(116, 52, 169, 1) 100%
+  );
   font-family: "Poppins", sans-serif;
 }
 
@@ -104,6 +108,7 @@ body {
 .icon-vagas {
   width: 90%;
   padding: 10px;
+  height: 150px;
   border-radius: 100px;
 }
 
@@ -222,7 +227,9 @@ nav {
     margin-left: 100px;
   }
 
-  .cards{margin: 0 auto;}
+  .cards {
+    margin: 0 auto;
+  }
 
   .icon-vagas {
     width: 200px;

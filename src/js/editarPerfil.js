@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then(function (data) {
+      console.log(data);
       let name = (document.getElementById("input-nome").value = data.nome);
       let img = document.getElementById("img-user");
       if (data.imagem) {
@@ -54,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
     receberDados.push(data);
   }
   //Chamando JSONServer User
-  console.log(receberDados);
 
   //Edita Perfil User
   let btn = document.getElementById("submit-usuario");
@@ -68,20 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let curriculo = document.getElementById("input-arquivo1").value;
     let portfolio = document.getElementById("input-arquivo2").value;
     //Recebendo valores dos campos de perfil do Usuario
+    console.log(receberDados[0].telefone);
     let usuario = {
       id: id,
-      login: receberDados.login,
-      senha: receberDados.senha,
-      senha2: receberDados.senha2,
+      login: receberDados[0].login,
+      senha: receberDados[0].senha,
+      senha2: receberDados[0].senha2,
       nome: nome,
-      sobrenome: receberDados.sobrenome,
-      data: "",
+      email: receberDados[0].email,
+      telefone: receberDados[0].telefone,
       sobre: descricao,
       portifolio: portfolio,
       curriculo: curriculo,
       imagem: imagem,
-      servicos: "",
     };
+    console.log(usuario);
 
     console.log(nome, imagem, descricao, curriculo, portfolio);
     let nomee = document.getElementById("input-nome");
@@ -134,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 2000);
         let addJSON = document.getElementById("btn-seguir");
         addJSON.addEventListener("click", function () {
+          modalUser.style.display = "none";
           putUse(usuario);
         });
       }
@@ -165,7 +167,6 @@ document.addEventListener("DOMContentLoaded", function () {
           descricaoo.style.border = "";
           curriculoo.style.border = "";
           portfolioo.style.border = "";
-          modalUser.style.display = " none";
           putUse(usuario);
         }, 4000);
       });
@@ -201,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let newCont = "";
         if (!dados.imagem) {
           for (let i = 0; i < data.length; i++) {
-            if (data[i].idE == id) {
+            if (data[i].usuario == id) {
               newCont += `
           <div class="div-container" data-value="${data[i].id}">
             <div class="div-img">
@@ -218,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           for (let i = 0; i < data.length; i++) {
             console.log(receberDados);
-            if (data[i].idE == id) {
+            if (data[i].usuario == id) {
               newCont += `
           <div class="div-container" data-value="${data[i].id}">
             <div class="div-img">
@@ -273,9 +274,10 @@ document.addEventListener("DOMContentLoaded", function () {
       modalServ.style.display = "block";
     } else {
       let servicos = {
+        imagem: receberDados.imagem,
         title: nameServ,
         descricao: descriServ,
-        idE: parseInt(id, 10),
+        usuario: id,
       };
       titleModalSuc.innerText = "Sucesso";
       cornameServ.style.border = "4px solid green";
@@ -284,15 +286,18 @@ document.addEventListener("DOMContentLoaded", function () {
       modalUserPh.innerText = "Todos dados preenchidos, deseja salva-los?";
       modalUser.style.display = "block";
 
-      setTimeout(() => {
-        cornameServ.style.border = "";
-        cordescriServ.style.border = "";
-      }, 2000);
-
       let addJSON = document.getElementById("btn-seguir");
       addJSON.addEventListener("click", function () {
+        modalUser.style.display = "none";
         console.log(servicos);
         postServicos(servicos);
+        setTimeout(() => {
+          cornameServ.style.border = "";
+          cordescriServ.style.border = "";
+          nameServ.value = "";
+          descriServ.value = "";
+          location.reload();
+        }, 2000);
       });
     }
   });

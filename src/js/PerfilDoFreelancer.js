@@ -15,10 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
   let linkVagaDisp = document.getElementById("a-VagasDisp");
   linkVagaDisp.href = `VagasDisponiveis.html?id=${id}`;
   ReceberID(id);
-  Servicos(id);
   Avaliacao(id);
+  setTimeout(() => {
+    Servicos(id);
+  }, 1000);
 });
-
+let pegardaros = [];
 function ReceberID(id) {
   let Json = `https://tecmatch--brandds.repl.co/usuarios/${id}`;
   fetch(Json)
@@ -32,17 +34,23 @@ function ReceberID(id) {
       console.log(data);
 
       if (data.imagem) {
+        getDadosUser(data);
         img.src = `${data.imagem}`;
-        name.textContent = `${data.nome} ${data.sobrenome}`;
+        name.textContent = `${data.nome} `;
         descri.textContent = `${data.sobre}`;
       } else {
+        getDadosUser(data);
         img.src = "imgs/icon-user.png";
-        name.textContent = `${data.nome} ${data.sobrenome}`;
+        name.textContent = `${data.nome}`;
         descri.textContent = `${data.sobre}`;
       }
     });
 }
-
+function getDadosUser(dados) {
+  pegardaros.push(dados);
+  console.log(pegardaros);
+}
+console.log(pegardaros);
 function Servicos(id) {
   let servicos = "https://tecmatch--brandds.repl.co/servicos";
   fetch(servicos)
@@ -50,30 +58,52 @@ function Servicos(id) {
       return response.json();
     })
     .then(function (data) {
+      console.log(data);
       let card = document.getElementById("conteudo");
       let newDiv = document.createElement("div");
       newDiv.classList.add("newDiv");
       let strHtml = "";
       for (let i = 0; i < data.length; i++) {
         if (data[i].usuario == id) {
-          strHtml += `
-                    <div class="card-vagas p-5">
-                      <div class="card-body">
-                        <div class="container text-center">
-                          <div class="row row-cols-2">
-                            <div class="col-md-4">
-                              <img class="icon-vagas" src="${data[i].imagem}" />
-                            </div>
-                            <div class="col-md-8">
-                              <h6>${data[i].title}</h6>
-                              <p id="descVaga">
-                              ${data[i].descricao}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>`;
+          if (pegardaros[0].imagem) {
+            strHtml += `
+          <div class="card-vagas p-5">
+            <div class="card-body">
+              <div class="container text-center">
+                <div class="row row-cols-2">
+                  <div class="col-md-4">
+                    <img class="icon-vagas" src="${pegardaros[0].imagem}" />
+                  </div>
+                  <div class="col-md-8">
+                    <h6>${data[i].title}</h6>
+                    <p id="descVaga">
+                    ${data[i].descricao}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`;
+          } else {
+            strHtml += `
+          <div class="card-vagas p-5">
+            <div class="card-body">
+              <div class="container text-center">
+                <div class="row row-cols-2">
+                  <div class="col-md-4">
+                    <img class="icon-vagas" src="imgs/icon-user.png" />
+                  </div>
+                  <div class="col-md-8">
+                    <h6>${data[i].title}</h6>
+                    <p id="descVaga">
+                    ${data[i].descricao}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`;
+          }
         }
       }
       newDiv.innerHTML = strHtml;

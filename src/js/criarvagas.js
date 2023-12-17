@@ -284,7 +284,8 @@ function getVagas() {
           }
 
           servicesString += "</p>";
-          newCamp += `
+          if (data[i].imagem) {
+            newCamp += `
           <div class="div-container" data-value="${data[i].id}">
             <div class="div01">
              <img class="img-vaga" src="${data[i].imagem}" alt="Minha Figura">
@@ -299,6 +300,23 @@ function getVagas() {
              <button class="btn-excluir" onclick="Excluir(${data[i].id})" type="button">Excluir Vaga</button>
             </div>
           </div>`;
+          } else {
+            newCamp += `
+          <div class="div-container" data-value="${data[i].id}">
+            <div class="div01">
+             <img class="img-vaga" src="imgs/icon-user.png" alt="Minha Figura">
+             <p><strong>Nome: </strong>${data[i].nomeVaga}</p>
+            </div>
+            <div class="div02">
+             <p><strong>Descrição: </strong>${data[i].descricao}</p>
+             <p><strong>Site: </strong>
+             <a href="${data[i].site}">${data[i].site}</a></p>
+             <p><strong>Serviço: </strong>${data[i].filtro}</p>
+             ${servicesString}
+             <button class="btn-excluir" onclick="Excluir(${data[i].id})" type="button">Excluir Vaga</button>
+            </div>
+          </div>`;
+          }
         }
       }
       newDiv.innerHTML = newCamp;
