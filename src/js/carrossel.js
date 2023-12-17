@@ -8,8 +8,8 @@ aVagas.href = `VagasDisponiveis.html?id=${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 
 let slideAtual = 0;
-let URLVagas = "https://jsonserver-techmatch--brandds.repl.co/vagas";
-let URLServicos = "https://jsonserver-techmatch--brandds.repl.co/servicos";
+let URLVagas = "https://tecmatch--brandds.repl.co/vagas";
+let URLServicos = "https://tecmatch--brandds.repl.co/servicos";
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";

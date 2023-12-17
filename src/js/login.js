@@ -1,4 +1,4 @@
-URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios";
+URL = "https://tecmatch--brandds.repl.co/usuarios";
 let mensagerSucc = document.getElementById("mensagerSucc");
 mensagerSucc.style.display = "none";
 mensagerSucc.style.color = "green";
@@ -79,21 +79,23 @@ form.addEventListener("submit", function (ev) {
 });
 
 function validarNome() {
-  var nome = document.getElementById('userName').value;
+  var nome = document.getElementById("userName").value;
 
-  if (nome.trim() === '') {
-    document.getElementById('erroNome').innerHTML = 'Por favor, informe o nome.';
+  if (nome.trim() === "") {
+    document.getElementById("erroNome").innerHTML =
+      "Por favor, informe o nome.";
   } else {
-    document.getElementById('erroNome').innerHTML = '';
+    document.getElementById("erroNome").innerHTML = "";
   }
 }
 
 function validarSenha() {
-  var senha = document.getElementById('userSenha').value;
+  var senha = document.getElementById("userSenha").value;
 
-  if (senha.trim() === '') {
-    document.getElementById('erroSenha').innerHTML = 'Por favor, informe a senha.';
+  if (senha.trim() === "") {
+    document.getElementById("erroSenha").innerHTML =
+      "Por favor, informe a senha.";
   } else {
-    document.getElementById('erroSenha').innerHTML = '';
+    document.getElementById("erroSenha").innerHTML = "";
   }
 }

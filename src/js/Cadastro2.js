@@ -26,7 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const passsoword1 = document.getElementById("UserSenha1").value;
       const passoword = document.getElementById("UserSenha").value;
 
-      console.log(login, name, sobrenome, email, telefone, passoword, passsoword1);
+      console.log(
+        login,
+        name,
+        sobrenome,
+        email,
+        telefone,
+        passoword,
+        passsoword1
+      );
       //Receber Valores
 
       if (
@@ -90,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
           software: "",
           disponivel: "",
         };
-        URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios ";
+        URL = "https://tecmatch--brandds.repl.co/usuarios ";
 
         fetch(URL)
           .then(function (response) {
@@ -139,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   bordDiv.style.border = " 4px solid green";
                   iconSuc.style.display = "block";
                   modal.style.display = "block";
-
+                  postUser(usuario);
                   setTimeout(() => {
                     campoName.style.borderColor = "";
                     campoSenha.style.borderColor = "";
@@ -151,9 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     bordDiv.style.borderColor = "";
                     iconSuc.style.display = "none";
                     modal.style.display = "none";
-                    postUser(usuario);
-                    window.location.href = "Login.html";
                   }, 8000);
+                  setTimeout(() => {
+                    window.location.href = "Login.html";
+                  }, 6000);
                 } else {
                   let campoSenha = document.getElementById("UserSenha");
                   let passsoword11 = document.getElementById("UserSenha1");
@@ -187,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function postUser(dados) {
-  URL = "https://jsonserver-techmatch--brandds.repl.co/usuarios ";
+  URL = "https://tecmatch--brandds.repl.co/usuarios ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -203,7 +212,7 @@ function postUser(dados) {
     });
 }
 function postVagas(dados) {
-  URL = "https://jsonserver-techmatch--brandds.repl.co/vagas ";
+  URL = "https://tecmatch--brandds.repl.co/vagas ";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -220,7 +229,7 @@ function postVagas(dados) {
 }
 
 function postServicos(dados) {
-  URL = "https://jsonserver-techmatch--brandds.repl.co/servicos";
+  URL = "https://tecmatch--brandds.repl.co/servicos";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -236,70 +245,77 @@ function postServicos(dados) {
     });
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
   $("#Telefone").inputmask("(99) 9999-9999");
 });
 
 function validarLogin() {
-  var login = document.getElementById('UserName').value;
+  var login = document.getElementById("UserName").value;
 
-  if (login.trim() === '') {
-    document.getElementById('erroLogin').innerHTML = 'Por favor, informe o login.';
+  if (login.trim() === "") {
+    document.getElementById("erroLogin").innerHTML =
+      "Por favor, informe o login.";
   } else {
-    document.getElementById('erroLogin').innerHTML = '';
+    document.getElementById("erroLogin").innerHTML = "";
   }
 }
 
 function validarNome() {
-  var nome = document.getElementById('UserName1').value;
+  var nome = document.getElementById("UserName1").value;
 
-  if (nome.trim() === '') {
-    document.getElementById('erroNome').innerHTML = 'Por favor, informe o nome.';
+  if (nome.trim() === "") {
+    document.getElementById("erroNome").innerHTML =
+      "Por favor, informe o nome.";
   } else {
-    document.getElementById('erroNome').innerHTML = '';
+    document.getElementById("erroNome").innerHTML = "";
   }
 }
 
 function validarSobrenome() {
-  var sobrenome = document.getElementById('UserSobrenome').value;
+  var sobrenome = document.getElementById("UserSobrenome").value;
 
-  if (sobrenome.trim() === '') {
-    document.getElementById('erroSobrenome').innerHTML = 'Por favor, informe o sobrenome.';
+  if (sobrenome.trim() === "") {
+    document.getElementById("erroSobrenome").innerHTML =
+      "Por favor, informe o sobrenome.";
   } else {
-    document.getElementById('erroSobrenome').innerHTML = '';
+    document.getElementById("erroSobrenome").innerHTML = "";
   }
 }
 
 function validarEmail() {
-  var email = document.getElementById('Email').value;
+  var email = document.getElementById("Email").value;
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (email.trim() === '') {
-    document.getElementById('erroEmail').innerHTML = 'Por favor, informe o e-mail.';
+  if (email.trim() === "") {
+    document.getElementById("erroEmail").innerHTML =
+      "Por favor, informe o e-mail.";
   } else if (!emailRegex.test(email)) {
-    document.getElementById('erroEmail').innerHTML = 'Formato de e-mail inválido.';
+    document.getElementById("erroEmail").innerHTML =
+      "Formato de e-mail inválido.";
   } else {
-    document.getElementById('erroEmail').innerHTML = '';
+    document.getElementById("erroEmail").innerHTML = "";
   }
 }
 
 function validarTelefone() {
-  var telefone = document.getElementById('Telefone').value;
+  var telefone = document.getElementById("Telefone").value;
 
-  if (telefone.trim() === '') {
-    document.getElementById('erroTelefone').innerHTML = 'Por favor, informe o telefone.';
+  if (telefone.trim() === "") {
+    document.getElementById("erroTelefone").innerHTML =
+      "Por favor, informe o telefone.";
   } else {
-    document.getElementById('erroTelefone').innerHTML = '';
+    document.getElementById("erroTelefone").innerHTML = "";
   }
 }
 
 function validarSenha() {
-  var senha = document.getElementById('UserSenha').value;
-  var senha1 = document.getElementById('UserSenha1').value;
+  var senha = document.getElementById("UserSenha").value;
+  var senha1 = document.getElementById("UserSenha1").value;
 
-  if (senha.trim() === '' || senha1.trim() === '') {
-    document.getElementById('erroSenha').innerHTML = 'Por favor, informe a senha.';
+  if (senha.trim() === "" || senha1.trim() === "") {
+    document.getElementById("erroSenha").innerHTML =
+      "Por favor, informe a senha.";
   } else {
-    document.getElementById('erroSenha').innerHTML = '';
+    document.getElementById("erroSenha").innerHTML = "";
   }
 }

@@ -13,7 +13,7 @@ linkEditar.href = `TelaEditarPerfil.html?id=${id}`;
 //Recuperando ID do usuario
 let recebeAPI = [];
 
-fetch(`https://jsonserver-techmatch--brandds.repl.co/usuarios/${id}`)
+fetch(`https://tecmatch--brandds.repl.co/usuarios/${id}`)
   .then(function (response) {
     return response.json();
   })
@@ -244,7 +244,7 @@ newVaga.addEventListener("click", async function (ev) {
 });
 
 function postVagas(dados) {
-  fetch("https://jsonserver-techmatch--brandds.repl.co/vagas", {
+  fetch("https://tecmatch--brandds.repl.co/vagas", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -256,7 +256,7 @@ function postVagas(dados) {
 }
 getVagas();
 function getVagas() {
-  fetch("https://jsonserver-techmatch--brandds.repl.co/vagas")
+  fetch("https://tecmatch--brandds.repl.co/vagas")
     .then((response) => response.json())
     .then(function (data) {
       let container = document.getElementById("vagas-criadas");
@@ -307,7 +307,7 @@ function getVagas() {
 }
 function Excluir(value) {
   document.querySelector(`.div-container[data-value="${value}"]`).remove();
-  fetch(`https://jsonserver-techmatch--brandds.repl.co/vagas/${value}`, {
+  fetch(`https://tecmatch--brandds.repl.co/vagas/${value}`, {
     method: "DELETE",
   }).then((response) => console.log("Item excluido"));
 }

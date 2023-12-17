@@ -22,31 +22,30 @@ function closeForm() {
 }
 
 function filterAll() {
-  fetch("https://jsonserver-techmatch--brandds.repl.co/posts")
+  fetch("https://tecmatch--brandds.repl.co/posts")
     .then((response) => response.json())
     .then((posts) => {
       updateUI(posts);
     });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const URLUsuario = "https://tecmatch--brandds.repl.co/usuarios";
+  const URLPost = "https://tecmatch--brandds.repl.co/posts";
+  const postForm = document.getElementById("post-form");
 
-document.addEventListener('DOMContentLoaded', function () {
-  const URLUsuario = 'http://localhost:3000/usuarios';
-  const URLPost = 'http://localhost:3000/posts';
-  const postForm = document.getElementById('post-form');
-
-  postForm.addEventListener('submit', (e) => {
+  postForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     fetch(URLPost)
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(function (dados) {
         const post = dados;
         let params = new URLSearchParams(location.search);
         let id = params.get("id");
 
         fetch(URLUsuario)
-          .then(res => res.json())
+          .then((res) => res.json())
           .then(function (dados) {
             usuario = dados;
             for (let i = 0; i < usuario.length; i++) {
@@ -58,37 +57,37 @@ document.addEventListener('DOMContentLoaded', function () {
                   nome: posicao.nome,
                   usuario: id,
                   imagem: posicao.imagem,
-                  comentario: document.getElementById('comentario').value
-                }
+                  comentario: document.getElementById("comentario").value,
+                };
 
                 return fetch(URLPost, {
-                  method: 'POST',
+                  method: "POST",
                   headers: {
-                    'Content-Type': 'application/json'
+                    "Content-Type": "application/json",
                   },
-                  body: JSON.stringify(postagem)
+                  body: JSON.stringify(postagem),
                 });
               }
             }
-          })
+          });
       })
-      .then(res => res.json())
-      .catch(error => console.error('Erro:', error));
+      .then((res) => res.json())
+      .catch((error) => console.error("Erro:", error));
   });
 });
 
 function Posts(id) {
-  let divPost = document.getElementById('cards');
-  let Json = `http://localhost:3000/posts`;
+  let divPost = document.getElementById("cards");
+  let Json = `https://tecmatch--brandds.repl.co/posts`;
   fetch(Json)
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (data) {
-          let strAvaliacao = '';
-          for(let i = 0; i < data.length; i++){
-                  if(data[i].imagem){
-                    strAvaliacao += `<div class="col mb-5">
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      let strAvaliacao = "";
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].imagem) {
+          strAvaliacao += `<div class="col mb-5">
                   <div class="card">
                     <div class="card-body">
                       <div class="container-card-body text-center">
@@ -107,8 +106,8 @@ function Posts(id) {
                     </div>
                   </div>
                 </div>`;
-                  }else{
-                    strAvaliacao += `<div class="col mb-5">
+        } else {
+          strAvaliacao += `<div class="col mb-5">
                   <div class="card">
                     <div class="card-body">
                       <div class="container-card-body text-center">
@@ -127,13 +126,9 @@ function Posts(id) {
                     </div>
                   </div>
                 </div>`;
-                  }
-              
-          }
+        }
+      }
 
-          divPost.innerHTML = strAvaliacao;
-      });
+      divPost.innerHTML = strAvaliacao;
+    });
 }
-
-
-
