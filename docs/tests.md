@@ -128,6 +128,14 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Dados de entrada** | Clique no atalho do chatbot na tela principal.
 **Resultado obtido** | Sucesso.
 
+**Caso de Teste** | **CT011 - Exibir um chatbot que leva ao WhatsApp**
+ :--------------: | ------------
+**Procedimento**  | 1)Os usuários teram a possibilidade de enviar avaliações da empresa ou freelancer, a partir de um modal que será possivel o cliente ou empregado dar sua opinião <br> 2)A avaliação devera ficar registrada no perfil do freelancer ou empresa. 
+**Requisitos associados** | RF-019,20,RF-021 e RF-022.
+**Resultado esperado** | O usuário ter uma função de comentar em que ficará disponível no perfil.
+**Dados de entrada** | Clique no atalho "Avaliar empresa" e digite o conteúdo.
+**Resultado obtido** | Sucesso.
+
 
 
 
