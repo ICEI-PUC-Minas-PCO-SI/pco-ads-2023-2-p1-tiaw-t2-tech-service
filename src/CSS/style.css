@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 html {
-  height: 100vh;
+  height: 100%;
 }
 body {
   background-image: linear-gradient(
@@ -11,10 +11,8 @@ body {
     #661476,
     #120079
   );
-  background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
   width: 100%;
   height: 100%;

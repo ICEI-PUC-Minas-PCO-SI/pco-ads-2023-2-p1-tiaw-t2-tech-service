@@ -14,6 +14,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
     <!-- <script src="../js/cadastro.js"></script> -->
     <script src="js/Cadastro2.js"></script>
     <title>Tech Match</title>
@@ -130,29 +133,55 @@
       <!-- Cadastro -->
       <div class="wrapper p-5">
         <form id="form">
-          <h1 class="h1-cadastro">Cadastro</h1>
+          <div class="row">
+            <div class="col-12">
+              <h1 class="h1-cadastro mb-3">Cadastro</h1>
+            </div>
+          </div>
           <p class="msgErr">Senhas não coincidem</p>
-          <div class="input-box">
-            <label for="">Digite o login</label>
-            <input type="text" id="UserName" placeholder="Username" />
-            <!-- <i style="background-color: aqua" class="bx bxs-user"></i> -->
-            <label for="">Digite seu nome</label>
-            <input type="text" id="UserName1" />
+          <div class="row input-box">
+            <div class="col-sm-12 col-md-6">
+              <label for="">Login</label>
+              <input type="text" id="UserName" placeholder="Username" onblur="validarLogin()" required/>
+              <span id="erroLogin" class="error"></span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label for="">Nome</label>
+              <input type="text" id="UserName1" onblur="validarNome()" required/>
+              <span id="erroNome" class="error"></span>
+            </div>
           </div>
-
-          <div class="input-box">
-            <label for="">Sobrenome</label>
-            <input type="text" id="UserSobrenome" />
-            <label for="">Data de nascimento</label>
-            <input type="date" id="UserDate" />
-            <label for="">Escreva sua senha</label>
-            <input type="password" id="UserSenha1" />
-            <label for="">Escreva novamente</label>
-            <input type="password" id="UserSenha" />
-
-            <!-- <i class="bx bxs-lock-alt"></i> -->
+          <div class="row input-box">
+            <div class="col-sm-12 col-md-6">
+              <label for="">Sobrenome</label>
+              <input type="text" id="UserSobrenome" onblur="validarSobrenome()" required/>
+              <span id="erroSobrenome" class="error"></span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label for="">Telefone</label>
+              <input type="tel" id="Telefone" onblur="validarTelefone()" required/>
+              <span id="erroTelefone" class="error"></span>
+            </div>
           </div>
-
+          <div class="row input-box w-100">
+            <div class="col-sm-12 col-md-12">
+              <label for="">E-mail</label>
+              <input type="email" id="Email" onblur="validarEmail()" required/>
+              <span id="erroEmail" class="error"></span>
+            </div>
+          </div>
+          <div class="row input-box">
+            <div class="col-sm-12 col-md-6">
+              <label for="">Escreva sua senha</label>
+              <input type="password" id="UserSenha1" onblur="validarSenha()" required/>
+              <span id="erroSenha" class="error"></span>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label for="">Escreva novamente</label>
+            <input type="password" id="UserSenha" onblur="validarSenha()" required/>
+            <span id="erroSenha" class="error"></span>
+            </div>
+          </div>
           <div class="remember-forgot">
             <label
               ><input type="checkbox" required />Eu concordo com os Termos &

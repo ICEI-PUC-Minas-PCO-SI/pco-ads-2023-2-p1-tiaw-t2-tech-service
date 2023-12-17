@@ -21,22 +21,20 @@ document.addEventListener("DOMContentLoaded", function () {
       const login = document.getElementById("UserName").value;
       const name = document.getElementById("UserName1").value;
       const sobrenome = document.getElementById("UserSobrenome").value;
-      const date = document
-        .getElementById("UserDate")
-        .value.split("-")
-        .reverse()
-        .join("/");
+      const email = document.getElementById("Email").value;
+      const telefone = document.getElementById("Telefone").value;
       const passsoword1 = document.getElementById("UserSenha1").value;
       const passoword = document.getElementById("UserSenha").value;
 
-      console.log(login, name, sobrenome, date, passoword, passsoword1);
+      console.log(login, name, sobrenome, email, telefone, passoword, passsoword1);
       //Receber Valores
 
       if (
         !login ||
         !name ||
         !sobrenome ||
-        !date ||
+        !email ||
+        !telefone ||
         !passsoword1 ||
         !passoword
       ) {
@@ -49,8 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!sobrenome) {
           console.log("Sobrenome");
         }
-        if (!date) {
-          console.log("date");
+        if (!email) {
+          console.log("email");
+        }
+        if (!telefone) {
+          console.log("telefone");
         }
         if (!passsoword1) {
           console.log("senha1");
@@ -66,7 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
           senha2: passsoword1,
           nome: name,
           sobrenome: sobrenome,
-          data: date,
+          email: email,
+          telefone: telefone,
           sobre: "",
           portifolio: "",
           curriculo: "",
@@ -122,12 +124,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                   let namee = document.getElementById("UserName1");
                   let sobrenomee = document.getElementById("UserSobrenome");
-                  let datee = document.getElementById("UserDate");
+                  let emaill = document.getElementById("Email");
+                  let telefonee = document.getElementById("Telefone");
                   let passsoword11 = document.getElementById("UserSenha1");
 
                   namee.style.border = "4px solid green";
                   sobrenomee.style.border = "4px solid green";
-                  datee.style.border = " 4px solid green";
+                  emaill.style.border = " 4px solid green";
+                  telefonee.style.border = " 4px solid green";
                   passsoword11.style.border = "4px solid green";
                   campoName.style.border = "4px solid green";
                   campoSenha.style.border = "4px solid green";
@@ -141,7 +145,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     campoSenha.style.borderColor = "";
                     namee.style.borderColor = "";
                     sobrenomee.style.borderColor = "";
-                    datee.style.borderColor = "";
+                    emaill.style.borderColor = "";
+                    telefonee.style.borderColor = "";
                     passsoword11.style.borderColor = "";
                     bordDiv.style.borderColor = "";
                     iconSuc.style.display = "none";
@@ -229,4 +234,72 @@ function postServicos(dados) {
     .then(function (data) {
       console.log(data);
     });
+}
+
+$(document).ready(function(){
+  $("#Telefone").inputmask("(99) 9999-9999");
+});
+
+function validarLogin() {
+  var login = document.getElementById('UserName').value;
+
+  if (login.trim() === '') {
+    document.getElementById('erroLogin').innerHTML = 'Por favor, informe o login.';
+  } else {
+    document.getElementById('erroLogin').innerHTML = '';
+  }
+}
+
+function validarNome() {
+  var nome = document.getElementById('UserName1').value;
+
+  if (nome.trim() === '') {
+    document.getElementById('erroNome').innerHTML = 'Por favor, informe o nome.';
+  } else {
+    document.getElementById('erroNome').innerHTML = '';
+  }
+}
+
+function validarSobrenome() {
+  var sobrenome = document.getElementById('UserSobrenome').value;
+
+  if (sobrenome.trim() === '') {
+    document.getElementById('erroSobrenome').innerHTML = 'Por favor, informe o sobrenome.';
+  } else {
+    document.getElementById('erroSobrenome').innerHTML = '';
+  }
+}
+
+function validarEmail() {
+  var email = document.getElementById('Email').value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (email.trim() === '') {
+    document.getElementById('erroEmail').innerHTML = 'Por favor, informe o e-mail.';
+  } else if (!emailRegex.test(email)) {
+    document.getElementById('erroEmail').innerHTML = 'Formato de e-mail inválido.';
+  } else {
+    document.getElementById('erroEmail').innerHTML = '';
+  }
+}
+
+function validarTelefone() {
+  var telefone = document.getElementById('Telefone').value;
+
+  if (telefone.trim() === '') {
+    document.getElementById('erroTelefone').innerHTML = 'Por favor, informe o telefone.';
+  } else {
+    document.getElementById('erroTelefone').innerHTML = '';
+  }
+}
+
+function validarSenha() {
+  var senha = document.getElementById('UserSenha').value;
+  var senha1 = document.getElementById('UserSenha1').value;
+
+  if (senha.trim() === '' || senha1.trim() === '') {
+    document.getElementById('erroSenha').innerHTML = 'Por favor, informe a senha.';
+  } else {
+    document.getElementById('erroSenha').innerHTML = '';
+  }
 }

@@ -77,3 +77,23 @@ form.addEventListener("submit", function (ev) {
       }
     });
 });
+
+function validarNome() {
+  var nome = document.getElementById('userName').value;
+
+  if (nome.trim() === '') {
+    document.getElementById('erroNome').innerHTML = 'Por favor, informe o nome.';
+  } else {
+    document.getElementById('erroNome').innerHTML = '';
+  }
+}
+
+function validarSenha() {
+  var senha = document.getElementById('userSenha').value;
+
+  if (senha.trim() === '') {
+    document.getElementById('erroSenha').innerHTML = 'Por favor, informe a senha.';
+  } else {
+    document.getElementById('erroSenha').innerHTML = '';
+  }
+}
