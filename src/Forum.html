@@ -94,11 +94,8 @@
 
     <div class="container">
       <div class="actions mb-5">
-        <a
-          class="btn btn-dark btn-md"
-          data-bs-toggle="modal"
-          data-bs-target="#post-modal"
-        >
+        <a class="btn btn-dark btn-md"
+          data-bs-toggle="modal" data-bs-target="#post-modal">
           <i class="fa fa-plus"></i> Criar novo post
         </a>
         <button
@@ -110,58 +107,34 @@
         </button>
       </div>
 
-      <div
-        class="modal fade"
-        id="post-modal"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
-      >
+      <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">
-                Criar post <span id="edit-prod-id"></span>
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form id="post-form" method="post" action="">
-                <div class="form-group">
-                  <label for="comentario" class="col-form-label"
-                    >Comentário:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="comentario"
-                    required
-                  />
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Criar post <span id="edit-prod-id"></span></h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cancelar
-                  </button>
-                  <button type="submit" class="btn btn-dark">Salvar</button>
+                <div class="modal-body">
+                    <form id="post-form" method="post" action="">
+                        <div class="form-group">
+                            <label for="comentario" class="col-form-label">Comentário:</label>
+                            <input type="text" class="form-control" id="comentario" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-dark">Salvar</button>
+                        </div>
+                    </form>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <div id="cards"></div>
+      <div id="cards">
+        
+      </div>
     </div>
 
     <!--Footer-->
