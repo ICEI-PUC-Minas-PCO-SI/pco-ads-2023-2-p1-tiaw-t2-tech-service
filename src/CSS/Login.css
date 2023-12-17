@@ -145,6 +145,8 @@ align-items: center;}
   text-decoration: underline;
 }
 
+.error {color: red;}
+
 @media only screen and (max-width: 768px) {
   .wrapper {
     width: 99%;
