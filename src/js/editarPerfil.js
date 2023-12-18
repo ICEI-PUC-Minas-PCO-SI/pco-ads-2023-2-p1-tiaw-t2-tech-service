@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
       portifolio: portfolio,
       curriculo: curriculo,
       imagem: imagem,
+      res: true,
     };
     console.log(usuario);
 

@@ -4,6 +4,8 @@ console.log(params);
 let id = params.get("id");
 let aPerfil = document.getElementById("a-Perfil");
 let aVagas = document.getElementById("a-Vagas");
+let aValiar = document.getElementById("a-Avaliar");
+aValiar.href = `avaliacoes.html?id=${id}`;
 aVagas.href = `VagasDisponiveis.html?id=${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 

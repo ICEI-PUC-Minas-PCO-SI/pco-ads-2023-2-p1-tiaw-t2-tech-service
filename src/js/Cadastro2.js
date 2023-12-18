@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
           curriculo: "",
           imagem: "",
           servicos: "",
+          res: true
         };
         console.log(usuario);
         let servicos = {

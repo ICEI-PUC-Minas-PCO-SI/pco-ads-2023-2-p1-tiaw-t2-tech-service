@@ -1,0 +1,146 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "login": "admin",
+      "senha": "admin",
+      "senha2": "",
+      "nome": "Brandex",
+      "email": "rbs13bg13@gmaial.com",
+      "telefone": "(31)98444-3929",
+      "sobre": "",
+      "portifolio": "",
+      "curriculo": "",
+      "imagem": "",
+      "servicos": "",
+      "res": false
+    }
+  ],
+  "vagas": [
+    {
+      "imagem": "https://i.pinimg.com/originals/19/20/10/19201048c854759ab45413d3667ed29c.jpg",
+      "nomeVaga": "IBM",
+      "descricao": "A empresa tem uma presença global e oferece uma ampla gama de produtos e serviços, incluindo hardware, software, serviços de consultoria e soluções em nuvem. A IBM é conhecida por suas contribuições históricas, como a criação do primeiro mainframe comercial, o desenvolvimento do primeiro disco rígido e a invenção do código de barras.",
+      "site": "https://br.pinterest.com/pin/3166662230812128/",
+      "filtro": "Software",
+      "soft1": "Python",
+      "soft2": "Java",
+      "soft3": "PHP",
+      "idE": 0,
+      "status": true,
+      "id": 6
+    },
+    {
+      "imagem": "",
+      "nomeVaga": "IBM",
+      "descricao": "A empresa tem uma presença global e oferece uma ampla gama de produtos e serviços, incluindo hardware, software, serviços de consultoria e soluções em nuvem. A IBM é conhecida por suas contribuições históricas, como a criação do primeiro mainframe comercial, o desenvolvimento do primeiro disco rígido e a invenção do código de barras.",
+      "site": "https://br.pinterest.com/pin/3166662230812128/",
+      "filtro": "Hardwere",
+      "idE": 4,
+      "status": true,
+      "id": 7
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "title": "Programador",
+      "descricao": ". Ele é um homem de muitos talentos, desde suas habilidades técnicas até sua paixão por aventuras ao ar livre. Com um senso de humor afiado, Sofia é conhecido por animar qualquer ambiente com sua presença descontraída. Seja mergulhando em projetos criativos ou explorando novos hobbies, ele abraça a vida com entusiasmo. A lealdade e a empatia de Sofia fazem dele um amigo confiável, sempre pronto para apoiar aqueles ao seu redor.",
+      "empresa": "0",
+      "usuario": "3",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
+    },
+    {
+      "id": 3,
+      "title": "Designer",
+      "descricao": "Acompanhe, em tempo real, tudo o que acontece na Industria do Turismo em Aviação, Hotelaria, Operadoras, Destinos, Mercado e muito mais.",
+      "empresa": "4",
+      "usuario": "3",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL"
+    },
+    {
+      "title": "IBM",
+      "descricao": "Nada de mais",
+      "idE": 1,
+      "id": 5
+    },
+    {
+      "title": "IBM",
+      "descricao": "Atualmente, a IBM está fortemente envolvida em áreas como inteligência artificial, computação em nuvem, blockchain e análise de dados. Sua abordagem para a inovação e pesquisa contínua a mantém como uma figura proeminente no cenário tecnológico global.",
+      "usuario": "0",
+      "id": 6
+    },
+    {
+      "id": 4,
+      "title": "Localiza",
+      "descricao": "Nada de mais ",
+      "empresa": "4",
+      "usuario": "0"
+    },
+    {
+      "title": "IBM",
+      "descricao": "A empresa tem uma presença global e oferece uma ampla gama de produtos e serviços, incluindo hardware, software, serviços de consultoria e soluções em nuvem. A IBM é conhecida por suas contribuições históricas, como a criação do primeiro mainframe comercial, o desenvolvimento do primeiro disco rígido e a invenção do código de barras.",
+      "usuario": "2",
+      "id": 7
+    },
+    {
+      "title": "IBM",
+      "descricao": "A empresa tem uma presença global e oferece uma ampla gama de produtos e serviços, incluindo hardware, software, serviços de consultoria e soluções em nuvem. A IBM é conhecida por suas contribuições históricas, como a criação do primeiro mainframe comercial, o desenvolvimento do primeiro disco rígido e a invenção do código de barras.",
+      "usuario": "4",
+      "id": 8
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "nome": "0",
+      "usuario": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "comentario": 1
+    },
+    {
+      "id": 2,
+      "nome": "João Oliveira",
+      "usuario": "3",
+      "comentario": "Muito bom profissional, sempre responde rápido e entrega o que promete."
+    },
+    {
+      "id": 3,
+      "nome": "Alice Machado",
+      "usuario": "3",
+      "comentario": "Adorei os trabalhos dele, muito bom."
+    },
+    {
+      "id": 4,
+      "nome": "Alice Machado",
+      "usuario": "4",
+      "comentario": "Empresa muito profissional e preocupada com os trabalhadores."
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "nome": "DG",
+      "usuario": "3",
+      "imagem": "https://play-lh.googleusercontent.com/8ngJLQ0v8tGp5CDvBo2eoqDDSg2zB5azNh-rLMOliWDG1hh8UMmsh879bNoEz9EcOzHL",
+      "comentario": "aaaaaaaaa"
+    },
+    {
+      "id": 2,
+      "nome": "Rafael",
+      "usuario": "2",
+      "imagem": "",
+      "comentario": "BBBBBBBBBBBBBBBB"
+    }
+  ],
+  "avaliacoes": [
+    {
+      "id": 0,
+      "zero": 0,
+      "um": 0,
+      "dois": 0,
+      "tres": 0,
+      "quatro": 0,
+      "cinco": 1
+    }
+  ]
+}
