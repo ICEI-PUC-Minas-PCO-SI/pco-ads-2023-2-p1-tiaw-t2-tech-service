@@ -120,6 +120,7 @@ function receberRespota() {
     putUserStatus(usuario);
     console.log(avalicao);
     putAvaliacao(avalicao);
+    location.reload();
   }
 }
 //Pegar avalição
