@@ -144,15 +144,117 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
+|*Caso de Teste*                                            |*TC-01 - Exibir landing page*                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Requisito Associado | RF-001 -	SIS. deve exibir landing page como tela inicial da aplicação.|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/index.html| 
 
-|*Caso de Teste*                                 |*TC-02 - Efetuar Login (usuário autenticado)*                                         |
+|*Caso de Teste*               |*TC-02 - landing page encaminhar para tela cadastro/login*                                         |
 |---|---|
-|Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
-|Link do vídeo do teste realizado: | https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar | 
+|Requisito Associado | RF-002	- Deve permitir landing page encaminhar para tela cadastro/login|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/index.html | 
+
+|*Caso de Teste*                                              |*TC-03 - Permitir cadastro*                                         |
+|---|---|
+|Requisito Associado | RF-003 - Deve permitir cadastro.|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Cadastro.html| 
+
+|*Caso de Teste*                          |*TC-04 - Permitir login a usuários cadastrados*                                         |
+|---|---|
+|Requisito Associado | RF-004	- Deve permitir login a usuários cadastrados|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Login.html| 
+
+|*Caso de Teste*                        |*TC-05 - Mostrar vagas para usuários cadastrados*                                         |
+|---|---|
+|Requisito Associado |RF-005	- Deve mostrar vagas para usuários cadastrados|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/VagasDisponiveis.html?id=null| 
+
+|*Caso de Teste*                                               |*TC-06 - Exibir carrossel*                                         |
+|---|---|
+|Requisito Associado |RF-006 - Deve exibir carrossel com vagas disponíveis na tela inicial|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/carrossel.html?id=null| 
+
+|*Caso de Teste*                          |*TC-07 - Permissão/Negação a vagas de empregos*                                         |
+|---|---|
+|Requisito Associado |RF-007 - Deve ter Permissão/Negação a vagas de empregos|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/carrossel.html?id=null| 
+
+|*Caso de Teste*                                           |*TC-08 - Exibir vagas aceitas*                                         |
+|---|---|
+|Requisito Associado |RF-008	- Deve exibir, no perfil do usuário, as vagas que ele aceitou|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null| 
+
+|*Caso de Teste*                                |*TC-09 - Permitir empresa cadastrar vaga*                                         |
+|---|---|
+|Requisito Associado |RF-009 - Deve permitir empresa cadastrar vaga|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/TelaCriarVagas.html?id=null| 
+
+|*Caso de Teste*                                |*TC-010 - Exibir fórum de dicas a usuários*                                       |
+|---|---|
+|Requisito Associado |RF-010	- Deve exibir fórum de dicas a usuários|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Forum.html?id=null| 
+
+|*Caso de Teste*                                |*TC-011 - Permitir usuário interagir com o fórum*                                 |
+|---|---|
+|Requisito Associado |RF-011 - Deve permitir usuário interagir com o fórum|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Forum.html?id=null| 
+
+|*Caso de Teste*                                |*TC-012 - Permitir filtragem de vagas a usuário cadastrado*                       |
+|---|---|
+|Requisito Associado |RF-012 - Deve permitir filtragem de vagas a usuário cadastrado|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/VagasDisponiveis.html?id=null | 
+
+|*Caso de Teste*                                           |*TC-014 - Exibir perfil do freelancer*                                 |
+|---|---|
+|Requisito Associado |RF-014	- Deve permitir exibir o perfil do freelancer|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null |
+
+|*Caso de Teste*                                               |*TC-015 - Exibir perfil da Empresa                                 |
+|---|---|
+|Requisito Associado |RF-015 - Deve permitir exibir o perfil da empresa|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Empresa.html?id=null |
+
+|*Caso de Teste*                                 |*TC-016 - Permitir freelancers editarem o perfil                                 |
+|---|---|
+|Requisito Associado |RF-016 - Deve permitir freelancers cadastrados a editar perfil|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/TelaEditarPerfil.html |
+
+
+|*Caso de Teste*                            |*TC-17 - Exibir chatbot que leva ao whatsapp*                                         |
+|---|---|
+|Requisito Associado |RF-017 - Deve exibir chatbot que leva ao whatsapp, para tirar dúvidas|
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/carrossel.html?id=null| 
+
+|*Caso de Teste*                                    |*TC-018 - Permitir empresas editarem o perfil                                 |
+|---|---|
+|Requisito Associado |RF-018	- Deve permitir empresas cadastradas a editar perfil|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/TelaEditarPerfil.html |
+
+|*Caso de Teste*                             |*TC-019 - Exibir avaliações no perfil do freelancer*                                 |
+|---|---|
+|Requisito Associado |RF-019 - Deve exibir no perfil as avaliações do freelancer cadastrado|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null |
+
+|*Caso de Teste*                                 |*TC-020 - Exibir avaliações no perfil da Empresa                                 |
+|---|---|
+|Requisito Associado |RF-020 - Deve exibir no perfil as avaliações da empresa cadastrada|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Empresa.html?id=null |
+
+|*Caso de Teste*                                 |*TC-021 - Permitir comentar no perfil da Empresa                                 |
+|---|---|
+|Requisito Associado |RF-021 - Deve permitir usuário cadastrado comentar no perfil da empresa|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Empresa.html?id=null |
+
+|*Caso de Teste*                             |*TC-022 - Permitir comentar no perfil do freelancer*                                 |
+|---|---|
+|Requisito Associado |RF-022 - Deve permitir empresa cadastrada comentar no perfil do usuário|
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null |
+
+
+
+
+
+
 
 
 ## Avaliação dos Testes de Software
