@@ -7,7 +7,7 @@ linKPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 linkHome.href = `carrossel.html?id=${id}`;
 linkForum.href = `Forum.html?id=${id}`;
 let recerStatus = [];
-fetch(`http://localhost:3000/usuarios/${id}`)
+fetch(`https://tecmatch--brandds.repl.co/usuarios/${id}`)
   .then((response) => response.json())
   .then((data) => {
     let input = document.getElementById("input-value");
@@ -22,7 +22,7 @@ fetch(`http://localhost:3000/usuarios/${id}`)
   });
 
 let receberdados = [];
-fetch(" http://localhost:3000/avaliacoes")
+fetch("https://tecmatch--brandds.repl.co/avaliacoes")
   .then((response) => response.json())
   .then((data) => {
     receberdados.push(data);
@@ -126,7 +126,7 @@ function receberRespota() {
 
 function putAvaliacao(dados) {
   console.log(dados);
-  fetch("http://localhost:3000/avaliacoes/0", {
+  fetch("https://tecmatch--brandds.repl.co/avaliacoes/0", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -139,7 +139,7 @@ function putAvaliacao(dados) {
 
 function putUserStatus(dados) {
   console.log(dados);
-  fetch(`http://localhost:3000/usuarios/${id}`, {
+  fetch(`https://tecmatch--brandds.repl.co/usuarios/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
