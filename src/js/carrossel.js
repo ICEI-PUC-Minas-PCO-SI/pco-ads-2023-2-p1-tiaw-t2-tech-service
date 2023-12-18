@@ -82,7 +82,7 @@ function criarSlide(slideAtual) {
         </div>`;
         }
       } else {
-        strCarrossel = `<p>Você precisa estar cadastrado para ter acesso a esse conteúdo.</p>`;
+        strCarrossel = `<p class="text-center text-light">Você precisa estar cadastrado para ter acesso a esse conteúdo.</p>`;
       }
       divConteudo.innerHTML = strCarrossel;
     });
@@ -120,7 +120,7 @@ function aceitarVaga() {
             </div>
             <h2 class="text-center">Você chegou ao fim, essas foram as vagas disponíveis. Obrigado por colaborar com o nosso site!</h2>
             <div class="text-center">
-              <a href="/src/HTML/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
+              <a href="/src/VagasDisponiveis.html" class="mt-3 fs-5 text-decoration-none" style="color: #b03f63;">Ver mais vagas</a>
             </div>
         </div>`;
     divConteudo.innerHTML = strCarrossel;

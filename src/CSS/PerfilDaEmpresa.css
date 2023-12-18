@@ -3,12 +3,38 @@
 body {
   width: 100%;
   background: rgb(230, 63, 251);
-  background: radial-gradient(
-    circle,
-    rgba(230, 63, 251, 1) 0%,
-    rgba(116, 52, 169, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(230, 63, 251, 1) 0%,
+      rgba(116, 52, 169, 1) 100%);
   font-family: "Poppins", sans-serif;
+}
+
+.textoDesc {font-family: "Poppins", sans-serif;
+font-weight: lighter;
+font-size: 18px;
+margin-left: 30px;}
+
+.rating-container {
+  text-align: center;
+}
+
+.star-container {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  margin: 0 0.1em;
+}
+
+.oba {
+  color: #ffcc00;
+}
+
+.star:hover,
+.star:active {
+  color: #ffcc00;
 }
 
 #a-sair {
