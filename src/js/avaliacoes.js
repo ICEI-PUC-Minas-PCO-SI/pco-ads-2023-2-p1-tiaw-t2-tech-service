@@ -120,7 +120,9 @@ function receberRespota() {
     putUserStatus(usuario);
     console.log(avalicao);
     putAvaliacao(avalicao);
-    location.reload();
+    setTimeout(() => {
+      location.reload();
+    }, 4000);
   }
 }
 //Pegar avalição

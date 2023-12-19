@@ -8,6 +8,15 @@ aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 namee.href = `carrossel.html?id=${id}`;
 URLVagas = "https://tecmatch--brandds.repl.co/vagas";
 
+let URLuser = "https://tecmatch--brandds.repl.co/usuarios";
+let dadosUser = [];
+
+fetch(URLuser)
+  .then((response) => response.json())
+  .then((data) => {
+    dadosUser.push(data);
+  });
+
 function carregarVagas() {
   let divVaga = document.getElementById("job-list");
   let strVaga = "";
@@ -27,7 +36,7 @@ function carregarVagas() {
                                 <div class="card job-card">
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center p-3">
                                         <h3 class="card-title mb-3">${vagas[i].nomeVaga}</h3>
-                                        <span class="card-text">${vagas[i].nomeEmpresa}</span>
+                                        <span class="card-text">${vagas[i].nomeVaga}</span>
                                         <span class="card-text">${vagas[i].filtro}</span>
                                         <a onclick="getVaga(${i});" class="btn btn-light btn-sm m-3" data-bs-toggle="modal" data-bs-target="#vaga-modal">Saber Mais</a>
                                     </div>
@@ -54,12 +63,12 @@ function getVaga(id) {
 
       const modalBody = document.getElementById("vagaModalBody");
       modalBody.innerHTML = `
-          <h5>${vaga.nomeEmpresa} - ${vaga.nomeVaga}</h5>
+          <h5>${vaga.nomeVaga} - ${vaga.nomeVaga}</h5>
           <p>${vaga.filtro}</p>
           <p>${vaga.descricao}</p>
           <h5>Contato</h5>
-          <strong>E-mail:</strong> <p class="d-inline">${vaga.email}</p><br>
-          <strong>Telefone:</strong> <p class="d-inline">${vaga.telefone}</p>
+          <strong>E-mail:</strong> <p class="d-inline">${dadosUser[0][2].email}</p><br>
+          <strong>Telefone:</strong> <p class="d-inline">${dadosUser[0][1].telefone}</p>
           
         `;
     });

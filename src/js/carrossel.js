@@ -10,8 +10,17 @@ aVagas.href = `VagasDisponiveis.html?id=${id}`;
 aPerfil.href = `Perfil.Freelancer.html?id=${id}`;
 
 let slideAtual = 0;
+let dadosUser = [];
+let URLuser = "https://tecmatch--brandds.repl.co/usuarios";
 let URLVagas = "https://tecmatch--brandds.repl.co/vagas";
 let URLServicos = "https://tecmatch--brandds.repl.co/servicos";
+
+fetch(URLuser)
+  .then((response) => response.json())
+  .then((data) => {
+    dadosUser.push(data);
+    console.log(dadosUser);
+  });
 
 function criarSlide(slideAtual) {
   var strCarrossel = "";
@@ -45,7 +54,7 @@ function criarSlide(slideAtual) {
                   </div>
                   <div class="div-dadosVagas col-md-6">
                   <h3 class="my-3">Detalhes da Vaga</h3>
-              <p class="paragraph-titulo"><strong>Empresa : </strong>${vagas[slideAtual].nomeEmpresa}</p>
+              <p class="paragraph-titulo"><strong>Empresa : </strong>${vagas[slideAtual].nomeVaga}</p>
               <p class="paragraph-titulo"><strong>Vaga : </strong>${vagas[slideAtual].nomeVaga}</p>
               <p class="paragraph-descricao"><strong>Descrição : </strong>${vagas[slideAtual].descricao}</p>
               <p class="paragraph-filtro"><strong>Categoria : </strong>${vagas[slideAtual].filtro}</p>
@@ -53,10 +62,10 @@ function criarSlide(slideAtual) {
                 <a href="${vagas[slideAtual].site}" target="_blank">${vagas[slideAtual].site}</a>
               </p>
               <p class="paragraph-site"><strong>E-mail : </strong>
-                <a href="${vagas[slideAtual].site}" target="_blank">${vagas[slideAtual].site}</a>
+                <a href="${vagas[slideAtual].site}" target="_blank">${dadosUser[slideAtual][0].email}</a>
               </p>
               <p class="paragraph-site"><strong>Telefone : </strong>
-                <a href="${vagas[slideAtual].site}" target="_blank">${vagas[slideAtual].site}</a>
+                <a href="${vagas[slideAtual].site}" target="_blank">${dadosUser[slideAtual][1].telefone}</a>
               </p>
               </div>
               <div class="actions d-flex justify-content-around">

@@ -236,8 +236,9 @@ newVaga.addEventListener("click", async function (ev) {
       .addEventListener("click", function (ev) {
         ev.preventDefault();
         msgConf.style.display = "none";
+        postVagas(vaga);
         setTimeout(() => {
-          postVagas(vaga);
+          location.reload();
         }, 2000);
       });
   }
