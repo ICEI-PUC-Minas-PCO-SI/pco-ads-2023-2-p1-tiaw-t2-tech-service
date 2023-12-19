@@ -94,7 +94,7 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 **Requisitos associados** | RF-010 e RF-011.
 **Resultado esperado** | Os usuários poderá interagir no fórum.
 **Dados de entrada** | Clique no atalho "Fórum" da barra de navegação.
-**Resultado obtido** | Não foi concluído.
+**Resultado obtido** | Sucesso.
 
 **Caso de Teste** | **CT010 - Exibir o perfil do freelancer**
  :--------------: | ------------
@@ -147,12 +147,12 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                            |*TC-01 - Exibir landing page*                                         |
 |---|---|
 |Requisito Associado | RF-001 -	SIS. deve exibir landing page como tela inicial da aplicação.|
-|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/index.html| 
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app| 
 
 |*Caso de Teste*               |*TC-02 - landing page encaminhar para tela cadastro/login*                                         |
 |---|---|
 |Requisito Associado | RF-002	- Deve permitir landing page encaminhar para tela cadastro/login|
-|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/index.html | 
+|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app | 
 
 |*Caso de Teste*                                              |*TC-03 - Permitir cadastro*                                         |
 |---|---|
@@ -192,7 +192,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                |*TC-010 - Exibir fórum de dicas a usuários*                                       |
 |---|---|
 |Requisito Associado |RF-010	- Deve exibir fórum de dicas a usuários|
-|Link do vídeo do teste realizado: | https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Forum.html?id=null| 
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Forum.html?id=null| 
 
 |*Caso de Teste*                                |*TC-011 - Permitir usuário interagir com o fórum*                                 |
 |---|---|
@@ -228,17 +228,17 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                    |*TC-018 - Permitir empresas editarem o perfil                                 |
 |---|---|
 |Requisito Associado |RF-018	- Deve permitir empresas cadastradas a editar perfil|
-|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/TelaEditarPerfil.html |
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/TelaEditarPerfil.html?id=null|
 
 |*Caso de Teste*                             |*TC-019 - Exibir avaliações no perfil do freelancer*                                 |
 |---|---|
 |Requisito Associado |RF-019 - Deve exibir no perfil as avaliações do freelancer cadastrado|
-|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null |
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Freelancer.html?id=null|
 
 |*Caso de Teste*                                 |*TC-020 - Exibir avaliações no perfil da Empresa                                 |
 |---|---|
 |Requisito Associado |RF-020 - Deve exibir no perfil as avaliações da empresa cadastrada|
-|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Empresa.html?id=null |
+|Link do vídeo do teste realizado: |https://pco-ads-2023-2-p1-tiaw-t2-tech-service.vercel.app/Perfil.Empresa.html?id=null|
 
 |*Caso de Teste*                                 |*TC-021 - Permitir comentar no perfil da Empresa                                 |
 |---|---|
