@@ -153,7 +153,6 @@ Esses recursos ajudarão a automatizar os processos e facilitar o desenvolviment
 | RF-010 | SIS. deve exibir fórum de dicas a usuários                          | MEDIA      | Gustavo O.  |
 | RF-011 | SIS. deve permitir usuário interagir com o fórum                    | MEDIA      | Gustavo O.  |
 | RF-012 | SIS. deve permitir filtragem de vagas a usuário cadastrado          | MEDIA      | Gustavo B.  |
-| RF-013 | SIS. deve fazer contrato para usuários cadastrados                  | MEDIA      | Rafael      |
 | RF-014 | SIS. deve permitir exibir o perfil do freelancer                    | MEDIA      | Luiza       |
 | RF-015 | SIS. deve permitir exibir o perfil da empresa                       | MEDIA      | Luiza       |
 | RF-016 | SIS. deve permitir freelancers cadastrados a editar perfil          | BAIXA      | Rafael      |
